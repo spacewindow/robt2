@@ -717,7 +717,7 @@ element.style {
 		font-weight: 400;
 		margin: 0;
 		.media-phone-portrait({
-			.fontSize(3, mobile);
+			.fontSize(5, mobile);
 			margin-bottom: 0.5rem;
 		});
 	}
@@ -785,7 +785,7 @@ img{
 .section--intro{
 	padding: 3rem 0;
 	.media-phone-portrait({
-		padding-top: 7rem;
+		padding: 1rem 0;
 	});
 	h2{
 		font-weight: 400;
@@ -902,6 +902,9 @@ img{
 }
 
 .credits{
+	.media-phone-portrait({
+		display:block;
+	});
   h3{
     color: @darkgrey;
 		.fontSize(0);
@@ -911,6 +914,13 @@ img{
   }
 	p{
 		// .fontSize(small);
+		.media-phone-portrait({
+			display:inline-block;
+			width:auto;
+			&:not(:last-of-type):after{
+				content: ', ';
+			}
+		});
 	}
 }
 

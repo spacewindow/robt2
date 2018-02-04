@@ -2182,8 +2182,8 @@ element.style {
 }
 @media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
   .project__header__title h1 {
-    font-size: 1.3824rem;
-    line-height: 2rem;
+    font-size: 1.9912rem;
+    line-height: 3rem;
     margin-bottom: 0.5rem;
   }
 }
@@ -2283,7 +2283,7 @@ img {
 }
 @media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
   .section--intro {
-    padding-top: 7rem;
+    padding: 1rem 0;
   }
 }
 .section--intro h2 {
@@ -2420,6 +2420,11 @@ img {
     position: relative;
   }
 }
+@media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
+  .credits {
+    display: block;
+  }
+}
 .credits h3 {
   color: #333333;
   font-size: 0.8rem;
@@ -2449,6 +2454,15 @@ img {
   .credits h3 {
     font-size: 0.6rem;
     line-height: 1rem;
+  }
+}
+@media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
+  .credits p {
+    display: inline-block;
+    width: auto;
+  }
+  .credits p:not(:last-of-type):after {
+    content: ', ';
   }
 }
 .divider {
