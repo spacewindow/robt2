@@ -112,26 +112,39 @@ body{
 	@size-0: 1;
 	@size-small: 0.833;
 	@size-xsmall: 0.694;
+
+
 }
 
 .parameters(media-phone-portrait){
-  @p-size: 0.7; // font-size in rem
+  @p-size: 0.6; // font-size in rem
 
 	// modular scale values - minor third - http://type-scale.com/
-  @size-6: 2.9868;
-	@size-5: 2.489;
-	@size-4: 2.074;
-	@size-3: 1.728;
-	@size-2: 1.44;
-	@size-1: 1.2;
+  // @size-6: 2.9868;
+	// @size-5: 2.489;
+	// @size-4: 2.074;
+	// @size-3: 1.728;
+	// @size-2: 1.44;
+	// @size-1: 1.2;
+	// @size-0: 1;
+	// @size-small: 0.833;
+	// @size-xsmall: 0.694;
+
+  //modular scale values - perfect fourth - http://type-scale.com/
+  @size-6: 5.609;
+	@size-5: 4.208;
+	@size-4: 3.157;
+	@size-3: 2.369;
+	@size-2: 1.777;
+	@size-1: 1.333;
 	@size-0: 1;
-	@size-small: 0.833;
-	@size-xsmall: 0.694;
+	@size-small: 0.75;
+	@size-xsmall: 0.563;
 
 }
 
 
-.fontSize(@scale, @device: desktop) {
+.fontSize(@scale, @device: all) {
 
   .test-args();
 
@@ -217,7 +230,7 @@ body{
 
 
 h1{
-  .fontSize(5, all);
+  .fontSize(4, all);
   position:relative;
 	font-family: @headingFamily;
   letter-spacing: 0.03em;
@@ -238,7 +251,7 @@ h3{
   font-weight: 400;
 }
 h4, .size-1{
-  .fontSize(1);
+  .fontSize(1, all);
   font-family: @fontFamily;
   text-transform: uppercase;
   font-weight: 400;
@@ -248,7 +261,8 @@ p{
   margin: 0.25rem 0 0.5rem;
 }
 p, li{
-	.fontSize(0);
+	.fontSize(0, all);
+  line-height: 1.7;
 }
 p.p__intro{
   .fontSize(1);

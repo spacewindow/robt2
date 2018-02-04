@@ -180,7 +180,7 @@ body{
 	margin-right: 1rem;
 	transition: all 0.3s ease-out;
 	.media-phone-portrait({
-		.fontSize(xsmall);
+		.fontSize(xsmall, mobile);
 	});
 	a{
 		color: @black;
@@ -326,7 +326,7 @@ body{
 		text-align:right;
 	}
 	.media-phone-portrait({
-		.fontSize(small);
+		.fontSize(small, mobile);
 	});
 }
 .footer-links__type{
@@ -378,7 +378,7 @@ body{
 		justify-content: flex-start;
 		width:auto;
 		margin-left: 40%;
-		.fontSize(xsmall);
+		.fontSize(xsmall, mobile);
 		h2{
 			text-align: left;
 			.fontSize(0);
@@ -403,7 +403,7 @@ body{
 	.media-phone-portrait({
 		justify-content: flex-start;
 		width:auto;
-		.fontSize(small);
+		.fontSize(small, mobile);
 	});
 }
 
@@ -714,11 +714,10 @@ element.style {
 	h1{
 		text-align: left;
 		text-transform: none;
-		.fontSize(6);
 		font-weight: 400;
 		margin: 0;
 		.media-phone-portrait({
-			.fontSize(3);
+			.fontSize(3, mobile);
 			margin-bottom: 0.5rem;
 		});
 	}
@@ -731,7 +730,7 @@ element.style {
 		margin: 0.3rem 0;
 		.media-phone-portrait({
 			margin-bottom: 1rem;
-			.fontSize(small);
+			.fontSize(small, mobile);
 		});
 	}
 }
@@ -784,12 +783,14 @@ img{
 }
 
 .section--intro{
+	padding: 3rem 0;
 	.media-phone-portrait({
 		padding-top: 7rem;
 	});
 	h2{
 		font-weight: 400;
-		.fontSize(1);
+		.fontSize(1, all);
+		max-width: 20em;
 	}
 	.media-phone-portrait({
 		flex-direction: column;
@@ -903,8 +904,14 @@ img{
 .credits{
   h3{
     color: @darkgrey;
-		margin-bottom: 0rem;
+		.fontSize(0);
+		margin-top: 1.5rem;
+		font-weight: 600;
+		// margin-bottom: 0rem;
   }
+	p{
+		// .fontSize(small);
+	}
 }
 
 .divider{
@@ -1248,7 +1255,7 @@ img{
   h3{
     text-align: center;
 		.media-phone-portrait({
-			.fontSize(0);
+			.fontSize(0, mobile);
 		});
   }
 }
@@ -1634,7 +1641,7 @@ li{
 		position: absolute;
 		left:0;
 		bottom: -1em;
-		font-size: 0.4em;
+		font-size: 0.6em;
 		content: '(CASE STUDY COMING SOON)';
 		font-family: @fontFamily;
 		font-weight: 300;
