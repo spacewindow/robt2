@@ -468,7 +468,8 @@ section {
 }
 @media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
   .grid1 {
-    width: calc(100% - 1rem);
+    width: calc(100% - 2rem);
+    margin: 0 1rem;
   }
 }
 .grid2 {
@@ -482,7 +483,8 @@ section {
 }
 @media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
   .grid2 {
-    width: calc(100% - 1rem);
+    width: calc(100% - 2rem);
+    margin: 0 1rem;
   }
 }
 .grid3 {
@@ -496,7 +498,8 @@ section {
 }
 @media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
   .grid3 {
-    width: calc(100% - 1rem);
+    width: calc(100% - 2rem);
+    margin: 0 1rem;
   }
 }
 .grid4 {
@@ -510,7 +513,8 @@ section {
 }
 @media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
   .grid4 {
-    width: calc(100% - 1rem);
+    width: calc(100% - 2rem);
+    margin: 0 1rem;
   }
 }
 .grid5 {
@@ -524,7 +528,8 @@ section {
 }
 @media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
   .grid5 {
-    width: calc(100% - 1rem);
+    width: calc(100% - 2rem);
+    margin: 0 1rem;
   }
 }
 .grid6 {
@@ -538,7 +543,8 @@ section {
 }
 @media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
   .grid6 {
-    width: calc(100% - 1rem);
+    width: calc(100% - 2rem);
+    margin: 0 1rem;
   }
 }
 .grid7 {
@@ -552,7 +558,8 @@ section {
 }
 @media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
   .grid7 {
-    width: calc(100% - 1rem);
+    width: calc(100% - 2rem);
+    margin: 0 1rem;
   }
 }
 .grid8 {
@@ -566,7 +573,8 @@ section {
 }
 @media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
   .grid8 {
-    width: calc(100% - 1rem);
+    width: calc(100% - 2rem);
+    margin: 0 1rem;
   }
 }
 .grid9 {
@@ -580,7 +588,8 @@ section {
 }
 @media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
   .grid9 {
-    width: calc(100% - 1rem);
+    width: calc(100% - 2rem);
+    margin: 0 1rem;
   }
 }
 .grid10 {
@@ -594,7 +603,8 @@ section {
 }
 @media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
   .grid10 {
-    width: calc(100% - 1rem);
+    width: calc(100% - 2rem);
+    margin: 0 1rem;
   }
 }
 .grid11 {
@@ -608,7 +618,8 @@ section {
 }
 @media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
   .grid11 {
-    width: calc(100% - 1rem);
+    width: calc(100% - 2rem);
+    margin: 0 1rem;
   }
 }
 .grid12 {
@@ -622,7 +633,8 @@ section {
 }
 @media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
   .grid12 {
-    width: calc(100% - 1rem);
+    width: calc(100% - 2rem);
+    margin: 0 1rem;
   }
 }
 .offset1 {
@@ -633,7 +645,8 @@ section {
 }
 @media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
   .offset1 {
-    /* remove offsets */
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
 }
 .offset2 {
@@ -644,7 +657,8 @@ section {
 }
 @media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
   .offset2 {
-    /* remove offsets */
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
 }
 .offset3 {
@@ -655,7 +669,8 @@ section {
 }
 @media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
   .offset3 {
-    /* remove offsets */
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
 }
 .offset4 {
@@ -666,7 +681,8 @@ section {
 }
 @media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
   .offset4 {
-    /* remove offsets */
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
 }
 .offset5 {
@@ -677,7 +693,8 @@ section {
 }
 @media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
   .offset5 {
-    /* remove offsets */
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
 }
 .offset6 {
@@ -688,7 +705,8 @@ section {
 }
 @media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
   .offset6 {
-    /* remove offsets */
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
 }
 .offset7 {
@@ -699,7 +717,8 @@ section {
 }
 @media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
   .offset7 {
-    /* remove offsets */
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
 }
 .offset8 {
@@ -710,7 +729,8 @@ section {
 }
 @media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
   .offset8 {
-    /* remove offsets */
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
 }
 .offset9 {
@@ -721,7 +741,8 @@ section {
 }
 @media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
   .offset9 {
-    /* remove offsets */
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
 }
 .offset10 {
@@ -732,7 +753,8 @@ section {
 }
 @media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
   .offset10 {
-    /* remove offsets */
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
 }
 .offset11 {
@@ -743,7 +765,8 @@ section {
 }
 @media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
   .offset11 {
-    /* remove offsets */
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
 }
 section {
@@ -826,12 +849,12 @@ body {
 h1 {
   position: relative;
   font-family: 'Merriweather', Helvetica, Arial, sans-serif;
-  font-size: 1.3824rem;
+  font-size: 1.9912rem;
   line-height: 2rem;
   letter-spacing: 0.03em;
   font-weight: 900;
-  text-transform: uppercase;
-  text-align: center;
+  text-align: left;
+  margin: 1rem 0;
 }
 h2 {
   font-family: 'Merriweather', Helvetica, Arial, sans-serif;
@@ -851,9 +874,12 @@ h3 {
 }
 h4,
 .size-1 {
-  font-family: 'Merriweather', Helvetica, Arial, sans-serif;
+  font-family: 'Interstate', Helvetica, Arial, sans-serif;
   font-size: 0.96rem;
   line-height: 1rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin: 0 0 0.5rem;
 }
 p {
   margin: 0.25rem 0 0.5rem;
@@ -885,12 +911,12 @@ p {
   h1 {
     position: relative;
     font-family: 'Merriweather', Helvetica, Arial, sans-serif;
-    font-size: 1.8952rem;
-    line-height: 2rem;
+    font-size: 3.3664rem;
+    line-height: 4rem;
     letter-spacing: 0.03em;
     font-weight: 900;
-    text-transform: uppercase;
-    text-align: center;
+    text-align: left;
+    margin: 1rem 0;
   }
   h2 {
     font-family: 'Merriweather', Helvetica, Arial, sans-serif;
@@ -910,9 +936,12 @@ p {
   }
   h4,
   .size-1 {
-    font-family: 'Merriweather', Helvetica, Arial, sans-serif;
+    font-family: 'Interstate', Helvetica, Arial, sans-serif;
     font-size: 1.0664rem;
     line-height: 2rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin: 0 0 0.5rem;
   }
   p {
     margin: 0.25rem 0 0.5rem;
@@ -942,12 +971,12 @@ p {
   h1 {
     position: relative;
     font-family: 'Merriweather', Helvetica, Arial, sans-serif;
-    font-size: 1.3824rem;
+    font-size: 1.9912rem;
     line-height: 2rem;
     letter-spacing: 0.03em;
     font-weight: 900;
-    text-transform: uppercase;
-    text-align: center;
+    text-align: left;
+    margin: 1rem 0;
   }
   h2 {
     font-family: 'Merriweather', Helvetica, Arial, sans-serif;
@@ -967,9 +996,12 @@ p {
   }
   h4,
   .size-1 {
-    font-family: 'Merriweather', Helvetica, Arial, sans-serif;
+    font-family: 'Interstate', Helvetica, Arial, sans-serif;
     font-size: 0.96rem;
     line-height: 1rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin: 0 0 0.5rem;
   }
   p {
     margin: 0.25rem 0 0.5rem;
@@ -999,12 +1031,12 @@ p {
   h1 {
     position: relative;
     font-family: 'Merriweather', Helvetica, Arial, sans-serif;
-    font-size: 1.2096rem;
+    font-size: 1.7423rem;
     line-height: 2rem;
     letter-spacing: 0.03em;
     font-weight: 900;
-    text-transform: uppercase;
-    text-align: center;
+    text-align: left;
+    margin: 1rem 0;
   }
   h2 {
     font-family: 'Merriweather', Helvetica, Arial, sans-serif;
@@ -1024,9 +1056,12 @@ p {
   }
   h4,
   .size-1 {
-    font-family: 'Merriweather', Helvetica, Arial, sans-serif;
+    font-family: 'Interstate', Helvetica, Arial, sans-serif;
     font-size: 0.84rem;
     line-height: 1rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin: 0 0 0.5rem;
   }
   p {
     margin: 0.25rem 0 0.5rem;
@@ -1051,16 +1086,31 @@ p {
     font-size: 0.4858rem;
     line-height: 1rem;
   }
-  h1 {
-    line-height: 1.6rem;
+  h4 {
+    font-size: 0.7rem;
   }
 }
-a {
-  display: inline-flex;
-  align-items: center;
+p a:link,
+p a:hover,
+p a:visited {
+  display: inline-block;
+  position: relative;
   width: auto;
   text-decoration: none;
-  color: #ff9900;
+  color: #6f6f6f;
+}
+p a:link:after,
+p a:hover:after,
+p a:visited:after {
+  content: '';
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  bottom: -0.25rem;
+  border-bottom: 2px dotted #aaaaaa;
 }
 .labelled-input {
   display: flex;
@@ -1232,11 +1282,24 @@ html {
 body {
   background: #333333;
 }
-.testerton {
-  border-left: 1px solid red;
+.index__title {
+  padding-top: 3rem;
 }
-.body-loading {
-  display: none !important;
+.index__title h1 {
+  margin-bottom: 0.25rem;
+}
+.index__subtitle {
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #aaaaaa;
+  margin-right: 10rem;
+}
+@media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
+  .index__subtitle {
+    border-bottom: 0;
+  }
+}
+.index__welcome {
+  margin-top: 1rem;
 }
 .app__svg-icons {
   display: none;
@@ -1333,13 +1396,17 @@ body {
   fill: #ffffff;
   opacity: 0;
 }
+.index .app__logo #logo-circle {
+  fill: #222222;
+}
 .app__logo #logo {
   fill: #222222;
   opacity: 1;
 }
 @media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
   .app__logo {
-    transform: translateX(0%) scale(0.25);
+    width: 2.6rem;
+    height: 2.6rem;
   }
 }
 .init .app__logo {
@@ -1352,20 +1419,36 @@ body {
   opacity: 0;
 }
 .app__menu__links {
+  display: flex;
+  align-items: center;
   font-size: 0.6664rem;
   text-transform: uppercase;
   margin-right: 1rem;
   transition: all 0.3s ease-out;
 }
+@media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
+  .app__menu__links {
+    font-size: 0.5552rem;
+  }
+}
 .app__menu__links a {
   color: #222222;
   margin: 0.5rem;
+  text-decoration: none;
+}
+.index .app__menu__links a {
+  color: #222222 !important;
 }
 .init .app__menu__links {
   transform: translateY(25%);
 }
 .init .app__menu__links a {
   color: #ffffff;
+}
+@media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
+  .init .app__menu__links {
+    transform: translateY(40%);
+  }
 }
 .app__header {
   position: fixed;
@@ -1389,7 +1472,7 @@ body {
   z-index: -1;
   box-shadow: 0 0 1em rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease-out;
-  background: rgba(255, 255, 255, 0.95);
+  background: #ffffff;
 }
 .init .app__header:after {
   opacity: 0;
