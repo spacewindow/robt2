@@ -681,14 +681,14 @@ element.style {
 }
 
 .project__header{
-  position: relative;
+  // position: relative;
   color: white;
   height: 25rem;
-  background-size: cover;
-  background-position: right:center;
-  background-repeat: no-repeat;
-	padding-top: 3rem;
-	z-index: 2;
+  // background-size: cover;
+  // background-position: right:center;
+  // background-repeat: no-repeat;
+	// padding-top: 3rem;
+	// z-index: 2;
 	&:before{
 		content:'';
 		position: absolute;
@@ -699,32 +699,40 @@ element.style {
 	}
 	.media-phone-portrait({
 		height: 18rem;
-		padding: 2.5rem 0.5rem 0 0.5rem;
+		// padding: 2.5rem 0.5rem 0 0.5rem;
 	});
+	.grid{
+		height:100%;
+		align-items: flex-end;
+	}
 }
 
 .project__header__title{
-	width:100%;
-	position: absolute;
-	bottom:0;
-	padding: 3rem 6rem;
+	// width:100%;
+	// position: absolute;
+	// bottom:0;
 	h1{
 		text-align: left;
 		text-transform: none;
 		font-size: @size-6;
 		font-weight: 400;
-		margin: 1rem 0;
+		margin: 0;
+		.media-phone-portrait({
+			font-size: @size-3;
+			margin-bottom: 0.5rem;
+		});
 	}
 	h3{
 		text-align: left;
 		font-family: @fontFamily;
-		font-weight: 400;
+		// font-weight: 400;
 		text-transform: uppercase;
 		font-size: @size-1;
 		margin: 0.3rem 0;
-	}
-	p{
-		text-align:center;
+		.media-phone-portrait({
+			margin-bottom: 1rem;
+			font-size: @size-small;
+		});
 	}
 }
 
@@ -776,18 +784,13 @@ img{
 }
 
 .section--intro{
-	flex-direction: row;
 	.media-phone-portrait({
 		padding-top: 7rem;
 	});
-	h3{
-
+	h2{
+		font-weight: 400;
+		font-size: @size-1;
 	}
-	// p{
-	// 	font-family: @fontFamily;
-	// 	text-transform: uppercase;
-	// 	margin: 0.25rem 0;
-	// }
 	.media-phone-portrait({
 		flex-direction: column;
 	});
@@ -899,9 +902,8 @@ img{
 
 .credits{
   h3{
-		font-weight: 700;
     color: @darkgrey;
-    margin: 0;
+		margin-bottom: 0rem;
   }
 }
 
@@ -1624,9 +1626,13 @@ li{
 	});
 }
 
-#mother-thumb h3{
+#mother-thumb{
 	overflow: visible;
-	&:after{
+	&:hover{
+		background: transparent;
+		cursor: not-allowed;
+	}
+	h3:after{
 		position: absolute;
 		left:0;
 		bottom: -1em;

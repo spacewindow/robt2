@@ -407,9 +407,9 @@ body.showgrid:before {
   left: 0;
   right: 0;
   margin: 0 auto;
-  width: 98%;
+  width: 95%;
   height: 100%;
-  background-image: repeating-linear-gradient(to right, #bada55 0px, #bada55 calc( 98% / 12 - 1rem), transparent calc( 98% / 12 - 1rem), transparent calc( 98% / 12 ));
+  background-image: repeating-linear-gradient(to right, #bada55 0px, #bada55 calc( 95% / 12 - 1rem), transparent calc( 95% / 12 - 1rem), transparent calc( 95% / 12 ));
   opacity: 0.4;
   background-position: left 0.5rem top;
   z-index: 20;
@@ -431,7 +431,7 @@ body.showgrid:before {
   }
 }
 .grid {
-  width: 98%;
+  width: 95%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -458,12 +458,12 @@ section {
 @media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
 }
 .grid1 {
-  width: calc(( 98%  *  0.08333333 ) - 1rem);
+  width: calc(( 95%  *  0.08333333 ) - 1rem);
   flex: none;
   margin: 0 0.5rem;
 }
 .grid1.no-gutter {
-  width: calc( 98%  *  0.08333333 );
+  width: calc( 95%  *  0.08333333 );
   margin: 0;
 }
 @media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
@@ -473,12 +473,12 @@ section {
   }
 }
 .grid2 {
-  width: calc(( 98%  *  0.16666667 ) - 1rem);
+  width: calc(( 95%  *  0.16666667 ) - 1rem);
   flex: none;
   margin: 0 0.5rem;
 }
 .grid2.no-gutter {
-  width: calc( 98%  *  0.16666667 );
+  width: calc( 95%  *  0.16666667 );
   margin: 0;
 }
 @media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
@@ -488,12 +488,12 @@ section {
   }
 }
 .grid3 {
-  width: calc(( 98%  *  0.25 ) - 1rem);
+  width: calc(( 95%  *  0.25 ) - 1rem);
   flex: none;
   margin: 0 0.5rem;
 }
 .grid3.no-gutter {
-  width: calc( 98%  *  0.25 );
+  width: calc( 95%  *  0.25 );
   margin: 0;
 }
 @media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
@@ -503,12 +503,12 @@ section {
   }
 }
 .grid4 {
-  width: calc(( 98%  *  0.33333333 ) - 1rem);
+  width: calc(( 95%  *  0.33333333 ) - 1rem);
   flex: none;
   margin: 0 0.5rem;
 }
 .grid4.no-gutter {
-  width: calc( 98%  *  0.33333333 );
+  width: calc( 95%  *  0.33333333 );
   margin: 0;
 }
 @media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
@@ -518,12 +518,12 @@ section {
   }
 }
 .grid5 {
-  width: calc(( 98%  *  0.41666667 ) - 1rem);
+  width: calc(( 95%  *  0.41666667 ) - 1rem);
   flex: none;
   margin: 0 0.5rem;
 }
 .grid5.no-gutter {
-  width: calc( 98%  *  0.41666667 );
+  width: calc( 95%  *  0.41666667 );
   margin: 0;
 }
 @media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
@@ -533,12 +533,12 @@ section {
   }
 }
 .grid6 {
-  width: calc(( 98%  *  0.5 ) - 1rem);
+  width: calc(( 95%  *  0.5 ) - 1rem);
   flex: none;
   margin: 0 0.5rem;
 }
 .grid6.no-gutter {
-  width: calc( 98%  *  0.5 );
+  width: calc( 95%  *  0.5 );
   margin: 0;
 }
 @media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
@@ -548,12 +548,12 @@ section {
   }
 }
 .grid7 {
-  width: calc(( 98%  *  0.58333333 ) - 1rem);
+  width: calc(( 95%  *  0.58333333 ) - 1rem);
   flex: none;
   margin: 0 0.5rem;
 }
 .grid7.no-gutter {
-  width: calc( 98%  *  0.58333333 );
+  width: calc( 95%  *  0.58333333 );
   margin: 0;
 }
 @media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
@@ -563,12 +563,12 @@ section {
   }
 }
 .grid8 {
-  width: calc(( 98%  *  0.66666667 ) - 1rem);
+  width: calc(( 95%  *  0.66666667 ) - 1rem);
   flex: none;
   margin: 0 0.5rem;
 }
 .grid8.no-gutter {
-  width: calc( 98%  *  0.66666667 );
+  width: calc( 95%  *  0.66666667 );
   margin: 0;
 }
 @media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
@@ -578,12 +578,12 @@ section {
   }
 }
 .grid9 {
-  width: calc(( 98%  *  0.75 ) - 1rem);
+  width: calc(( 95%  *  0.75 ) - 1rem);
   flex: none;
   margin: 0 0.5rem;
 }
 .grid9.no-gutter {
-  width: calc( 98%  *  0.75 );
+  width: calc( 95%  *  0.75 );
   margin: 0;
 }
 @media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
@@ -593,12 +593,12 @@ section {
   }
 }
 .grid10 {
-  width: calc(( 98%  *  0.83333333 ) - 1rem);
+  width: calc(( 95%  *  0.83333333 ) - 1rem);
   flex: none;
   margin: 0 0.5rem;
 }
 .grid10.no-gutter {
-  width: calc( 98%  *  0.83333333 );
+  width: calc( 95%  *  0.83333333 );
   margin: 0;
 }
 @media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
@@ -608,12 +608,12 @@ section {
   }
 }
 .grid11 {
-  width: calc(( 98%  *  0.91666667 ) - 1rem);
+  width: calc(( 95%  *  0.91666667 ) - 1rem);
   flex: none;
   margin: 0 0.5rem;
 }
 .grid11.no-gutter {
-  width: calc( 98%  *  0.91666667 );
+  width: calc( 95%  *  0.91666667 );
   margin: 0;
 }
 @media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
@@ -623,12 +623,12 @@ section {
   }
 }
 .grid12 {
-  width: calc(( 98%  *  1 ) - 1rem);
+  width: calc(( 95%  *  1 ) - 1rem);
   flex: none;
   margin: 0 0.5rem;
 }
 .grid12.no-gutter {
-  width: calc( 98%  *  1 );
+  width: calc( 95%  *  1 );
   margin: 0;
 }
 @media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
@@ -638,10 +638,10 @@ section {
   }
 }
 .offset1 {
-  margin-left: calc(( 98%  *  0.08333333 ) + 0.5rem);
+  margin-left: calc(( 95%  *  0.08333333 ) + 0.5rem);
 }
 .offset1.no-gutter {
-  margin-left: calc( 98%  *  0.08333333 );
+  margin-left: calc( 95%  *  0.08333333 );
 }
 @media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
   .offset1 {
@@ -650,10 +650,10 @@ section {
   }
 }
 .offset2 {
-  margin-left: calc(( 98%  *  0.16666667 ) + 0.5rem);
+  margin-left: calc(( 95%  *  0.16666667 ) + 0.5rem);
 }
 .offset2.no-gutter {
-  margin-left: calc( 98%  *  0.16666667 );
+  margin-left: calc( 95%  *  0.16666667 );
 }
 @media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
   .offset2 {
@@ -662,10 +662,10 @@ section {
   }
 }
 .offset3 {
-  margin-left: calc(( 98%  *  0.25 ) + 0.5rem);
+  margin-left: calc(( 95%  *  0.25 ) + 0.5rem);
 }
 .offset3.no-gutter {
-  margin-left: calc( 98%  *  0.25 );
+  margin-left: calc( 95%  *  0.25 );
 }
 @media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
   .offset3 {
@@ -674,10 +674,10 @@ section {
   }
 }
 .offset4 {
-  margin-left: calc(( 98%  *  0.33333333 ) + 0.5rem);
+  margin-left: calc(( 95%  *  0.33333333 ) + 0.5rem);
 }
 .offset4.no-gutter {
-  margin-left: calc( 98%  *  0.33333333 );
+  margin-left: calc( 95%  *  0.33333333 );
 }
 @media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
   .offset4 {
@@ -686,10 +686,10 @@ section {
   }
 }
 .offset5 {
-  margin-left: calc(( 98%  *  0.41666667 ) + 0.5rem);
+  margin-left: calc(( 95%  *  0.41666667 ) + 0.5rem);
 }
 .offset5.no-gutter {
-  margin-left: calc( 98%  *  0.41666667 );
+  margin-left: calc( 95%  *  0.41666667 );
 }
 @media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
   .offset5 {
@@ -698,10 +698,10 @@ section {
   }
 }
 .offset6 {
-  margin-left: calc(( 98%  *  0.5 ) + 0.5rem);
+  margin-left: calc(( 95%  *  0.5 ) + 0.5rem);
 }
 .offset6.no-gutter {
-  margin-left: calc( 98%  *  0.5 );
+  margin-left: calc( 95%  *  0.5 );
 }
 @media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
   .offset6 {
@@ -710,10 +710,10 @@ section {
   }
 }
 .offset7 {
-  margin-left: calc(( 98%  *  0.58333333 ) + 0.5rem);
+  margin-left: calc(( 95%  *  0.58333333 ) + 0.5rem);
 }
 .offset7.no-gutter {
-  margin-left: calc( 98%  *  0.58333333 );
+  margin-left: calc( 95%  *  0.58333333 );
 }
 @media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
   .offset7 {
@@ -722,10 +722,10 @@ section {
   }
 }
 .offset8 {
-  margin-left: calc(( 98%  *  0.66666667 ) + 0.5rem);
+  margin-left: calc(( 95%  *  0.66666667 ) + 0.5rem);
 }
 .offset8.no-gutter {
-  margin-left: calc( 98%  *  0.66666667 );
+  margin-left: calc( 95%  *  0.66666667 );
 }
 @media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
   .offset8 {
@@ -734,10 +734,10 @@ section {
   }
 }
 .offset9 {
-  margin-left: calc(( 98%  *  0.75 ) + 0.5rem);
+  margin-left: calc(( 95%  *  0.75 ) + 0.5rem);
 }
 .offset9.no-gutter {
-  margin-left: calc( 98%  *  0.75 );
+  margin-left: calc( 95%  *  0.75 );
 }
 @media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
   .offset9 {
@@ -746,10 +746,10 @@ section {
   }
 }
 .offset10 {
-  margin-left: calc(( 98%  *  0.83333333 ) + 0.5rem);
+  margin-left: calc(( 95%  *  0.83333333 ) + 0.5rem);
 }
 .offset10.no-gutter {
-  margin-left: calc( 98%  *  0.83333333 );
+  margin-left: calc( 95%  *  0.83333333 );
 }
 @media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
   .offset10 {
@@ -758,10 +758,10 @@ section {
   }
 }
 .offset11 {
-  margin-left: calc(( 98%  *  0.91666667 ) + 0.5rem);
+  margin-left: calc(( 95%  *  0.91666667 ) + 0.5rem);
 }
 .offset11.no-gutter {
-  margin-left: calc( 98%  *  0.91666667 );
+  margin-left: calc( 95%  *  0.91666667 );
 }
 @media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
   .offset11 {
@@ -776,6 +776,7 @@ section {
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: flex-start;
+  align-items: center;
 }
 @media (min-width: 481px) {
   section {
@@ -858,14 +859,11 @@ h2 {
   font-weight: 700;
 }
 h3 {
-  font-family: 'Merriweather', Helvetica, Arial, sans-serif;
+  font-family: 'Interstate', Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-size: 0.96rem;
-  font-weight: 700;
+  font-weight: 400;
   line-height: 1rem;
-}
-.credits h3 {
-  font-size: 0.8rem;
 }
 h4,
 .size-1 {
@@ -882,11 +880,6 @@ p {
 p,
 li {
   font-size: 0.8rem;
-}
-.credits p,
-.credits li {
-  font-size: 0.6664rem;
-  margin-bottom: 0.25rem;
 }
 p.p__intro {
   font-size: 0.96rem;
@@ -920,14 +913,11 @@ p {
     font-weight: 700;
   }
   h3 {
-    font-family: 'Merriweather', Helvetica, Arial, sans-serif;
+    font-family: 'Interstate', Helvetica, Arial, sans-serif;
     text-transform: uppercase;
     font-size: 1.0664rem;
-    font-weight: 700;
+    font-weight: 400;
     line-height: 2rem;
-  }
-  .credits h3 {
-    font-size: 0.8rem;
   }
   h4,
   .size-1 {
@@ -944,11 +934,6 @@ p {
   p,
   li {
     font-size: 0.8rem;
-  }
-  .credits p,
-  .credits li {
-    font-size: 0.6rem;
-    margin-bottom: 0.25rem;
   }
   p.p__intro {
     font-size: 1.0664rem;
@@ -980,14 +965,11 @@ p {
     font-weight: 700;
   }
   h3 {
-    font-family: 'Merriweather', Helvetica, Arial, sans-serif;
+    font-family: 'Interstate', Helvetica, Arial, sans-serif;
     text-transform: uppercase;
     font-size: 0.96rem;
-    font-weight: 700;
+    font-weight: 400;
     line-height: 1rem;
-  }
-  .credits h3 {
-    font-size: 0.8rem;
   }
   h4,
   .size-1 {
@@ -1004,11 +986,6 @@ p {
   p,
   li {
     font-size: 0.8rem;
-  }
-  .credits p,
-  .credits li {
-    font-size: 0.6664rem;
-    margin-bottom: 0.25rem;
   }
   p.p__intro {
     font-size: 0.96rem;
@@ -1040,14 +1017,11 @@ p {
     font-weight: 700;
   }
   h3 {
-    font-family: 'Merriweather', Helvetica, Arial, sans-serif;
+    font-family: 'Interstate', Helvetica, Arial, sans-serif;
     text-transform: uppercase;
     font-size: 0.84rem;
-    font-weight: 700;
+    font-weight: 400;
     line-height: 1rem;
-  }
-  .credits h3 {
-    font-size: 0.7rem;
   }
   h4,
   .size-1 {
@@ -1064,11 +1038,6 @@ p {
   p,
   li {
     font-size: 0.7rem;
-  }
-  .credits p,
-  .credits li {
-    font-size: 0.5831rem;
-    margin-bottom: 0.25rem;
   }
   p.p__intro {
     font-size: 0.84rem;
@@ -1292,7 +1261,7 @@ body {
 }
 .index__subtitle:after {
   content: '';
-  width: calc(( 98%  *  0.25 ) - 1rem);
+  width: calc(( 95%  *  0.25 ) - 1rem);
   flex: none;
   margin: 0 0.5rem;
   position: absolute;
@@ -1303,7 +1272,7 @@ body {
   border-bottom: 2px solid #aaaaaa;
 }
 .index__subtitle:after.no-gutter {
-  width: calc( 98%  *  0.25 );
+  width: calc( 95%  *  0.25 );
   margin: 0;
 }
 @media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
@@ -1912,14 +1881,8 @@ element.style {
   background: transparent;
 }
 .project__header {
-  position: relative;
   color: white;
   height: 25rem;
-  background-size: cover;
-  background-position: right:center;
-  background-repeat: no-repeat;
-  padding-top: 3rem;
-  z-index: 2;
 }
 .project__header:before {
   content: '';
@@ -1932,32 +1895,37 @@ element.style {
 @media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
   .project__header {
     height: 18rem;
-    padding: 2.5rem 0.5rem 0 0.5rem;
   }
 }
-.project__header__title {
-  width: 100%;
-  position: absolute;
-  bottom: 0;
-  padding: 3rem 6rem;
+.project__header .grid {
+  height: 100%;
+  align-items: flex-end;
 }
 .project__header__title h1 {
   text-align: left;
   text-transform: none;
   font-size: 2.38944rem;
   font-weight: 400;
-  margin: 1rem 0;
+  margin: 0;
+}
+@media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
+  .project__header__title h1 {
+    font-size: 1.3824rem;
+    margin-bottom: 0.5rem;
+  }
 }
 .project__header__title h3 {
   text-align: left;
   font-family: 'Interstate', Helvetica, Arial, sans-serif;
-  font-weight: 400;
   text-transform: uppercase;
   font-size: 0.96rem;
   margin: 0.3rem 0;
 }
-.project__header__title p {
-  text-align: center;
+@media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
+  .project__header__title h3 {
+    margin-bottom: 1rem;
+    font-size: 0.6664rem;
+  }
 }
 .project__header__hero {
   position: relative;
@@ -2011,13 +1979,14 @@ img {
     margin: 0rem 0 1rem 5%;
   }
 }
-.section--intro {
-  flex-direction: row;
-}
 @media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
   .section--intro {
     padding-top: 7rem;
   }
+}
+.section--intro h2 {
+  font-weight: 400;
+  font-size: 0.96rem;
 }
 @media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
   .section--intro {
@@ -2124,9 +2093,8 @@ img {
   }
 }
 .credits h3 {
-  font-weight: 700;
   color: #333333;
-  margin: 0;
+  margin-bottom: 0rem;
 }
 .divider {
   width: 100%;
@@ -2757,8 +2725,12 @@ li {
     height: 32rem !important;
   }
 }
-#mother-thumb h3 {
+#mother-thumb {
   overflow: visible;
+}
+#mother-thumb:hover {
+  background: transparent;
+  cursor: not-allowed;
 }
 #mother-thumb h3:after {
   position: absolute;
