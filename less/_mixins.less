@@ -1,0 +1,54 @@
+/* BORDER-BOX FTW */
+
+   *, *:before, *:after{
+       box-sizing: border-box;
+   }
+
+  .flex-center{
+    display:flex;
+  	align-items: center;
+  	justify-content: center;
+  }
+
+/*  COLORS */
+
+   // Useful greys
+
+   @black: #222222;
+   @white: #ffffff;
+
+   @palegrey: #fafafa;
+
+   @lightgrey: #efefef;
+   @midgrey:  #aaaaaa;
+   @darkgrey: #333333;
+
+
+   /*   MEDIA QUERIES */
+
+.media-large(@rules) {
+    @media (min-width: 1200px) { @rules(); }
+}
+
+.media-desktop(@rules) {
+    @media (min-width: 481px) { @rules(); }
+}
+
+.media-small-device(@rules) {
+     @media (max-width: 899px) { @rules(); }
+ }
+.media-phone-portrait(@rules) {
+  // iPhone 7 portrait (not anymore I bumped it from 414 to 550 for better desktop dev... see how this plays out) + below  or iPhone 5 landscape + below will trigger mobile stack
+     @media (max-width: 550px) and (orientation: portrait),
+     (max-width: 480px) and (orientation: landscape){ @rules(); }
+ }
+
+ .pseudofill{
+   content:'';
+   position: absolute;
+   display:block;
+   top:0;
+   left:0;
+   bottom:0;
+   right:0;
+ }

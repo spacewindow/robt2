@@ -1,0 +1,79 @@
+<% include partials/header.html.ejs %>
+
+    <section class="about">
+      <div class="top-content profile">
+        <svg class="logo__mobile" viewBox="0 0 300 300" preserveAspectRatio="xMidYMid meet">
+          <use x="0" y="0" xlink:href="#logo"></use>
+        </svg>
+        <h1 class="title">Rob Thwaites</h1>
+        <h2>Digital Product Designer</h2>
+        <p class="p__intro">I am a multi-disciplinary designer, working across UX Design, Visual Design and Front-End Development.</p>
+        <p><a href="/about">Read more about my process and skills.</a></p>
+
+      </div>
+
+      <div class="bottom-content contact">
+        <a href="mailto:rob@robthwaites.com">
+          <svg viewBox="0 0 300 300" preserveAspectRatio="xMidYMid meet">
+            <use x="0" y="0" xlink:href="#envelope"></use>
+          </svg>
+          rob@robthwaites.com</a>
+        <a href="tel:+612403899183">
+          <svg viewBox="0 0 300 300" preserveAspectRatio="xMidYMid meet">
+            <use x="0" y="0" xlink:href="#phone"></use>
+          </svg>
+          0403899183
+        </a>
+
+      </div>
+    </section>
+
+    <section id="work" class="work">
+
+      <h1 style="color: white; width:100%; margin-bottom: 2rem;">Projects</h1>
+
+        <% allData.forEach(function(project){ %>
+
+          <a class="work__thumb" href="/<%= project.id %>">
+            <img src="/images/thumb-bw-<%= project.id %>.png" alt="">
+            <h3 style="margin-top: 1rem; margin-bottom: 0.25rem;"><%- project.title %></h3>
+             <p class="work__tag"><%- project.type %></p>
+          </a>
+
+        <% }) %>
+
+    </section>
+
+    <section class="grid approach">
+
+        <h1>Approach</h1>
+
+        <div class="grid-cell grid4">
+
+          <svg viewBox="0 0 300 300" preserveAspectRatio="xMidYMid meet">
+            <use x="0" y="0" xlink:href="#research"></use>
+          </svg>
+          <h4>Design for humans</h4>
+          <p>I am a naturally empathetic person, and have conducted user research at project inception, and user testing at all project stages as part of an iterative design process.</p>
+        </div>
+
+        <div class="grid-cell grid4">
+          <svg viewBox="0 0 300 300" preserveAspectRatio="xMidYMid meet">
+            <use x="0" y="0" xlink:href="#codesign"></use>
+          </svg>
+          <h4>I Sketch in code</h4>
+
+          <p>I solve visual design problems with Photoshop and Sketch, but use my advanced skills in HTML/CSS/JS to move design 'in browser' at a fairly early stage. I create functioning, moving, data-driven prototypes to help my team move efficiently towards MVP.</p>
+        </div>
+
+        <div class="grid-cell grid4">
+          <svg viewBox="0 0 300 300" preserveAspectRatio="xMidYMid meet">
+            <use x="0" y="0" xlink:href="#design"></use>
+          </svg>
+          <h4>Beauty = Engagement</h4>
+
+          <p>There is value in visual flair and meaningful motion. I use my skills in graphic design and animation to make the products I work on as engaging as possible.</p>
+        </div>
+    </section>
+
+<% include partials/footer.html.ejs %>

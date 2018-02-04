@@ -1,0 +1,182 @@
+//
+// Typography
+// -----------------
+
+html{
+	height: 100%;
+	font-size: 20px;
+}
+
+@columnColor: #bada55;
+
+@baseWidth: 100%;
+
+@numColumns:12;
+
+
+body {
+	padding-top:0.1px; // collapsing margins fix
+	color: @black;
+	position:relative;
+	&.showgrid:after{
+		// BASELINE GRID  - only an indication, doesn't really seem to work/ align properly
+		content: '';
+		display:block;
+		position: absolute;
+		top:0;
+		left:0;
+		width: 100%;
+		height: 100%;
+		background-image:	linear-gradient(to bottom, transparent 0%, transparent 95%, #cdcdcd 95%, #cdcdcd 100%);
+		background-size: 1rem 1rem;
+		background-repeat: repeat;
+		background-position: left top;
+		z-index:10;
+		pointer-events:none;
+	}
+
+	&.showgrid:before{
+		// COLUMN GRID
+		content: '';
+		display:block;
+		position: absolute;
+		top:0;
+		left: 0;
+		right:0;
+		margin: 0 auto;
+		width: @baseWidth;
+		height: 100%;
+		background-image:
+		repeating-linear-gradient(to right, @columnColor 0px, @columnColor ~"calc(" @baseWidth ~"/" @numColumns ~"- 1rem)", transparent ~"calc(" @baseWidth ~"/" @numColumns ~"- 1rem)", transparent ~"calc(" @baseWidth ~"/" @numColumns ~")");
+		opacity:0.4;
+		background-position: left 0.5rem top;
+		z-index:20;
+		pointer-events: none;
+	}
+}
+
+// set rems
+
+.media-large({
+	html{
+		font-size: 25px;
+	}
+});
+
+
+.media-small-device({
+	html{
+		font-size: 17px;
+	}
+});
+
+.media-phone-portrait({
+	html{
+		font-size: ~"calc(0.5em + 4vw)";
+	}
+});
+
+.grid{
+	width: @baseWidth;
+	// margin: 0 auto;
+	display:flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.grid-cell{
+	position:relative;
+	width: auto;
+	min-height: 2rem;
+	flex-direction: column;
+	justify-content: flex-start;
+	overflow: hidden;
+	display:flex;
+	flex:1;
+}
+
+.grid-cell.sub-grid{
+	// width: @baseWidth;
+	margin: 0 auto;
+	display:flex;
+	flex-direction: row;
+	// flex-wrap: wrap;
+	justify-content: space-between;
+	.grid-cell{
+		// margin-right: 1rem;
+	}
+}
+
+section {
+	flex-shrink:0;
+	// margin-bottom: 1.5rem;
+	// padding: 2rem 1rem;
+	.media-phone-portrait({
+		// padding: 1rem 1rem;
+	});
+}
+
+.baseGridWidths(@i: 1) when (@i <= (@numColumns)) {
+  .grid@{i} {
+    width: ~"calc(("@baseWidth~" * "@i/@numColumns~") - 1rem)";
+		flex:none;
+		margin: 0 0.5rem;
+		&.no-gutter{
+			width: ~"calc("@baseWidth~" * "@i/@numColumns~")";
+			margin:0;
+		}
+		.media-phone-portrait({
+			width:~"calc(100% - 1rem)";
+		});
+  }
+	// .grid-cell.wrapper
+  .baseGridWidths(@i + 1);
+}
+
+.baseGridWidths();
+
+.offsets(@i: 1) when (@i <= (@numColumns - 1)) {
+  .offset@{i} {
+    margin-left: ~"calc(("@baseWidth~" * "@i/@numColumns ~") + 0.5rem)";
+		&.no-gutter{
+			margin-left: ~"calc("@baseWidth~" * "@i/@numColumns ~")";
+		}
+		.media-phone-portrait({
+			/* remove offsets */
+		});
+  }
+	// .grid-cell.wrapper
+  .offsets(@i + 1);
+}
+
+.offsets();
+
+section{
+	position:relative;
+	display:flex;
+	width: 100%;
+	flex-direction: column;
+	flex-wrap:wrap;
+	justify-content: flex-start;
+	.media-phone-portrait({
+		border-bottom: 1px solid @lightgrey;
+	});
+	.media-desktop({
+		padding-top: 1rem;
+		padding-bottom: 2rem;
+	});
+}
+
+section.block{
+	height: 80vh;
+	.media-phone-portrait({
+		height: auto;
+	});
+	.media-phone-portrait({
+		height: auto;
+	});
+}
+
+section.tall{
+	height: 100vh;
+}

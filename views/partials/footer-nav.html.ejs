@@ -1,0 +1,30 @@
+<section class="footer-links">
+  <% if (pageData.previous) { %>
+      <a class="previous" href="/<%= pageData.previous.id %>">
+        <div class="footer-links__thumb">
+          <!-- <img src="/images/thumb-bw-<%= pageData.previous.id %>.png" alt=""> -->
+          <span class="footer-links__title" style="color: <%= pageData.previous.color %>;"><%- pageData.previous.title %></span>
+          <span class="footer-links__type"><%= pageData.previous.type %></span>
+        </div>
+        <div class="footer-links__chevron footer-links__chevron--left" style="border-color: <%= pageData.previous.color %>">
+          <svg viewBox="0 0 300 300" preserveAspectRatio="xMidYMid meet" style="fill: <%= pageData.previous.color %>;">
+            <use x="0" y="0" xlink:href="#chevron-left"></use>
+          </svg>
+        </div>
+      </a>
+    <% } %>
+  <% if (pageData.next) { %>
+      <a class="next" href="/<%= pageData.next.id %>">
+        <div class="footer-links__thumb">
+          <!-- <img src="/images/thumb-bw-<%= pageData.next.id %>.png" alt=""> -->
+          <span class="footer-links__title" style="color: <%= pageData.next.color %>;"><%- pageData.next.title %></span>
+          <span class="footer-links__type"><%= pageData.next.type %></span>
+        </div>
+        <div class="footer-links__chevron footer-links__chevron--right" style="border-color: <%= pageData.next.color %>;">
+          <svg viewBox="0 0 300 300" preserveAspectRatio="xMidYMid meet" style="fill: <%= pageData.next.color %>;">
+            <use x="0" y="0" xlink:href="#chevron-right"></use>
+          </svg>
+        </div>
+      </a>
+  <% } %>
+</section>

@@ -1,0 +1,139 @@
+<% include ../partials/header.html.ejs %>
+
+  <section class="section--grey section--intro">
+      <div class="top-content intro-text">
+        <h4>Data visualisation screens to give clients rapid insight into the performance of their mobile advertising campaigns.</h4>
+      </div>
+
+      <div class="bottom-content credits">
+        <h3>My Role</h3>
+        <p>UX Research</p>
+        <p>Design</p>
+        <p>Prototyping</p>
+      </div>
+
+  </section>
+
+  <section class="section--text-left">
+      <div class="top-content">
+        <h2>Campaigns Listing</h2>
+      </div>
+        <div class="slide">
+          <img src="/images/reporting/dashboard1.jpg" alt="" style="align-self: flex-end">
+        </div>
+        <div class="bottom-content">
+        <p>Playground customers are usually managing multiple ad campaigns at once, each containing multiple ad creatives and audience targetting.</p>
+        <p>My challenge was to provide users with immediate insight into the performance of their campaigns on login.</p>
+      </div>
+  </section>
+
+  <section class="section--text-right">
+      <div class="top-content">
+      <h2>Reporting and Analytics</h2>
+      </div>
+      <div class="slide">
+        <img src="/images/reporting/analytics1.jpg" alt="">
+      </div>
+      <div class="bottom-content">
+        <p>We wanted to provide customers with custom, easily comprehensible visualisations of their campaign data.</p>
+        <p>We also aimed to provide some basic analytics controls, so the data could be split and viewed in a number of ways to gain deeper insights on campaign performance, such as which targetted audience was responding most to the ads based on clicks or engagement.
+        </p>
+      </div>
+  </section>
+
+
+  <section class="section--text-left section--slider-desktop section--dark">
+    <div class="top-content">
+      <h2 style="width:100%">Key Features</h2>
+    </div>
+
+    <div class="slide slider--desktop" id="slider-campaigns">
+
+        <div class="video-slide">
+          <video autoplay loop muted playsinline>
+            <source src="/images/reporting/v2-list-breakdown.mp4">
+          </video>
+        </div>
+
+        <div class="video-slide">
+          <video autoplay loop muted playsinline>
+            <source src="/images/2-charts.mp4">
+          </video>
+        </div>
+        <div class="video-slide">
+          <video autoplay loop muted playsinline>
+            <source src="/images/3-notes.mp4">
+          </video>
+        </div>
+
+        <div class="video-slide">
+          <video autoplay loop muted playsinline>
+            <source src="/images/4-split.mp4">
+          </video>
+        </div>
+
+    </div>
+
+    <div class="bottom-content">
+      <div class="slider__captions">
+        <div class="caption">
+          <h4>Campaigns, Creatives, Placements</h4>
+          <p> The overview of your campaigns can be expanded to display data about the attached ad creatives, such as whether ad placement is delivering or generating engagement from its target audience.</p>
+        </div>
+        <div class="caption">
+          <h4>Visual insights</h4>
+          <p>Custom charts quickly surface the most relevant data for campaign managers, including alerts when key metrics for a campaign are not hitting their benchmarks.</p>
+        </div>
+        <div class="caption">
+          <h4>Annotations and Alerts</h4>
+          <p>Customers are quickly alerted when the data indicates a placement is not performing to benchmarks. Annotations keep track of where optimisations were made during the campaign to improve campaign performance.</p>
+        </div>
+        <div class="caption">
+          <h4>Basic Analytics</h4>
+          <p>Campaign data can be split and grouped in various ways - by placement, audience and site. Animated transitions and color coding assist clients to make comparisons and gain insights</p>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="section--split section--lightgrey">
+    <h2>Additional Features</h2>
+    <div class="top-content">
+      <img src="/images/reporting/preview-creative.jpg" alt="">
+      <h4>Ad previews</h4>
+      <p>Ad creative can be opened in a preview window from the Campaign Listing to remind advertisers what customers are viewing.</p>
+    </div>
+    <div class="bottom-content">
+      <img src="/images/reporting/download-sheet.jpg" alt="">
+      <h4>Data downloads</h4>
+      <p>All data is downloadable as a formatted Excel document for further analysis.</p>
+    </div>
+  </section>
+
+  <section class="process section--split">
+    <div class="top-content">
+      <img src="/images/process-reporting.png" alt="">
+
+    </div>
+    <div class="bottom-content">
+      <h2>Process</h2>
+      <p>
+        <svg viewBox="0 0 300 300" preserveAspectRatio="xMidYMid meet">
+          <use x="0" y="0" xlink:href="#research"></use>
+        </svg> I gathered information about our Playground clients through our Operations team to understand what the essential and most requested metrics and insights were for campaign reporting.</p>
+
+      <p>
+        <svg viewBox="0 0 300 300" preserveAspectRatio="xMidYMid meet">
+          <use x="0" y="0" xlink:href="#plan"></use>
+        </svg> I created wireframes for the application using Balsamiq Mockups over several iterations until we hit on the most clear and efficient layout.</p>
+
+      <p>
+        <svg viewBox="0 0 300 300" preserveAspectRatio="xMidYMid meet">
+          <use x="0" y="0" xlink:href="#codesign"></use>
+        </svg>I built the prototype with HTML / CSS / JS, using the Amcharts API for the more complex charts. I structured the app as a series of separate components, in preparation for the production development in React.</p>
+    </div>
+  </section>
+
+
+  <% include ../partials/footer.html.ejs %>

@@ -1,0 +1,394 @@
+
+@font-face {
+  font-family: 'Interstate';
+  src: url('../fonts/interstateplus_regular-webfont.eot');
+  src: url('../fonts/interstateplus_regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/interstateplus_regular-webfont.ttf') format('truetype'), url('../fonts/interstateplus_regular-webfont.woff') format('woff'), url('../fonts/interstateplus_regular-webfont.svg#interstateplus_regular-webfont') format('svg');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Interstate';
+  src: url('../fonts/interstateplus_bold-webfont.eot');
+  src: url('../fonts/interstateplus_bold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/interstateplus_bold-webfont.ttf') format('truetype'), url('../fonts/interstateplus_bold-webfont.woff') format('woff'), url('../fonts/interstateplus_bold-webfont.svg#interstateplus_black-webfont') format('svg');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: 'Merriweather';
+    src: url('../fonts/merriweather-bold-webfont.woff2') format('woff2'),
+         url('../fonts/merriweather-bold-webfont.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Merriweather';
+    src: url('../fonts/merriweather-bolditalic-webfont.woff2') format('woff2'),
+         url('../fonts/merriweather-bolditalic-webfont.woff') format('woff');
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Merriweather';
+    src: url('../fonts/merriweather-italic-webfont.woff2') format('woff2'),
+         url('../fonts/merriweather-italic-webfont.woff') format('woff');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Merriweather';
+    src: url('../fonts/merriweather-regular-webfont.woff2') format('woff2'),
+         url('../fonts/merriweather-regular-webfont.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+@fontFamily: 'Interstate', Helvetica, Arial, sans-serif;
+@headingFamily: 'Merriweather', Helvetica, Arial, sans-serif;
+
+body{
+	font-family: @fontFamily;
+	-webkit-font-smoothing: antialiased;
+}
+
+.parameters(media-large){
+  @p-size: 0.8; // font-size in rem
+
+	// modular scale values - perfect fourth - http://type-scale.com/
+  @size-6: (@p-size * 5.609) * 1rem;
+  @size-5: (@p-size * 4.208) * 1rem;
+	@size-5: (@p-size * 4.208) * 1rem;
+	@size-4: (@p-size * 3.157) * 1rem;
+	@size-3: (@p-size * 2.369) * 1rem;
+	@size-2: (@p-size * 1.777) * 1rem;
+	@size-1: (@p-size * 1.333) * 1rem;
+	@size-0: (@p-size * 1) * 1rem;
+	@size-small: (@p-size * 0.75) * 1rem;
+	@size-xsmall: (@p-size * 0.563) * 1rem;
+}
+
+
+.parameters(media-desktop){
+  @p-size: 0.8; // font-size in rem
+
+	// modular scale values - perfect fourth - http://type-scale.com/
+	// @size-5: (@p-size * 4.208) * 1rem;
+	// @size-4: (@p-size * 3.157) * 1rem;
+	// @size-3: (@p-size * 2.369) * 1rem;
+	// @size-2: (@p-size * 1.777) * 1rem;
+	// @size-1: (@p-size * 1.333) * 1rem;
+	// @size-0: (@p-size * 1) * 1rem;
+	// @size-small: (@p-size * 0.75) * 1rem;
+	// @size-xsmall: (@p-size * 0.563) * 1rem;
+
+  // modular scale values - minor third - http://type-scale.com/
+  @size-6: (@p-size * 2.9868) * 1rem;
+	@size-5: (@p-size * 2.489) * 1rem;
+	@size-4: (@p-size * 2.074) * 1rem;
+	@size-3: (@p-size * 1.728) * 1rem;
+	@size-2: (@p-size * 1.44) * 1rem;
+	@size-1: (@p-size * 1.2) * 1rem;
+	@size-0: (@p-size * 1) * 1rem;
+	@size-small: (@p-size * 0.833) * 1rem;
+	@size-xsmall: (@p-size * 0.694) * 1rem;
+}
+
+.parameters(media-small-device){
+  @p-size: 0.8; // font-size in rem
+
+	// modular scale values - minor third - http://type-scale.com/
+  @size-6: (@p-size * 2.9868) * 1rem;
+	@size-5: (@p-size * 2.489) * 1rem;
+	@size-4: (@p-size * 2.074) * 1rem;
+	@size-3: (@p-size * 1.728) * 1rem;
+	@size-2: (@p-size * 1.44) * 1rem;
+	@size-1: (@p-size * 1.2) * 1rem;
+	@size-0: (@p-size * 1) * 1rem;
+	@size-small: (@p-size * 0.833) * 1rem;
+	@size-xsmall: (@p-size * 0.694) * 1rem;
+}
+
+.parameters(media-phone-portrait){
+  @p-size: 0.7; // font-size in rem
+
+	// modular scale values - minor third - http://type-scale.com/
+  @size-6: (@p-size * 2.9868) * 1rem;
+	@size-5: (@p-size * 2.489) * 1rem;
+	@size-4: (@p-size * 2.074) * 1rem;
+	@size-3: (@p-size * 1.728) * 1rem;
+	@size-2: (@p-size * 1.44) * 1rem;
+	@size-1: (@p-size * 1.2) * 1rem;
+	@size-0: (@p-size * 1) * 1rem;
+	@size-small: (@p-size * 0.833) * 1rem;
+	@size-xsmall: (@p-size * 0.694) * 1rem;
+
+
+}
+
+.make-headings(@device){
+	.parameters(@device);
+	h1{
+    position:relative;
+		font-family: @headingFamily;
+		font-size: @size-3;
+		line-height: ceil(@size-3);
+    letter-spacing: 0.03em;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+	}
+	h2{
+    font-family: @headingFamily;
+		font-size: @size-2;
+		line-height: ceil(@size-2);
+    font-weight: 700;
+    // text-transform: uppercase;
+	}
+	h3{
+    font-family: @headingFamily;
+    text-transform: uppercase;
+		font-size: @size-1;
+    font-weight: 700;
+		line-height: ceil(@size-1);
+    .credits & {
+      font-size: @size-0;
+    }
+	}
+	h4, .size-1{
+    font-family: @headingFamily;
+		font-size: @size-1;
+		line-height: ceil(@size-1);
+	}
+  p{
+    margin: 0.25rem 0 0.5rem;
+  }
+	p, li{
+		font-size: @size-0;
+    .credits & {
+      font-size: @size-small;
+      margin-bottom: 0.25rem;
+      // line-height: 1.2;
+    }
+	}
+  p.p__intro{
+    font-size: @size-1;
+  }
+	p.small{
+		font-size: @size-small;
+		line-height: 1rem;
+	}
+	p.xsmall{
+		font-size: @size-xsmall;
+		line-height: ceil(@size-xsmall);
+	}
+}
+
+// some base font-sizes, set in rems, sized according to modular scale for that media query
+
+
+.make-headings(media-desktop);
+
+p{
+  line-height: 1.7;
+}
+
+.media-large({
+	.make-headings(media-large);
+});
+
+.media-small-device({
+	.make-headings(media-small-device);
+});
+
+.media-phone-portrait({
+	// uses fluid type - see dash_grid.less
+	.make-headings(media-phone-portrait);
+  h1{
+    line-height: 1.6rem;
+  }
+});
+
+a{
+	display: inline-flex;
+  align-items: center;
+	width: auto;
+	text-decoration: none;
+  color: #ff9900;
+}
+
+// LABEL / INPUTS
+
+.labelled-input{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 1rem 0;
+	[type="text"],
+	[type="email"],
+	[type="password"]{
+		width: 70%;
+		height: 2rem;
+	}
+}
+
+
+// CHECKBOXES
+
+/* Base for label styling */
+[type="checkbox"]:not(:checked),
+[type="checkbox"]:checked {
+  position: absolute;
+  left: -9999px;
+}
+[type="checkbox"]:not(:checked) + label,
+[type="checkbox"]:checked + label {
+	display:block;
+  position: relative;
+  padding-left: 1.95em;
+	height: 1.5rem;
+	line-height: 1.5rem;
+  cursor: pointer;
+	margin-bottom: 0.5rem;
+}
+
+/* checkbox aspect */
+[type="checkbox"]:not(:checked) + label:before,
+[type="checkbox"]:checked + label:before {
+  content: '';
+  position: absolute;
+  left: 0; top: 0;
+  width: 1.25em; height: 1.25em;
+  border: 2px solid #ccc;
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: inset 0 1px 3px rgba(0,0,0,.1);
+}
+/* checked mark aspect */
+[type="checkbox"]:not(:checked) + label:after,
+[type="checkbox"]:checked + label:after {
+  content: '✔';
+  position: absolute;
+  top: .1em; left: .3em;
+  font-size: 1.3em;
+  line-height: 0.8;
+  color: @darkgrey;
+  transition: all .2s;
+}
+/* checked mark aspect changes */
+[type="checkbox"]:not(:checked) + label:after {
+  opacity: 0;
+  transform: scale(0);
+}
+[type="checkbox"]:checked + label:after {
+  opacity: 1;
+  transform: scale(1);
+}
+/* disabled checkbox */
+[type="checkbox"]:disabled:not(:checked) + label:before,
+[type="checkbox"]:disabled:checked + label:before {
+  box-shadow: none;
+  border-color: #bbb;
+  background-color: #ddd;
+}
+[type="checkbox"]:disabled:checked + label:after {
+  color: #999;
+}
+[type="checkbox"]:disabled + label {
+  color: #aaa;
+}
+/* accessibility */
+[type="checkbox"]:checked:focus + label:before,
+[type="checkbox"]:not(:checked):focus + label:before {
+  border: 2px dotted blue;
+}
+
+/* hover style just for information */
+label:hover:before {
+  border: 2px solid #4778d9!important;
+}
+
+// RADIO BUTTONS
+
+[type="radio"]:checked,
+[type="radio"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+[type="radio"]:checked + label,
+[type="radio"]:not(:checked) + label
+{
+    position: relative;
+    padding-left: 2rem;
+    cursor: pointer;
+    line-height: 2rem;
+    // display: inline-block;
+    color: @darkgrey;
+		font-weight: 400;
+}
+[type="radio"]:checked + label:before,
+[type="radio"]:not(:checked) + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.2em;
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: 100%;
+    background: #fff;
+}
+[type="radio"]:checked + label:after,
+[type="radio"]:not(:checked) + label:after {
+    content: '';
+    width: 1rem;
+    height: 1rem;
+
+    position: absolute;
+    top: 0.45em;
+    left: 0.25rem;
+    border-radius: 100%;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+[type="radio"]:not(:checked) + label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+[type="radio"]:checked + label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+
+button{
+	border: 0;
+	border-radius: 5em;
+	height: 2em;
+	width: auto;
+	display:flex;
+	align-items:center;
+	padding: 0 1em;
+	svg{
+		width: 1.5em;
+		height: 1.5em;
+	}
+}
+
+button.icon-only{
+	background: transparent;
+	span{
+		display:none;
+	}
+	svg{
+		width: 2rem;
+		height:2rem;
+		fill: white;
+	}
+}

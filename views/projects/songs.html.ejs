@@ -1,0 +1,121 @@
+<% include ../partials/header.html.ejs %>
+
+<section class="section--grey section--intro">
+    <div class="top-content" style="color: <%= pageData.current.color %>">
+        <p>Critical Stages needed to raise $25,000 in tax-deductible donations to send hit show <em>Songs for the Fallen</em> on its first international tour.</p>
+        <p>I was contracted to create a rich-media brochure site, showcasing the new music and rich design of the show.</p>
+      </div>
+
+      <div class="bottom-content credits">
+        <h3>Client</h3>
+        <p><%= pageData.current.client %></p>
+      <h3>My role</h3>
+      <p>Design, Front-end Development, Wordpress CMS</p>
+    </div>
+
+</section>
+
+
+<section class="section--text-left">
+    <div class="top-content">
+        <h2>Branding</h2>
+      </div>
+      <div class="slide">
+        <img src="/images/songs/brand.png" alt=""  style="border:0">
+      </div>
+      <div class="bottom-content">
+          <p>I began the project by creating a new brand for the production</p>
+          <p>This included a logotype, fonts and color choices which matches the already strong aeathetic of the live show.</p>
+          <p>These elements were subsequently used on the website and for print and social media purposes.</p>
+      </div>
+</section>
+
+<section class="section--text-right section--lightgrey">
+    <div class="top-content">
+      <h2>Rich Media elements</h2>
+    </div>
+    <div class="slide">
+          <video autoplay loop muted playsinline>
+            <source src="/images/songs/songs-thumbs.mp4">
+            <!-- <source src="image.webm" onerror="fallback(parentNode)"> -->
+            <!-- <img src="image.gif"> -->
+          </video>
+    </div>
+
+    <div class="bottom-content">
+          <p>To showcase the production, the site had to be equipped to display rich media.</p>
+          <p>Audio, video, text, imagery would play a part in showing off the production to potential donors and supporters.</p>
+      </div>
+
+  </section>
+
+  <section class="section--text-left section--palegrey">
+      <div class="top-content">
+        <h2>Custom Paypal form</h2>
+      </div>
+      <div class="slide">
+        <img src="/images/songs/form.png" alt="">
+      </div>
+      <div class="bottom-content">
+          <p>I used the Paypal API to embed the donation form in the page to streamline the donor process for giving their tax-deductible donation.</p>
+          <p>The form took their essential details and then forwarded them to the a Paypal page to enter card details.</p>
+      </div>
+
+  </section>
+
+  <section class="section--text-right section--slider-desktop section--dark">
+    <div class="top-content">
+      <h2>The Full Effect</h2>
+      <p>All elements were combined into a one-page scrolling site.</p>
+    </div>
+      <div class="slide slider--desktop" id="slider-songs-full">
+
+        <div class="video-slide">
+          <video autoplay loop muted playsinline>
+            <source src="/images/songs/songs-demo.mp4">
+          </video>
+        </div>
+
+      </div>
+    <div class="bottom-content">
+
+    </div>
+
+  </section>
+
+  <section class="section--text-left section--palegrey">
+      <div class="top-content">
+        <h3>Responsive Design</h3>
+        <p>All elements of the design could be viewed on any device.</p>
+      </div>
+      <div class="slide">
+        <img src="/images/songs/responsive.png" alt="" style="border:0;">
+      </div>
+  </section>
+
+  <section class="process section--split">
+    <div class="top-content">
+      <img src="/images/process-songs.png" alt="">
+    </div>
+    <div class="bottom-content">
+      <h2>Process</h2>
+        <p><svg viewBox="0 0 300 300" preserveAspectRatio="xMidYMid meet">
+          <use x="0" y="0" xlink:href="#research"></use>
+        </svg>I consulted closely with the show's director on the functionality and look and feel of the site, mocking designs in Photoshop to get sign-off.</p>
+      <p>
+        <svg viewBox="0 0 300 300" preserveAspectRatio="xMidYMid meet">
+          <use x="0" y="0" xlink:href="#codesign"></use>
+        </svg>I coded up a static responsive version of the site with HTML/CSS/JS.</p>
+
+        <p>
+          <svg viewBox="0 0 300 300" preserveAspectRatio="xMidYMid meet">
+            <use x="0" y="0" xlink:href="#code"></use>
+          </svg>I realised that it would be easier for the clients to update their own content. I ported the static website to Wordpress and deployed it to a PHP server.</p>
+    </div>
+  </section>
+
+
+
+
+
+  <% include ../partials/footer.html.ejs %>

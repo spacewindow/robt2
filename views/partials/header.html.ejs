@@ -1,0 +1,96 @@
+<% var indexData = {
+  current: {
+    id: "index",
+    title: "Digital Product Designer",
+    color: color.orange
+  }
+} %>
+
+<% pageData = (typeof pageData !== 'undefined') ? pageData : indexData;%>
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rob Thwaites :: <%- pageData.current.title %></title>
+  <link rel="shortcut icon" href="/images/favicon/favicon.ico" type="image/x-icon">
+
+  <link rel="stylesheet" type="text/css" href="/css/royalslider.css">
+	<link rel="stylesheet" type="text/css" href="/css/skins/default/rs-default.css">
+  <link rel="stylesheet" href="/css/main.css">
+
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/images/favicon/apple-touch-icon-144x144.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/images/favicon/apple-touch-icon-152x152.png" />
+  <link rel="icon" type="image/png" href="/images/favicon/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="/images/favicon/favicon-16x16.png" sizes="16x16" />
+  <meta name="application-name" content="Rob Thwaites: Digital Product Designer"/>
+  <meta name="msapplication-TileColor" content="#FFFFFF" />
+  <meta name="msapplication-TileImage" content="/images/favicon/mstile-144x144.png" />
+
+
+  <script src="/js/jquery-3.1.1.min.js"></script>
+  <script src="/js/gsap/TweenMax.min.js"></script>
+  <script src="/js/gsap/easing/CustomEase.min.js"></script>
+  <script src="/js/gsap/plugins/MorphSVGPlugin.min.js"></script>
+
+  <script src="/js/jquery.royalslider.min.js"></script>
+  <script src="/js/site.js"></script>
+
+</head>
+
+<body class="<%= pageData.current.id %> showgrid">
+
+
+
+  <% include ../../images/icons.svg %>
+
+  <% include app-menu.html.ejs %>
+
+  <div class="app__body">
+    <style>
+      h1,h2,h3{
+        /*color: <%= pageData.current.color %>;*/
+      }
+      .project__header__title h1,
+      .project__header__title h3,{
+        color: white;
+      }
+
+      a{
+        color: <%= pageData.current.color %>;
+      }
+
+
+      .slider__captions .current strong{
+          color: <%= pageData.current.color %>;
+      }
+
+      <% var gradient2 = tinycolor(pageData.current.color).setAlpha(0).toRgbString(); %>
+      <% var gradient1 = tinycolor(pageData.current.color).setAlpha(0.9).toRgbString(); %>
+
+      .project__header:before{
+        background-image:
+        linear-gradient(30deg, <%= gradient1 %> 10%, <%= gradient2 %> 100%);
+      }
+
+      .process{
+        background: <%= pageData.current.color %>;
+      }
+
+    </style>
+
+    <% if(typeof pageData.current.type !== 'undefined') {%>
+
+      <section class="project__header" style="background-color: <%= pageData.current.color %>; background-image: url(/images/hero-<%- pageData.current.id %>.jpg);">
+        <div class="project__header__title">
+            <h1><%- pageData.current.title %></h1>
+            <h3><%= pageData.current.client %></h3>
+        </div>
+      </section>
+
+
+    <% } %>

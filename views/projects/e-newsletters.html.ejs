@@ -1,0 +1,92 @@
+<% include ../partials/header.html.ejs %>
+
+<section class="section--grey section--intro">
+    <div class="top-content" style="color: <%= pageData.current.color %>">
+        <p>CGU required a fresh approach to their email communications, allowing for more personalised, 1-to-1 communications with both customers and brokers.</p>
+        <p>I designed a series of email templates for Salesforce Marketing Cloud that would be easy to use and flexible for their marketing team, with no HTML knowledge required.</p>
+      </div>
+
+      <div class="bottom-content credits">
+        <h3>Client</h3>
+        <p><%= pageData.current.client %></p>
+      <h3>Design, Coding, Deployment</h3>
+      <p>Rob Thwaites</p>
+
+    </div>
+  </section>
+
+  <section class="section--text-left"  id="email-personalised">
+      <div class="top-content">
+        <h2>Personalised Content</h2>
+        <p>Components of the email could be populated with dynamically generated content, either directly from the customer’s profile or using Marketing Cloud’s rigorous segmentation capabilities.</p>
+      </div>
+      <div class="slide">
+        <img src="/images/email/email-personalised.jpg" alt="">
+        <img src="/images/email/email-red1.jpg" alt="">
+        <img src="/images/email/email-red2.jpg" alt="">
+        <img src="/images/email/email-red3.jpg" alt="">
+        <img src="/images/email/email-red4.jpg" alt="">
+      </div>
+      <div class="bottom-content">
+
+      </div>
+  </section>
+
+  <section class="section--text-right section--overflow"  id="modular-content">
+      <div class="top-content">
+        <h2>Modular Content Blocks</h2>
+        <p>The templates were designed and developed in blocks that could be rearranged and repurposed according to the marketers needs.</p>
+      </div>
+      <div class="slide">
+        <img id="email-main" src="/images/email/email-main.jpg" alt="">
+        <img src="/images/email/mod-block-2.png" alt="">
+        <img src="/images/email/mod-block-1.png" alt="">
+        <img src="/images/email/mod-block-3.png" alt="">
+        <img src="/images/email/mod-block-4.png" alt="">
+      </div>
+      <div class="bottom-content">
+
+      </div>
+  </section>
+
+  <section class="section--text-left" id="every-device">
+      <div class="top-content">
+        <h2>Every Device and Client</h2>
+        <p>The final EDMS would designed to work on over 20 different email clients and render beautifully at any device size.</p>
+      </div>
+      <div class="slide slider--mobile">
+        <div class="slide-wrapper">
+          <div id="cgu-mobile-edm" class="image-slide">
+            <img src="/images/email/edm-mobile.jpg" alt="">
+          </div>
+        </div>
+      </div>
+
+    <div class="bottom-content"></div>
+  </section>
+
+  <section class="process section--split" id="cgu-process">
+    <div class="top-content">
+      <img src="/images/process-e-newsletters.png" alt="">
+    </div>
+    <div class="bottom-content">
+      <h2>Process</h2>
+      <p>
+        <svg viewBox="0 0 300 300" preserveAspectRatio="xMidYMid meet">
+          <use x="0" y="0" xlink:href="#research"></use>
+        </svg>I reviewed CGUs past email campaigns to break them down into a series of templates and modules, in close consultation with their marketing team.</p>
+
+      <p>
+        <svg viewBox="0 0 300 300" preserveAspectRatio="xMidYMid meet">
+          <use x="0" y="0" xlink:href="#design"></use>
+        </svg>The emails were design in Photoshop in order to get sign off from the clients.</p>
+
+      <p>
+        <svg viewBox="0 0 300 300" preserveAspectRatio="xMidYMid meet">
+          <use x="0" y="0" xlink:href="#code"></use>
+        </svg>I coded the templates with the help of Zurb Ink email framework, to ensure cross-client functionality. These were uploaded as modules into CGU's Marketing Cloud instance. I flew to Melbourne to instruct the CGU Team and help them deploy their first campaigns.</p>
+    </div>
+  </section>
+
+
+  <% include ../partials/footer.html.ejs %>
