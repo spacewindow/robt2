@@ -843,33 +843,105 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 h1 {
+  font-size: 3.3664rem;
+  line-height: 5rem;
   position: relative;
   font-family: 'Merriweather', Helvetica, Arial, sans-serif;
-  font-size: 1.9912rem;
-  line-height: 2rem;
   letter-spacing: 0.03em;
   font-weight: 900;
   text-align: left;
   margin: 1rem 0;
 }
+@media (min-width: 1200px) {
+  h1 {
+    font-size: 3.3664rem;
+    line-height: 5rem;
+  }
+}
+@media (max-width: 899px) {
+  h1 {
+    font-size: 1.9912rem;
+    line-height: 3rem;
+  }
+}
+@media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
+  h1 {
+    font-size: 1.7423rem;
+    line-height: 3rem;
+  }
+}
+@media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
+  h1 {
+    font-size: 1.7423rem;
+    line-height: 3rem;
+  }
+}
 h2 {
+  font-size: 1.8952rem;
+  line-height: 3rem;
   font-family: 'Merriweather', Helvetica, Arial, sans-serif;
-  font-size: 1.152rem;
-  line-height: 2rem;
   font-weight: 700;
 }
+@media (min-width: 1200px) {
+  h2 {
+    font-size: 1.8952rem;
+    line-height: 3rem;
+  }
+}
+@media (max-width: 899px) {
+  h2 {
+    font-size: 1.3824rem;
+    line-height: 2rem;
+  }
+}
+@media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
+  h2 {
+    font-size: 1.2096rem;
+    line-height: 2rem;
+  }
+}
+@media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
+  h2 {
+    font-size: 1.2096rem;
+    line-height: 2rem;
+  }
+}
 h3 {
+  font-size: 1.0664rem;
+  line-height: 2rem;
   font-family: 'Interstate', Helvetica, Arial, sans-serif;
   text-transform: uppercase;
-  font-size: 0.96rem;
   font-weight: 400;
-  line-height: 1rem;
+}
+@media (min-width: 1200px) {
+  h3 {
+    font-size: 1.0664rem;
+    line-height: 2rem;
+  }
+}
+@media (max-width: 899px) {
+  h3 {
+    font-size: 0.96rem;
+    line-height: 2rem;
+  }
+}
+@media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
+  h3 {
+    font-size: 0.84rem;
+    line-height: 2rem;
+  }
+}
+@media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
+  h3 {
+    font-size: 0.84rem;
+    line-height: 2rem;
+  }
 }
 h4,
 .size-1 {
+  font-size: 1.0664rem;
+  line-height: 2rem;
   font-family: 'Interstate', Helvetica, Arial, sans-serif;
-  font-size: 0.96rem;
-  line-height: 1rem;
   text-transform: uppercase;
   font-weight: 400;
   margin: 0 0 0.5rem;
@@ -880,176 +952,19 @@ p {
 p,
 li {
   font-size: 0.8rem;
+  line-height: 1rem;
 }
 p.p__intro {
-  font-size: 0.96rem;
+  font-size: 1.0664rem;
+  line-height: 2rem;
 }
 p.small {
-  font-size: 0.6664rem;
+  font-size: 0.6rem;
   line-height: 1rem;
 }
 p.xsmall {
-  font-size: 0.5552rem;
+  font-size: 0.4504rem;
   line-height: 1rem;
-}
-p {
-  line-height: 1.7;
-}
-@media (min-width: 1200px) {
-  h1 {
-    position: relative;
-    font-family: 'Merriweather', Helvetica, Arial, sans-serif;
-    font-size: 3.3664rem;
-    line-height: 4rem;
-    letter-spacing: 0.03em;
-    font-weight: 900;
-    text-align: left;
-    margin: 1rem 0;
-  }
-  h2 {
-    font-family: 'Merriweather', Helvetica, Arial, sans-serif;
-    font-size: 1.4216rem;
-    line-height: 2rem;
-    font-weight: 700;
-  }
-  h3 {
-    font-family: 'Interstate', Helvetica, Arial, sans-serif;
-    text-transform: uppercase;
-    font-size: 1.0664rem;
-    font-weight: 400;
-    line-height: 2rem;
-  }
-  h4,
-  .size-1 {
-    font-family: 'Interstate', Helvetica, Arial, sans-serif;
-    font-size: 1.0664rem;
-    line-height: 2rem;
-    text-transform: uppercase;
-    font-weight: 400;
-    margin: 0 0 0.5rem;
-  }
-  p {
-    margin: 0.25rem 0 0.5rem;
-  }
-  p,
-  li {
-    font-size: 0.8rem;
-  }
-  p.p__intro {
-    font-size: 1.0664rem;
-  }
-  p.small {
-    font-size: 0.6rem;
-    line-height: 1rem;
-  }
-  p.xsmall {
-    font-size: 0.4504rem;
-    line-height: 1rem;
-  }
-}
-@media (max-width: 899px) {
-  h1 {
-    position: relative;
-    font-family: 'Merriweather', Helvetica, Arial, sans-serif;
-    font-size: 1.9912rem;
-    line-height: 2rem;
-    letter-spacing: 0.03em;
-    font-weight: 900;
-    text-align: left;
-    margin: 1rem 0;
-  }
-  h2 {
-    font-family: 'Merriweather', Helvetica, Arial, sans-serif;
-    font-size: 1.152rem;
-    line-height: 2rem;
-    font-weight: 700;
-  }
-  h3 {
-    font-family: 'Interstate', Helvetica, Arial, sans-serif;
-    text-transform: uppercase;
-    font-size: 0.96rem;
-    font-weight: 400;
-    line-height: 1rem;
-  }
-  h4,
-  .size-1 {
-    font-family: 'Interstate', Helvetica, Arial, sans-serif;
-    font-size: 0.96rem;
-    line-height: 1rem;
-    text-transform: uppercase;
-    font-weight: 400;
-    margin: 0 0 0.5rem;
-  }
-  p {
-    margin: 0.25rem 0 0.5rem;
-  }
-  p,
-  li {
-    font-size: 0.8rem;
-  }
-  p.p__intro {
-    font-size: 0.96rem;
-  }
-  p.small {
-    font-size: 0.6664rem;
-    line-height: 1rem;
-  }
-  p.xsmall {
-    font-size: 0.5552rem;
-    line-height: 1rem;
-  }
-}
-@media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
-  h1 {
-    position: relative;
-    font-family: 'Merriweather', Helvetica, Arial, sans-serif;
-    font-size: 1.7423rem;
-    line-height: 2rem;
-    letter-spacing: 0.03em;
-    font-weight: 900;
-    text-align: left;
-    margin: 1rem 0;
-  }
-  h2 {
-    font-family: 'Merriweather', Helvetica, Arial, sans-serif;
-    font-size: 1.008rem;
-    line-height: 2rem;
-    font-weight: 700;
-  }
-  h3 {
-    font-family: 'Interstate', Helvetica, Arial, sans-serif;
-    text-transform: uppercase;
-    font-size: 0.84rem;
-    font-weight: 400;
-    line-height: 1rem;
-  }
-  h4,
-  .size-1 {
-    font-family: 'Interstate', Helvetica, Arial, sans-serif;
-    font-size: 0.84rem;
-    line-height: 1rem;
-    text-transform: uppercase;
-    font-weight: 400;
-    margin: 0 0 0.5rem;
-  }
-  p {
-    margin: 0.25rem 0 0.5rem;
-  }
-  p,
-  li {
-    font-size: 0.7rem;
-  }
-  p.p__intro {
-    font-size: 0.84rem;
-  }
-  p.small {
-    font-size: 0.5831rem;
-    line-height: 1rem;
-  }
-  p.xsmall {
-    font-size: 0.4858rem;
-    line-height: 1rem;
-  }
 }
 p a:link,
 p a:hover,
@@ -1363,6 +1278,7 @@ body {
 }
 .app__menu a {
   font-size: 0.8rem;
+  line-height: 1rem;
   color: white;
   display: block;
   margin-bottom: 0.5em;
@@ -1411,14 +1327,16 @@ body {
 .app__menu__links {
   display: flex;
   align-items: center;
-  font-size: 0.6664rem;
+  font-size: 0.6rem;
+  line-height: 1rem;
   text-transform: uppercase;
   margin-right: 1rem;
   transition: all 0.3s ease-out;
 }
 @media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
   .app__menu__links {
-    font-size: 0.5552rem;
+    font-size: 0.4504rem;
+    line-height: 1rem;
   }
 }
 .app__menu__links a {
@@ -1557,11 +1475,13 @@ body {
 }
 @media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
   .footer-links__title {
-    font-size: 0.6664rem;
+    font-size: 0.6rem;
+    line-height: 1rem;
   }
 }
 .footer-links__type {
-  font-size: 0.6664rem;
+  font-size: 0.6rem;
+  line-height: 1rem;
   font-weight: 400;
   color: #aaaaaa;
   margin: 0.5em 0;
@@ -1619,11 +1539,13 @@ body {
     justify-content: flex-start;
     width: auto;
     margin-left: 40%;
-    font-size: 0.5552rem;
+    font-size: 0.4504rem;
+    line-height: 1rem;
   }
   .footer__signoff h2 {
     text-align: left;
     font-size: 0.8rem;
+    line-height: 1rem;
     line-height: 1.4;
   }
   .footer__signoff a {
@@ -1638,6 +1560,7 @@ body {
 }
 .footer__signoff__links {
   font-size: 0.8rem;
+  line-height: 1rem;
   width: 100%;
   text-align: center;
 }
@@ -1645,7 +1568,8 @@ body {
   .footer__signoff__links {
     justify-content: flex-start;
     width: auto;
-    font-size: 0.6664rem;
+    font-size: 0.6rem;
+    line-height: 1rem;
   }
 }
 .footer-links__chevron {
@@ -1686,13 +1610,15 @@ footer > .grid-cell {
 }
 footer h2 {
   text-align: center;
-  font-size: 1.152rem;
+  font-size: 1.4216rem;
+  line-height: 2rem;
   max-width: 25rem;
   margin: 0 auto;
 }
 footer p {
   text-align: center;
-  font-size: 0.96rem;
+  font-size: 1.0664rem;
+  line-height: 2rem;
 }
 @media (max-width: 899px) {
   footer {
@@ -1703,11 +1629,13 @@ footer p {
     height: 8rem;
   }
   footer h2 {
-    font-size: 0.96rem;
+    font-size: 1.0664rem;
+    line-height: 2rem;
     margin-bottom: 2rem;
   }
   footer p {
     font-size: 0.8rem;
+    line-height: 1rem;
     padding-left: 35%;
   }
 }
@@ -1904,13 +1832,15 @@ element.style {
 .project__header__title h1 {
   text-align: left;
   text-transform: none;
-  font-size: 2.38944rem;
+  font-size: 4.4872rem;
+  line-height: 6rem;
   font-weight: 400;
   margin: 0;
 }
 @media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
   .project__header__title h1 {
-    font-size: 1.3824rem;
+    font-size: 1.8952rem;
+    line-height: 3rem;
     margin-bottom: 0.5rem;
   }
 }
@@ -1918,13 +1848,15 @@ element.style {
   text-align: left;
   font-family: 'Interstate', Helvetica, Arial, sans-serif;
   text-transform: uppercase;
-  font-size: 0.96rem;
+  font-size: 1.0664rem;
+  line-height: 2rem;
   margin: 0.3rem 0;
 }
 @media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
   .project__header__title h3 {
     margin-bottom: 1rem;
-    font-size: 0.6664rem;
+    font-size: 0.6rem;
+    line-height: 1rem;
   }
 }
 .project__header__hero {
@@ -1986,7 +1918,8 @@ img {
 }
 .section--intro h2 {
   font-weight: 400;
-  font-size: 0.96rem;
+  font-size: 1.0664rem;
+  line-height: 2rem;
 }
 @media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
   .section--intro {
@@ -2154,10 +2087,11 @@ img {
 }
 .slider__captions h4 {
   font-size: 0.8rem;
+  line-height: 1rem;
   margin-bottom: 0.5em;
 }
 .slider__captions p {
-  font-size: 0.6664rem;
+  font-size: 0.6rem;
   line-height: 1rem;
   margin-top: 0;
   overflow: hidden;
@@ -2196,7 +2130,7 @@ img {
 }
 .slider__nav-below span {
   font-size: 0.8rem;
-  line-height: 0.8rem;
+  line-height: 1rem;
 }
 .slider__fullscreen-button {
   width: auto;
@@ -2214,7 +2148,8 @@ img {
 .slider__fullscreen-button span {
   text-transform: uppercase;
   display: block;
-  font-size: 0.6664rem;
+  font-size: 0.6rem;
+  line-height: 1rem;
   right: 0;
 }
 .rsSlide {
@@ -2384,6 +2319,7 @@ img {
 @media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
   .works h3 {
     font-size: 0.8rem;
+    line-height: 1rem;
   }
 }
 .work {
@@ -2409,7 +2345,8 @@ img {
 .work p {
   margin: 1rem 0 2rem;
   text-transform: uppercase;
-  font-size: 0.6664rem;
+  font-size: 0.6rem;
+  line-height: 1rem;
   position: relative;
 }
 .work p:after {
@@ -2447,7 +2384,8 @@ img {
 }
 .work__tag {
   color: #fafafa;
-  font-size: 0.6664rem;
+  font-size: 0.6rem;
+  line-height: 1rem;
   text-align: center;
   line-height: 0.8rem;
 }
@@ -2459,7 +2397,8 @@ img {
 .thumb-annotations p {
   width: 33%;
   color: black;
-  font-size: 0.5552rem;
+  font-size: 0.4504rem;
+  line-height: 1rem;
   text-align: center;
   padding: 0;
 }
@@ -2474,11 +2413,13 @@ img {
   left: 0;
 }
 .current-count {
-  font-size: 0.6664rem;
+  font-size: 0.6rem;
+  line-height: 1rem;
 }
 .full-count {
   position: relative;
-  font-size: 0.6664rem;
+  font-size: 0.6rem;
+  line-height: 1rem;
   font-weight: 700;
   color: #aaaaaa;
 }

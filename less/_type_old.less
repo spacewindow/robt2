@@ -60,207 +60,153 @@ body{
   @p-size: 0.8; // font-size in rem
 
 	// modular scale values - perfect fourth - http://type-scale.com/
-  @size-6: 5.609;
-  @size-5: 4.208;
-	@size-5: 4.208;
-	@size-4: 3.157;
-	@size-3: 2.369;
-	@size-2: 1.777;
-	@size-1: 1.333;
-	@size-0: 1;
-	@size-small: 0.75;
-	@size-xsmall: 0.563;
+  @size-6: (@p-size * 5.609) * 1rem;
+  @size-5: (@p-size * 4.208) * 1rem;
+	@size-5: (@p-size * 4.208) * 1rem;
+	@size-4: (@p-size * 3.157) * 1rem;
+	@size-3: (@p-size * 2.369) * 1rem;
+	@size-2: (@p-size * 1.777) * 1rem;
+	@size-1: (@p-size * 1.333) * 1rem;
+	@size-0: (@p-size * 1) * 1rem;
+	@size-small: (@p-size * 0.75) * 1rem;
+	@size-xsmall: (@p-size * 0.563) * 1rem;
 }
 
 
 .parameters(media-desktop){
   @p-size: 0.8; // font-size in rem
 
-	//modular scale values - perfect fourth - http://type-scale.com/
-  @size-6: 5.609;
-	@size-5: 4.208;
-	@size-4: 3.157;
-	@size-3: 2.369;
-	@size-2: 1.777;
-	@size-1: 1.333;
-	@size-0: 1;
-	@size-small: 0.75;
-	@size-xsmall: 0.563;
+	// modular scale values - perfect fourth - http://type-scale.com/
+	// @size-5: (@p-size * 4.208) * 1rem;
+	// @size-4: (@p-size * 3.157) * 1rem;
+	// @size-3: (@p-size * 2.369) * 1rem;
+	// @size-2: (@p-size * 1.777) * 1rem;
+	// @size-1: (@p-size * 1.333) * 1rem;
+	// @size-0: (@p-size * 1) * 1rem;
+	// @size-small: (@p-size * 0.75) * 1rem;
+	// @size-xsmall: (@p-size * 0.563) * 1rem;
 
   // modular scale values - minor third - http://type-scale.com/
-  // @size-6: 2.9868;
-	// @size-5: 2.489;
-	// @size-4: 2.074;
-	// @size-3: 1.728;
-	// @size-2: 1.44;
-	// @size-1: 1.2;
-	// @size-0: 1;
-	// @size-small: 0.833;
-	// @size-xsmall: 0.694;
+  @size-6: (@p-size * 2.9868) * 1rem;
+	@size-5: (@p-size * 2.489) * 1rem;
+	@size-4: (@p-size * 2.074) * 1rem;
+	@size-3: (@p-size * 1.728) * 1rem;
+	@size-2: (@p-size * 1.44) * 1rem;
+	@size-1: (@p-size * 1.2) * 1rem;
+	@size-0: (@p-size * 1) * 1rem;
+	@size-small: (@p-size * 0.833) * 1rem;
+	@size-xsmall: (@p-size * 0.694) * 1rem;
 }
 
 .parameters(media-small-device){
   @p-size: 0.8; // font-size in rem
 
 	// modular scale values - minor third - http://type-scale.com/
-  @size-6: 2.9868;
-	@size-5: 2.489;
-	@size-4: 2.074;
-	@size-3: 1.728;
-	@size-2: 1.44;
-	@size-1: 1.2;
-	@size-0: 1;
-	@size-small: 0.833;
-	@size-xsmall: 0.694;
+  @size-6: (@p-size * 2.9868) * 1rem;
+	@size-5: (@p-size * 2.489) * 1rem;
+	@size-4: (@p-size * 2.074) * 1rem;
+	@size-3: (@p-size * 1.728) * 1rem;
+	@size-2: (@p-size * 1.44) * 1rem;
+	@size-1: (@p-size * 1.2) * 1rem;
+	@size-0: (@p-size * 1) * 1rem;
+	@size-small: (@p-size * 0.833) * 1rem;
+	@size-xsmall: (@p-size * 0.694) * 1rem;
 }
 
 .parameters(media-phone-portrait){
   @p-size: 0.7; // font-size in rem
 
 	// modular scale values - minor third - http://type-scale.com/
-  @size-6: 2.9868;
-	@size-5: 2.489;
-	@size-4: 2.074;
-	@size-3: 1.728;
-	@size-2: 1.44;
-	@size-1: 1.2;
-	@size-0: 1;
-	@size-small: 0.833;
-	@size-xsmall: 0.694;
+  @size-6: (@p-size * 2.9868) * 1rem;
+	@size-5: (@p-size * 2.489) * 1rem;
+	@size-4: (@p-size * 2.074) * 1rem;
+	@size-3: (@p-size * 1.728) * 1rem;
+	@size-2: (@p-size * 1.44) * 1rem;
+	@size-1: (@p-size * 1.2) * 1rem;
+	@size-0: (@p-size * 1) * 1rem;
+	@size-small: (@p-size * 0.833) * 1rem;
+	@size-xsmall: (@p-size * 0.694) * 1rem;
+
 
 }
 
-
-.fontSize(@scale, @device: desktop) {
-
-  .test-args();
-
-  .test-args() when (@device = desktop) {
-    .parameters(media-desktop);
-    @size: "size-@{scale}";
-    @sizeVar: @@size;
-    font-size: (@p-size * @sizeVar) * 1rem;
-    line-height: ceil(@sizeVar) * 1rem;
-
+.make-headings(@device){
+	.parameters(@device);
+	h1{
+    position:relative;
+		font-family: @headingFamily;
+		font-size: @size-5;
+		line-height: ceil(@size-5);
+    letter-spacing: 0.03em;
+    font-weight: 900;
+    text-align: left;
+    margin: 1rem 0;
+	}
+	h2{
+    font-family: @headingFamily;
+		font-size: @size-2;
+		line-height: ceil(@size-2);
+    font-weight: 700;
+    // text-transform: uppercase;
+	}
+	h3{
+    font-family: @fontFamily;
+    text-transform: uppercase;
+		font-size: @size-1;
+    font-weight: 400;
+		line-height: ceil(@size-1);
+	}
+	h4, .size-1{
+    font-family: @fontFamily;
+		font-size: @size-1;
+		line-height: ceil(@size-1);
+    text-transform: uppercase;
+    font-weight: 400;
+    margin: 0 0 0.5rem;
+	}
+  p{
+    margin: 0.25rem 0 0.5rem;
   }
-  .test-args() when (@device = large) {
-    .parameters(media-large);
-    @size: "size-@{scale}";
-    @sizeVar: @@size;
-    font-size: (@p-size * @sizeVar) * 1rem;
-    line-height: ceil(@sizeVar) * 1rem;
-
+	p, li{
+		font-size: @size-0;
+	}
+  p.p__intro{
+    font-size: @size-1;
   }
-
-  .test-args() when (@device = small){
-    .parameters(media-small-device);
-    @size: "size-@{scale}";
-    @sizeVar: @@size;
-    font-size: (@p-size * @sizeVar) * 1rem;
-    line-height: ceil(@sizeVar) * 1rem;
-
-  }
-
-  .test-args() when (@device = mobile){
-
-    .parameters(media-small-device);
-    @size: "size-@{scale}";
-    @sizeVar: @@size;
-    font-size: (@p-size * @sizeVar) * 1rem;
-    line-height: ceil(@sizeVar) * 1rem;
-
-  }
-
-  .test-args() when (@device = all){
-
-  .parameters(media-desktop);
-  @size: "size-@{scale}";
-  @sizeVar: @@size;
-  font-size: (@p-size * @sizeVar) * 1rem;
-  line-height: ceil(@sizeVar) * 1rem;
-
-  .media-large({
-    .parameters(media-large);
-    @size: "size-@{scale}";
-    @sizeVar: @@size;
-    font-size: (@p-size * @sizeVar) * 1rem;
-    line-height: ceil(@sizeVar) * 1rem;
-  });
-
-  .media-small-device({
-    .parameters(media-small-device);
-    @size: "size-@{scale}";
-    @sizeVar: @@size;
-    font-size: (@p-size * @sizeVar) * 1rem;
-    line-height: ceil(@sizeVar) * 1rem;
-  });
-
-  .media-phone-portrait({
-    .parameters(media-phone-portrait);
-    @size: "size-@{scale}";
-    @sizeVar: @@size;
-    font-size: (@p-size * @sizeVar) * 1rem;
-    line-height: ceil(@sizeVar) * 1rem;
-  });
-
-  .media-phone-portrait({
-    .parameters(media-phone-portrait);
-    @size: "size-@{scale}";
-    @sizeVar: @@size;
-    font-size: (@p-size * @sizeVar) * 1rem;
-    line-height: ceil(@sizeVar) * 1rem;
-  });
-
-  }
-
+	p.small{
+		font-size: @size-small;
+		line-height: 1rem;
+	}
+	p.xsmall{
+		font-size: @size-xsmall;
+		line-height: ceil(@size-xsmall);
+	}
 }
 
+// some base font-sizes, set in rems, sized according to modular scale for that media query
 
-h1{
-  .fontSize(5, all);
-  position:relative;
-	font-family: @headingFamily;
-  letter-spacing: 0.03em;
-  font-weight: 900;
-  text-align: left;
-  margin: 1rem 0;
-}
-h2{
-  .fontSize(3, all);
-  font-family: @headingFamily;
-  font-weight: 700;
-  // text-transform: uppercase;
-}
-h3{
-  .fontSize(1, all);
-  font-family: @fontFamily;
-  text-transform: uppercase;
-  font-weight: 400;
-}
-h4, .size-1{
-  .fontSize(1);
-  font-family: @fontFamily;
-  text-transform: uppercase;
-  font-weight: 400;
-  margin: 0 0 0.5rem;
-}
+
+.make-headings(media-desktop);
+
 p{
-  margin: 0.25rem 0 0.5rem;
-}
-p, li{
-	.fontSize(0);
-}
-p.p__intro{
-  .fontSize(1);
-}
-p.small{
-	.fontSize(small);
-	line-height: 1rem;
-}
-p.xsmall{
-	.fontSize(xsmall);
+  line-height: 1.7;
 }
 
+.media-large({
+	.make-headings(media-large);
+});
+
+.media-small-device({
+	.make-headings(media-small-device);
+});
+
+.media-phone-portrait({
+	// uses fluid type - see dash_grid.less
+	.make-headings(media-phone-portrait);
+  h1{
+    // line-height: 1.6rem;
+  }
+});
 
 p a:link,
 p a:hover,
