@@ -7,7 +7,7 @@
         <div class="grid-cell grid11 offset1 index__title">
           <h1>Rob Thwaites</h1>
         </div>
-        <div class="grid-cell grid3 offset1 index__subtitle">
+        <div class="grid-cell grid5 offset1 index__subtitle">
           <h4>Digital Product Designer</h4>
         </div>
 
@@ -19,6 +19,37 @@
 
       </div>
 
+    </section>
+
+    <section class="works">
+      <div class="grid">
+
+      <% allData.forEach(function(project){ %>
+
+        <div class="grid-cell grid6 work">
+          <a href="/<%= project.id %>">
+            <div class="work__thumb" style="background-image: url(/images/thumb-<%= project.id %>.jpg)"></div>
+
+            <div class="work__details">
+              <p class="work__client"><%- project.client %></p>
+              <h3 class="work__name"><%- project.title %></h3>
+            </div>
+          </a>
+        </div>
+
+      <% }) %>
+
+      <div class="grid-cell grid6 work">
+        <a href="/motherboard" disabled>
+          <div class="work__thumb" style="background-image: url(/images/thumb-motherboard.jpg)"></div>
+
+          <div class="work__details" id="mother-thumb">
+            <p class="work__client">Motherboard Productions</p>
+            <h3 class="work__name">Motherboard Website</h3>
+          </div>
+        </a>
+      </div>
+      </div>
     </section>
 
 <% include partials/footer.html.ejs %>

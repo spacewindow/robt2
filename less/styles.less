@@ -13,15 +13,32 @@ body{
 	h1{
 		margin-bottom: 0.25rem;
 	}
+	.media-phone-portrait({
+		margin-top: 1rem;
+	});
 }
 
 .index__subtitle{
 	padding-bottom: 0.5rem;
-	border-bottom: 2px solid @midgrey;
+	// border-bottom: 2px solid @midgrey;
 	margin-right: 10rem;
-	.media-phone-portrait({
-		border-bottom: 0;
-	});
+	overflow: visible;
+	&:after{
+		content:'';
+		.grid3;
+		position: absolute;
+		bottom: 0rem;
+		left:0;
+		margin:0;
+		width: 20vw;
+		border-bottom: 2px solid @midgrey;
+		.media-phone-portrait({
+			// border-bottom: 0;
+			width: 50%;
+			bottom:0;
+			margin:0;
+		});
+	}
 }
 
 .index__welcome{
@@ -322,6 +339,74 @@ body{
 	});
 }
 
+.footer__signoff{
+	display:flex;
+	width: 20rem;
+	position: relative;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+
+	h2{
+		width:100%;
+		margin-bottom: 0.5rem;
+	}
+	a{
+		position: relative;
+		width: 50%;
+		color: @black;
+		text-decoration: none;
+		overflow:visible;
+	}
+	.footer__email{
+		margin-right: 1rem;
+		&:after{
+			.pseudofill;
+			height: 0.7rem;
+			top: 0.1rem;
+			border-right: 1px solid black;
+			right: -0.5rem;
+			.media-phone-portrait({
+				display:none;
+			});
+		}
+	}
+	.footer__phone{
+		font-size: 0.9em;
+	}
+	.media-phone-portrait({
+		justify-content: flex-start;
+		width:auto;
+		margin-left: 40%;
+		font-size: @size-xsmall;
+		h2{
+			text-align: left;
+			font-size: @size-0;
+			line-height: 1.4;
+		}
+		a{
+			display:block;
+			width: auto;
+			text-align: left;
+			line-height: 1.4;
+			&:after{
+				display:none;
+			}
+		}
+	});
+}
+
+.footer__signoff__links{
+	font-size: @size-0;
+	width:100%;
+	text-align: center;
+	.media-phone-portrait({
+		justify-content: flex-start;
+		width:auto;
+		font-size: @size-small;
+	});
+}
+
 .footer-links__chevron{
 	display:flex;
 	justify-content:center;
@@ -360,8 +445,9 @@ footer{
 		contain,
 		auto,
 		auto 12rem;
-	.grid-cell{
+	> .grid-cell{
 		justify-content:center;
+		align-items: center;
 	}
 	h2{
 		text-align: center;
@@ -378,15 +464,16 @@ footer{
 		// text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
 	}
 
-	.media-phone-portrait({
+	.media-small-device({
 		background-size:
-			auto 60%,
+			auto 95%,
 			auto,
 			auto 12rem;
 		background-position:
 			left -1rem bottom -1rem,
 			0 0,
 			0 0;
+			height: 8rem;
 		h2{
 			font-size: @size-1;
 			margin-bottom: 2rem;
@@ -1154,17 +1241,10 @@ img{
   border-radius: 50%;
 }
 
-.work{
-	background: @darkgrey url(../images/textured_paper.png);
+.works{
 	flex-direction: row;
 	justify-content: space-around;
 	padding: 1rem 0;
-	h1, h2, h3{
-		color: #ff9900;
-	}
-	h1:after{
-		border-color: white;
-	}
   h3{
     text-align: center;
 		.media-phone-portrait({
@@ -1173,26 +1253,61 @@ img{
   }
 }
 
+.work{
+	margin-bottom: 4rem;
+	.media-phone-portrait({
+		margin-bottom: 2rem;
+	});
+	&:hover{
+		background-color: @lightgrey;
+	}
+	a{
+		text-decoration: none;
+		color: @black;
+	}
+	h3{
+		text-transform: none;
+		text-align: left;
+		margin: 0;
+
+	}
+	p{
+		margin: 1rem 0 2rem;
+		text-transform: uppercase;
+		font-size: @size-small;
+		position:relative;
+		&:after{
+			content:'';
+			position: absolute;
+			left:0;
+			width: 3rem;
+			bottom: -1rem;
+			border-bottom: 2px solid @midgrey;
+		}
+	}
+}
+
+.work__details{
+	padding: 0 0.5rem 1rem;
+}
+
 .work__thumb{
-	display:flex;
+	display:block;
 	position: relative;
-	flex-direction: column;
-	padding: 0 0.5rem;
-	width: 33.33%;
-	height: 18rem;
-	img{
-		display:block;
-		width: 85%;
-		max-width: 400px;
-		flex-shrink:0; // required for IE Fix
-		// height: 58%;
+	width: 100%;
+	height: 10rem;
+	background-size: cover;
+	background-position: center center;
+	border: 1px solid @lightgrey;
+	&:before{
+		.pseudofill;
+		pointer-events: none;
+		background-image: radial-gradient(rgba(0,0,0,0) 30%, rgba(0,0,0,0.5) 100%);
+		mix-blend-mode: soft-light;
+		z-index: 1;
 	}
 	.media-phone-portrait({
-		width: 50%;
-		height: 12rem;
-		img{
-			width: 100%;
-		}
+
 	});
 }
 
@@ -1272,6 +1387,12 @@ img{
 	.footer-links{
 		display:none;
 	}
+}
+
+.index-title{
+	.media-phone-portrait({
+		margin-bottom: 2rem;
+	});
 }
 
 .approach{
@@ -1374,10 +1495,6 @@ img{
 
 .single-image > img{
 	width: 85%;
-}
-
-.index h3{
-	text-align:center;
 }
 
 .process{
@@ -1505,4 +1622,19 @@ li{
 	.media-desktop({
 		height:32rem !important;
 	});
+}
+
+#mother-thumb h3{
+	overflow: visible;
+	&:after{
+		position: absolute;
+		left:0;
+		bottom: -1em;
+		font-size: 0.4em;
+		content: '(CASE STUDY COMING SOON)';
+		font-family: @fontFamily;
+		font-weight: 300;
+		margin-left: 0.5rem;
+		color: @midgrey;
+	}
 }

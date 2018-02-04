@@ -407,9 +407,9 @@ body.showgrid:before {
   left: 0;
   right: 0;
   margin: 0 auto;
-  width: 100%;
+  width: 98%;
   height: 100%;
-  background-image: repeating-linear-gradient(to right, #bada55 0px, #bada55 calc( 100% / 12 - 1rem), transparent calc( 100% / 12 - 1rem), transparent calc( 100% / 12 ));
+  background-image: repeating-linear-gradient(to right, #bada55 0px, #bada55 calc( 98% / 12 - 1rem), transparent calc( 98% / 12 - 1rem), transparent calc( 98% / 12 ));
   opacity: 0.4;
   background-position: left 0.5rem top;
   z-index: 20;
@@ -431,7 +431,7 @@ body.showgrid:before {
   }
 }
 .grid {
-  width: 100%;
+  width: 98%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -458,12 +458,12 @@ section {
 @media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
 }
 .grid1 {
-  width: calc(( 100%  *  0.08333333 ) - 1rem);
+  width: calc(( 98%  *  0.08333333 ) - 1rem);
   flex: none;
   margin: 0 0.5rem;
 }
 .grid1.no-gutter {
-  width: calc( 100%  *  0.08333333 );
+  width: calc( 98%  *  0.08333333 );
   margin: 0;
 }
 @media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
@@ -473,12 +473,12 @@ section {
   }
 }
 .grid2 {
-  width: calc(( 100%  *  0.16666667 ) - 1rem);
+  width: calc(( 98%  *  0.16666667 ) - 1rem);
   flex: none;
   margin: 0 0.5rem;
 }
 .grid2.no-gutter {
-  width: calc( 100%  *  0.16666667 );
+  width: calc( 98%  *  0.16666667 );
   margin: 0;
 }
 @media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
@@ -488,12 +488,12 @@ section {
   }
 }
 .grid3 {
-  width: calc(( 100%  *  0.25 ) - 1rem);
+  width: calc(( 98%  *  0.25 ) - 1rem);
   flex: none;
   margin: 0 0.5rem;
 }
 .grid3.no-gutter {
-  width: calc( 100%  *  0.25 );
+  width: calc( 98%  *  0.25 );
   margin: 0;
 }
 @media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
@@ -503,12 +503,12 @@ section {
   }
 }
 .grid4 {
-  width: calc(( 100%  *  0.33333333 ) - 1rem);
+  width: calc(( 98%  *  0.33333333 ) - 1rem);
   flex: none;
   margin: 0 0.5rem;
 }
 .grid4.no-gutter {
-  width: calc( 100%  *  0.33333333 );
+  width: calc( 98%  *  0.33333333 );
   margin: 0;
 }
 @media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
@@ -518,12 +518,12 @@ section {
   }
 }
 .grid5 {
-  width: calc(( 100%  *  0.41666667 ) - 1rem);
+  width: calc(( 98%  *  0.41666667 ) - 1rem);
   flex: none;
   margin: 0 0.5rem;
 }
 .grid5.no-gutter {
-  width: calc( 100%  *  0.41666667 );
+  width: calc( 98%  *  0.41666667 );
   margin: 0;
 }
 @media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
@@ -533,12 +533,12 @@ section {
   }
 }
 .grid6 {
-  width: calc(( 100%  *  0.5 ) - 1rem);
+  width: calc(( 98%  *  0.5 ) - 1rem);
   flex: none;
   margin: 0 0.5rem;
 }
 .grid6.no-gutter {
-  width: calc( 100%  *  0.5 );
+  width: calc( 98%  *  0.5 );
   margin: 0;
 }
 @media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
@@ -548,12 +548,12 @@ section {
   }
 }
 .grid7 {
-  width: calc(( 100%  *  0.58333333 ) - 1rem);
+  width: calc(( 98%  *  0.58333333 ) - 1rem);
   flex: none;
   margin: 0 0.5rem;
 }
 .grid7.no-gutter {
-  width: calc( 100%  *  0.58333333 );
+  width: calc( 98%  *  0.58333333 );
   margin: 0;
 }
 @media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
@@ -563,12 +563,12 @@ section {
   }
 }
 .grid8 {
-  width: calc(( 100%  *  0.66666667 ) - 1rem);
+  width: calc(( 98%  *  0.66666667 ) - 1rem);
   flex: none;
   margin: 0 0.5rem;
 }
 .grid8.no-gutter {
-  width: calc( 100%  *  0.66666667 );
+  width: calc( 98%  *  0.66666667 );
   margin: 0;
 }
 @media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
@@ -578,12 +578,12 @@ section {
   }
 }
 .grid9 {
-  width: calc(( 100%  *  0.75 ) - 1rem);
+  width: calc(( 98%  *  0.75 ) - 1rem);
   flex: none;
   margin: 0 0.5rem;
 }
 .grid9.no-gutter {
-  width: calc( 100%  *  0.75 );
+  width: calc( 98%  *  0.75 );
   margin: 0;
 }
 @media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
@@ -593,12 +593,12 @@ section {
   }
 }
 .grid10 {
-  width: calc(( 100%  *  0.83333333 ) - 1rem);
+  width: calc(( 98%  *  0.83333333 ) - 1rem);
   flex: none;
   margin: 0 0.5rem;
 }
 .grid10.no-gutter {
-  width: calc( 100%  *  0.83333333 );
+  width: calc( 98%  *  0.83333333 );
   margin: 0;
 }
 @media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
@@ -608,12 +608,12 @@ section {
   }
 }
 .grid11 {
-  width: calc(( 100%  *  0.91666667 ) - 1rem);
+  width: calc(( 98%  *  0.91666667 ) - 1rem);
   flex: none;
   margin: 0 0.5rem;
 }
 .grid11.no-gutter {
-  width: calc( 100%  *  0.91666667 );
+  width: calc( 98%  *  0.91666667 );
   margin: 0;
 }
 @media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
@@ -623,12 +623,12 @@ section {
   }
 }
 .grid12 {
-  width: calc(( 100%  *  1 ) - 1rem);
+  width: calc(( 98%  *  1 ) - 1rem);
   flex: none;
   margin: 0 0.5rem;
 }
 .grid12.no-gutter {
-  width: calc( 100%  *  1 );
+  width: calc( 98%  *  1 );
   margin: 0;
 }
 @media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
@@ -638,10 +638,10 @@ section {
   }
 }
 .offset1 {
-  margin-left: calc(( 100%  *  0.08333333 ) + 0.5rem);
+  margin-left: calc(( 98%  *  0.08333333 ) + 0.5rem);
 }
 .offset1.no-gutter {
-  margin-left: calc( 100%  *  0.08333333 );
+  margin-left: calc( 98%  *  0.08333333 );
 }
 @media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
   .offset1 {
@@ -650,10 +650,10 @@ section {
   }
 }
 .offset2 {
-  margin-left: calc(( 100%  *  0.16666667 ) + 0.5rem);
+  margin-left: calc(( 98%  *  0.16666667 ) + 0.5rem);
 }
 .offset2.no-gutter {
-  margin-left: calc( 100%  *  0.16666667 );
+  margin-left: calc( 98%  *  0.16666667 );
 }
 @media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
   .offset2 {
@@ -662,10 +662,10 @@ section {
   }
 }
 .offset3 {
-  margin-left: calc(( 100%  *  0.25 ) + 0.5rem);
+  margin-left: calc(( 98%  *  0.25 ) + 0.5rem);
 }
 .offset3.no-gutter {
-  margin-left: calc( 100%  *  0.25 );
+  margin-left: calc( 98%  *  0.25 );
 }
 @media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
   .offset3 {
@@ -674,10 +674,10 @@ section {
   }
 }
 .offset4 {
-  margin-left: calc(( 100%  *  0.33333333 ) + 0.5rem);
+  margin-left: calc(( 98%  *  0.33333333 ) + 0.5rem);
 }
 .offset4.no-gutter {
-  margin-left: calc( 100%  *  0.33333333 );
+  margin-left: calc( 98%  *  0.33333333 );
 }
 @media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
   .offset4 {
@@ -686,10 +686,10 @@ section {
   }
 }
 .offset5 {
-  margin-left: calc(( 100%  *  0.41666667 ) + 0.5rem);
+  margin-left: calc(( 98%  *  0.41666667 ) + 0.5rem);
 }
 .offset5.no-gutter {
-  margin-left: calc( 100%  *  0.41666667 );
+  margin-left: calc( 98%  *  0.41666667 );
 }
 @media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
   .offset5 {
@@ -698,10 +698,10 @@ section {
   }
 }
 .offset6 {
-  margin-left: calc(( 100%  *  0.5 ) + 0.5rem);
+  margin-left: calc(( 98%  *  0.5 ) + 0.5rem);
 }
 .offset6.no-gutter {
-  margin-left: calc( 100%  *  0.5 );
+  margin-left: calc( 98%  *  0.5 );
 }
 @media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
   .offset6 {
@@ -710,10 +710,10 @@ section {
   }
 }
 .offset7 {
-  margin-left: calc(( 100%  *  0.58333333 ) + 0.5rem);
+  margin-left: calc(( 98%  *  0.58333333 ) + 0.5rem);
 }
 .offset7.no-gutter {
-  margin-left: calc( 100%  *  0.58333333 );
+  margin-left: calc( 98%  *  0.58333333 );
 }
 @media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
   .offset7 {
@@ -722,10 +722,10 @@ section {
   }
 }
 .offset8 {
-  margin-left: calc(( 100%  *  0.66666667 ) + 0.5rem);
+  margin-left: calc(( 98%  *  0.66666667 ) + 0.5rem);
 }
 .offset8.no-gutter {
-  margin-left: calc( 100%  *  0.66666667 );
+  margin-left: calc( 98%  *  0.66666667 );
 }
 @media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
   .offset8 {
@@ -734,10 +734,10 @@ section {
   }
 }
 .offset9 {
-  margin-left: calc(( 100%  *  0.75 ) + 0.5rem);
+  margin-left: calc(( 98%  *  0.75 ) + 0.5rem);
 }
 .offset9.no-gutter {
-  margin-left: calc( 100%  *  0.75 );
+  margin-left: calc( 98%  *  0.75 );
 }
 @media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
   .offset9 {
@@ -746,10 +746,10 @@ section {
   }
 }
 .offset10 {
-  margin-left: calc(( 100%  *  0.83333333 ) + 0.5rem);
+  margin-left: calc(( 98%  *  0.83333333 ) + 0.5rem);
 }
 .offset10.no-gutter {
-  margin-left: calc( 100%  *  0.83333333 );
+  margin-left: calc( 98%  *  0.83333333 );
 }
 @media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
   .offset10 {
@@ -758,10 +758,10 @@ section {
   }
 }
 .offset11 {
-  margin-left: calc(( 100%  *  0.91666667 ) + 0.5rem);
+  margin-left: calc(( 98%  *  0.91666667 ) + 0.5rem);
 }
 .offset11.no-gutter {
-  margin-left: calc( 100%  *  0.91666667 );
+  margin-left: calc( 98%  *  0.91666667 );
 }
 @media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
   .offset11 {
@@ -776,11 +776,6 @@ section {
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: flex-start;
-}
-@media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
-  section {
-    border-bottom: 1px solid #efefef;
-  }
 }
 @media (min-width: 481px) {
   section {
@@ -1086,9 +1081,6 @@ p {
     font-size: 0.4858rem;
     line-height: 1rem;
   }
-  h4 {
-    font-size: 0.7rem;
-  }
 }
 p a:link,
 p a:hover,
@@ -1288,14 +1280,43 @@ body {
 .index__title h1 {
   margin-bottom: 0.25rem;
 }
+@media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
+  .index__title {
+    margin-top: 1rem;
+  }
+}
 .index__subtitle {
   padding-bottom: 0.5rem;
-  border-bottom: 2px solid #aaaaaa;
   margin-right: 10rem;
+  overflow: visible;
+}
+.index__subtitle:after {
+  content: '';
+  width: calc(( 98%  *  0.25 ) - 1rem);
+  flex: none;
+  margin: 0 0.5rem;
+  position: absolute;
+  bottom: 0rem;
+  left: 0;
+  margin: 0;
+  width: 20vw;
+  border-bottom: 2px solid #aaaaaa;
+}
+.index__subtitle:after.no-gutter {
+  width: calc( 98%  *  0.25 );
+  margin: 0;
 }
 @media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
-  .index__subtitle {
-    border-bottom: 0;
+  .index__subtitle:after {
+    width: calc(100% - 2rem);
+    margin: 0 1rem;
+  }
+}
+@media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
+  .index__subtitle:after {
+    width: 50%;
+    bottom: 0;
+    margin: 0;
   }
 }
 .index__welcome {
@@ -1581,6 +1602,83 @@ body {
     display: none;
   }
 }
+.footer__signoff {
+  display: flex;
+  width: 20rem;
+  position: relative;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.footer__signoff h2 {
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+.footer__signoff a {
+  position: relative;
+  width: 50%;
+  color: #222222;
+  text-decoration: none;
+  overflow: visible;
+}
+.footer__signoff .footer__email {
+  margin-right: 1rem;
+}
+.footer__signoff .footer__email:after {
+  content: '';
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 0.7rem;
+  top: 0.1rem;
+  border-right: 1px solid black;
+  right: -0.5rem;
+}
+@media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
+  .footer__signoff .footer__email:after {
+    display: none;
+  }
+}
+.footer__signoff .footer__phone {
+  font-size: 0.9em;
+}
+@media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
+  .footer__signoff {
+    justify-content: flex-start;
+    width: auto;
+    margin-left: 40%;
+    font-size: 0.5552rem;
+  }
+  .footer__signoff h2 {
+    text-align: left;
+    font-size: 0.8rem;
+    line-height: 1.4;
+  }
+  .footer__signoff a {
+    display: block;
+    width: auto;
+    text-align: left;
+    line-height: 1.4;
+  }
+  .footer__signoff a:after {
+    display: none;
+  }
+}
+.footer__signoff__links {
+  font-size: 0.8rem;
+  width: 100%;
+  text-align: center;
+}
+@media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
+  .footer__signoff__links {
+    justify-content: flex-start;
+    width: auto;
+    font-size: 0.6664rem;
+  }
+}
 .footer-links__chevron {
   display: flex;
   justify-content: center;
@@ -1613,8 +1711,9 @@ footer {
 		auto,
 		auto 12rem;
 }
-footer .grid-cell {
+footer > .grid-cell {
   justify-content: center;
+  align-items: center;
 }
 footer h2 {
   text-align: center;
@@ -1626,12 +1725,13 @@ footer p {
   text-align: center;
   font-size: 0.96rem;
 }
-@media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
+@media (max-width: 899px) {
   footer {
-    background-size: auto 60%,
+    background-size: auto 95%,
 			auto,
 			auto 12rem;
     background-position: left -1rem bottom -1rem, 0 0, 0 0;
+    height: 8rem;
   }
   footer h2 {
     font-size: 0.96rem;
@@ -2305,50 +2405,77 @@ img {
   align-self: center;
   border-radius: 50%;
 }
-.work {
-  background: #333333 url(../images/textured_paper.png);
+.works {
   flex-direction: row;
   justify-content: space-around;
   padding: 1rem 0;
 }
-.work h1,
-.work h2,
-.work h3 {
-  color: #ff9900;
-}
-.work h1:after {
-  border-color: white;
-}
-.work h3 {
+.works h3 {
   text-align: center;
 }
 @media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
-  .work h3 {
+  .works h3 {
     font-size: 0.8rem;
   }
 }
-.work__thumb {
-  display: flex;
-  position: relative;
-  flex-direction: column;
-  padding: 0 0.5rem;
-  width: 33.33%;
-  height: 18rem;
-}
-.work__thumb img {
-  display: block;
-  width: 85%;
-  max-width: 400px;
-  flex-shrink: 0;
+.work {
+  margin-bottom: 4rem;
 }
 @media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
-  .work__thumb {
-    width: 50%;
-    height: 12rem;
+  .work {
+    margin-bottom: 2rem;
   }
-  .work__thumb img {
-    width: 100%;
-  }
+}
+.work:hover {
+  background-color: #efefef;
+}
+.work a {
+  text-decoration: none;
+  color: #222222;
+}
+.work h3 {
+  text-transform: none;
+  text-align: left;
+  margin: 0;
+}
+.work p {
+  margin: 1rem 0 2rem;
+  text-transform: uppercase;
+  font-size: 0.6664rem;
+  position: relative;
+}
+.work p:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 3rem;
+  bottom: -1rem;
+  border-bottom: 2px solid #aaaaaa;
+}
+.work__details {
+  padding: 0 0.5rem 1rem;
+}
+.work__thumb {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 10rem;
+  background-size: cover;
+  background-position: center center;
+  border: 1px solid #efefef;
+}
+.work__thumb:before {
+  content: '';
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  pointer-events: none;
+  background-image: radial-gradient(rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0.5) 100%);
+  mix-blend-mode: soft-light;
+  z-index: 1;
 }
 .work__tag {
   color: #fafafa;
@@ -2411,6 +2538,11 @@ img {
 }
 .index .footer-links {
   display: none;
+}
+@media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
+  .index-title {
+    margin-bottom: 2rem;
+  }
 }
 @media (min-width: 481px) {
   .approach {
@@ -2518,9 +2650,6 @@ img {
 .single-image > img {
   width: 85%;
 }
-.index h3 {
-  text-align: center;
-}
 .process {
   color: white;
 }
@@ -2627,5 +2756,19 @@ li {
   .section--tall-desk {
     height: 32rem !important;
   }
+}
+#mother-thumb h3 {
+  overflow: visible;
+}
+#mother-thumb h3:after {
+  position: absolute;
+  left: 0;
+  bottom: -1em;
+  font-size: 0.4em;
+  content: '(CASE STUDY COMING SOON)';
+  font-family: 'Interstate', Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  margin-left: 0.5rem;
+  color: #aaaaaa;
 }
 /*# sourceMappingURL=../source.map */

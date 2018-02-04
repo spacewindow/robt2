@@ -12,14 +12,14 @@ const data = [
       "Prototyping"
     ]
   },
-  {
-    id: "ad-formats",
-    title: "Mobile Ad Formats",
-    type: "mobile / web component",
-    client: "Playground XYZ",
-    description: "New canvases to enhance the way advertisers interact with potential customers on mobile",
-    color: "#72b1a3"
-  },
+  // {
+  //   id: "ad-formats",
+  //   title: "Mobile Ad Formats",
+  //   type: "mobile / web component",
+  //   client: "Playground XYZ",
+  //   description: "New canvases to enhance the way advertisers interact with potential customers on mobile",
+  //   color: "#72b1a3"
+  // },
   {
     id: "songs",
     title: "Songs for the&nbsp;Fallen",
@@ -69,7 +69,7 @@ const data = [
   //   color: "#f1b706"
   // },
   {
-    id: "michaelthwaites",
+    id: "michael-thwaites",
     title: "Michael Thwaites: Poetry",
     type: "desktop / website / CMS",
     client: "Personal Project",
