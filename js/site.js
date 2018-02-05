@@ -12,7 +12,7 @@ function makeSlider(divID) {
     controlNavigation: 'none',
     arrowsNav: true,
     fullscreen: {
-  		// fullscreen options go gere
+  		// fullscreen options go here
   		enabled: true,
   		nativeFS: true,
       buttonFS: true
@@ -30,7 +30,7 @@ function makeSlider(divID) {
 
   // Captions
 
-  var captions = sliderDiv.siblings('.bottom-content').children('.slider__captions');
+  var captions = sliderDiv.closest('.grid').children('.bottom-content').first().children('.slider__captions');
   console.log(captions);
 
   // init styles

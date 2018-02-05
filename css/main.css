@@ -407,9 +407,9 @@ body.showgrid:before {
   left: 0;
   right: 0;
   margin: 0 auto;
-  width: 90%;
+  width: 100%;
   height: 100%;
-  background-image: repeating-linear-gradient(to right, #bada55 0px, #bada55 calc( 90% / 12 - 1rem), transparent calc( 90% / 12 - 1rem), transparent calc( 90% / 12 ));
+  background-image: repeating-linear-gradient(to right, #bada55 0px, #bada55 calc( 100% / 12 - 1rem), transparent calc( 100% / 12 - 1rem), transparent calc( 100% / 12 ));
   opacity: 0.4;
   background-position: left 0.5rem top;
   z-index: 20;
@@ -432,6 +432,7 @@ body.showgrid:before {
 }
 .grid {
   width: 90%;
+  height: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -458,12 +459,12 @@ section {
 @media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
 }
 .grid1 {
-  width: calc(( 90%  *  0.08333333 ) - 1rem);
+  width: calc(( 100%  *  0.08333333 ) - 2rem);
   flex: none;
-  margin: 0 0.5rem;
+  margin: 0 1rem;
 }
 .grid1.no-gutter {
-  width: calc( 90%  *  0.08333333 );
+  width: calc( 100%  *  0.08333333 );
   margin: 0;
 }
 @media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
@@ -473,12 +474,12 @@ section {
   }
 }
 .grid2 {
-  width: calc(( 90%  *  0.16666667 ) - 1rem);
+  width: calc(( 100%  *  0.16666667 ) - 2rem);
   flex: none;
-  margin: 0 0.5rem;
+  margin: 0 1rem;
 }
 .grid2.no-gutter {
-  width: calc( 90%  *  0.16666667 );
+  width: calc( 100%  *  0.16666667 );
   margin: 0;
 }
 @media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
@@ -488,12 +489,12 @@ section {
   }
 }
 .grid3 {
-  width: calc(( 90%  *  0.25 ) - 1rem);
+  width: calc(( 100%  *  0.25 ) - 2rem);
   flex: none;
-  margin: 0 0.5rem;
+  margin: 0 1rem;
 }
 .grid3.no-gutter {
-  width: calc( 90%  *  0.25 );
+  width: calc( 100%  *  0.25 );
   margin: 0;
 }
 @media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
@@ -503,12 +504,12 @@ section {
   }
 }
 .grid4 {
-  width: calc(( 90%  *  0.33333333 ) - 1rem);
+  width: calc(( 100%  *  0.33333333 ) - 2rem);
   flex: none;
-  margin: 0 0.5rem;
+  margin: 0 1rem;
 }
 .grid4.no-gutter {
-  width: calc( 90%  *  0.33333333 );
+  width: calc( 100%  *  0.33333333 );
   margin: 0;
 }
 @media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
@@ -518,12 +519,12 @@ section {
   }
 }
 .grid5 {
-  width: calc(( 90%  *  0.41666667 ) - 1rem);
+  width: calc(( 100%  *  0.41666667 ) - 2rem);
   flex: none;
-  margin: 0 0.5rem;
+  margin: 0 1rem;
 }
 .grid5.no-gutter {
-  width: calc( 90%  *  0.41666667 );
+  width: calc( 100%  *  0.41666667 );
   margin: 0;
 }
 @media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
@@ -533,12 +534,12 @@ section {
   }
 }
 .grid6 {
-  width: calc(( 90%  *  0.5 ) - 1rem);
+  width: calc(( 100%  *  0.5 ) - 2rem);
   flex: none;
-  margin: 0 0.5rem;
+  margin: 0 1rem;
 }
 .grid6.no-gutter {
-  width: calc( 90%  *  0.5 );
+  width: calc( 100%  *  0.5 );
   margin: 0;
 }
 @media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
@@ -548,12 +549,12 @@ section {
   }
 }
 .grid7 {
-  width: calc(( 90%  *  0.58333333 ) - 1rem);
+  width: calc(( 100%  *  0.58333333 ) - 2rem);
   flex: none;
-  margin: 0 0.5rem;
+  margin: 0 1rem;
 }
 .grid7.no-gutter {
-  width: calc( 90%  *  0.58333333 );
+  width: calc( 100%  *  0.58333333 );
   margin: 0;
 }
 @media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
@@ -563,12 +564,12 @@ section {
   }
 }
 .grid8 {
-  width: calc(( 90%  *  0.66666667 ) - 1rem);
+  width: calc(( 100%  *  0.66666667 ) - 2rem);
   flex: none;
-  margin: 0 0.5rem;
+  margin: 0 1rem;
 }
 .grid8.no-gutter {
-  width: calc( 90%  *  0.66666667 );
+  width: calc( 100%  *  0.66666667 );
   margin: 0;
 }
 @media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
@@ -578,12 +579,12 @@ section {
   }
 }
 .grid9 {
-  width: calc(( 90%  *  0.75 ) - 1rem);
+  width: calc(( 100%  *  0.75 ) - 2rem);
   flex: none;
-  margin: 0 0.5rem;
+  margin: 0 1rem;
 }
 .grid9.no-gutter {
-  width: calc( 90%  *  0.75 );
+  width: calc( 100%  *  0.75 );
   margin: 0;
 }
 @media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
@@ -593,12 +594,12 @@ section {
   }
 }
 .grid10 {
-  width: calc(( 90%  *  0.83333333 ) - 1rem);
+  width: calc(( 100%  *  0.83333333 ) - 2rem);
   flex: none;
-  margin: 0 0.5rem;
+  margin: 0 1rem;
 }
 .grid10.no-gutter {
-  width: calc( 90%  *  0.83333333 );
+  width: calc( 100%  *  0.83333333 );
   margin: 0;
 }
 @media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
@@ -608,12 +609,12 @@ section {
   }
 }
 .grid11 {
-  width: calc(( 90%  *  0.91666667 ) - 1rem);
+  width: calc(( 100%  *  0.91666667 ) - 2rem);
   flex: none;
-  margin: 0 0.5rem;
+  margin: 0 1rem;
 }
 .grid11.no-gutter {
-  width: calc( 90%  *  0.91666667 );
+  width: calc( 100%  *  0.91666667 );
   margin: 0;
 }
 @media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
@@ -623,12 +624,12 @@ section {
   }
 }
 .grid12 {
-  width: calc(( 90%  *  1 ) - 1rem);
+  width: calc(( 100%  *  1 ) - 2rem);
   flex: none;
-  margin: 0 0.5rem;
+  margin: 0 1rem;
 }
 .grid12.no-gutter {
-  width: calc( 90%  *  1 );
+  width: calc( 100%  *  1 );
   margin: 0;
 }
 @media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
@@ -638,10 +639,10 @@ section {
   }
 }
 .offset1 {
-  margin-left: calc(( 90%  *  0.08333333 ) + 0.5rem);
+  margin-left: calc(( 100%  *  0.08333333 ) + 0.5rem);
 }
 .offset1.no-gutter {
-  margin-left: calc( 90%  *  0.08333333 );
+  margin-left: calc( 100%  *  0.08333333 );
 }
 @media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
   .offset1 {
@@ -650,10 +651,10 @@ section {
   }
 }
 .offset2 {
-  margin-left: calc(( 90%  *  0.16666667 ) + 0.5rem);
+  margin-left: calc(( 100%  *  0.16666667 ) + 0.5rem);
 }
 .offset2.no-gutter {
-  margin-left: calc( 90%  *  0.16666667 );
+  margin-left: calc( 100%  *  0.16666667 );
 }
 @media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
   .offset2 {
@@ -662,10 +663,10 @@ section {
   }
 }
 .offset3 {
-  margin-left: calc(( 90%  *  0.25 ) + 0.5rem);
+  margin-left: calc(( 100%  *  0.25 ) + 0.5rem);
 }
 .offset3.no-gutter {
-  margin-left: calc( 90%  *  0.25 );
+  margin-left: calc( 100%  *  0.25 );
 }
 @media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
   .offset3 {
@@ -674,10 +675,10 @@ section {
   }
 }
 .offset4 {
-  margin-left: calc(( 90%  *  0.33333333 ) + 0.5rem);
+  margin-left: calc(( 100%  *  0.33333333 ) + 0.5rem);
 }
 .offset4.no-gutter {
-  margin-left: calc( 90%  *  0.33333333 );
+  margin-left: calc( 100%  *  0.33333333 );
 }
 @media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
   .offset4 {
@@ -686,10 +687,10 @@ section {
   }
 }
 .offset5 {
-  margin-left: calc(( 90%  *  0.41666667 ) + 0.5rem);
+  margin-left: calc(( 100%  *  0.41666667 ) + 0.5rem);
 }
 .offset5.no-gutter {
-  margin-left: calc( 90%  *  0.41666667 );
+  margin-left: calc( 100%  *  0.41666667 );
 }
 @media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
   .offset5 {
@@ -698,10 +699,10 @@ section {
   }
 }
 .offset6 {
-  margin-left: calc(( 90%  *  0.5 ) + 0.5rem);
+  margin-left: calc(( 100%  *  0.5 ) + 0.5rem);
 }
 .offset6.no-gutter {
-  margin-left: calc( 90%  *  0.5 );
+  margin-left: calc( 100%  *  0.5 );
 }
 @media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
   .offset6 {
@@ -710,10 +711,10 @@ section {
   }
 }
 .offset7 {
-  margin-left: calc(( 90%  *  0.58333333 ) + 0.5rem);
+  margin-left: calc(( 100%  *  0.58333333 ) + 0.5rem);
 }
 .offset7.no-gutter {
-  margin-left: calc( 90%  *  0.58333333 );
+  margin-left: calc( 100%  *  0.58333333 );
 }
 @media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
   .offset7 {
@@ -722,10 +723,10 @@ section {
   }
 }
 .offset8 {
-  margin-left: calc(( 90%  *  0.66666667 ) + 0.5rem);
+  margin-left: calc(( 100%  *  0.66666667 ) + 0.5rem);
 }
 .offset8.no-gutter {
-  margin-left: calc( 90%  *  0.66666667 );
+  margin-left: calc( 100%  *  0.66666667 );
 }
 @media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
   .offset8 {
@@ -734,10 +735,10 @@ section {
   }
 }
 .offset9 {
-  margin-left: calc(( 90%  *  0.75 ) + 0.5rem);
+  margin-left: calc(( 100%  *  0.75 ) + 0.5rem);
 }
 .offset9.no-gutter {
-  margin-left: calc( 90%  *  0.75 );
+  margin-left: calc( 100%  *  0.75 );
 }
 @media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
   .offset9 {
@@ -746,10 +747,10 @@ section {
   }
 }
 .offset10 {
-  margin-left: calc(( 90%  *  0.83333333 ) + 0.5rem);
+  margin-left: calc(( 100%  *  0.83333333 ) + 0.5rem);
 }
 .offset10.no-gutter {
-  margin-left: calc( 90%  *  0.83333333 );
+  margin-left: calc( 100%  *  0.83333333 );
 }
 @media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
   .offset10 {
@@ -758,10 +759,10 @@ section {
   }
 }
 .offset11 {
-  margin-left: calc(( 90%  *  0.91666667 ) + 0.5rem);
+  margin-left: calc(( 100%  *  0.91666667 ) + 0.5rem);
 }
 .offset11.no-gutter {
-  margin-left: calc( 90%  *  0.91666667 );
+  margin-left: calc( 100%  *  0.91666667 );
 }
 @media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
   .offset11 {
@@ -1305,9 +1306,9 @@ body {
 }
 .index__subtitle:after {
   content: '';
-  width: calc(( 90%  *  0.25 ) - 1rem);
+  width: calc(( 100%  *  0.25 ) - 2rem);
   flex: none;
-  margin: 0 0.5rem;
+  margin: 0 1rem;
   position: absolute;
   bottom: 0rem;
   left: 0;
@@ -1316,7 +1317,7 @@ body {
   border-bottom: 2px solid #aaaaaa;
 }
 .index__subtitle:after.no-gutter {
-  width: calc( 90%  *  0.25 );
+  width: calc( 100%  *  0.25 );
   margin: 0;
 }
 @media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
@@ -2003,12 +2004,12 @@ img {
   width: 11.25rem;
   margin: 2rem auto;
 }
+.section--slider-desktop,
+.section--slider-mobile {
+  height: 23rem;
+  padding: 0;
+}
 @media (min-width: 481px) {
-  .section--slider-desktop,
-  .section--slider-mobile {
-    height: 27rem;
-    justify-content: space-between;
-  }
   .section--slider-desktop .slider__nav,
   .section--slider-mobile .slider__nav {
     justify-content: flex-start;
@@ -2018,30 +2019,6 @@ img {
     display: flex;
     flex-direction: column-reverse;
     margin-bottom: 2rem;
-  }
-}
-.slider--desktop {
-  position: relative;
-  width: 90%;
-  height: auto;
-  box-sizing: content-box;
-  border: 1rem solid #aaaaaa;
-  border-radius: 0.5rem;
-}
-.slider--desktop:before {
-  content: '';
-  opacity: 0;
-  z-index: -1;
-  position: relative;
-  display: block;
-  width: 100%;
-  height: 0;
-  padding-top: 62.5%;
-}
-@media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
-  .slider--desktop {
-    margin: 0 !important;
-    border: 0.5rem solid #aaa;
   }
 }
 .slider--desktop.rsFullscreen {
@@ -2061,6 +2038,18 @@ img {
 .slider--desktop .rsOverflow {
   position: absolute;
   top: 0;
+}
+.section--slider-desktop .slider-wrapper {
+  background-image: url(../images/screen-desktop.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+@media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
+  .slider-wrapper {
+    flex: 1 1 auto;
+    order: 1;
+  }
 }
 .slider--mobile {
   height: auto !important;
@@ -2243,26 +2232,6 @@ element.style {
 img {
   width: 100%;
 }
-.top-content,
-.bottom-content {
-  position: relative;
-  width: calc(50% - 3rem);
-  margin: 0 1.5rem;
-  padding: 0 0 2rem;
-}
-.top-content img,
-.bottom-content img {
-  margin: 1.5rem 0 0.5rem;
-  border: 1px solid #aaaaaa;
-}
-@media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
-  .top-content,
-  .bottom-content {
-    width: calc(100% - 1.5rem);
-    margin: 0 0.75rem;
-    padding: 0 1rem 0.5rem 0;
-  }
-}
 .slide {
   position: absolute;
   max-width: 600px;
@@ -2319,51 +2288,6 @@ img {
 @media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
   .section--intro {
     flex-direction: column;
-  }
-}
-@media (min-width: 481px) {
-  .section--text-left {
-    height: 28rem;
-  }
-  .section--text-left .slide {
-    width: calc(58% - 2rem);
-    right: 0;
-    top: 0;
-    margin: 2.5rem 1rem 0 0;
-  }
-  .section--text-left .slide.slider--mobile {
-    width: auto;
-    left: auto;
-    right: 15%;
-    top: 3rem;
-  }
-  .section--text-left .top-content,
-  .section--text-left .bottom-content {
-    width: calc(40% - 3rem);
-    padding-bottom: 0;
-  }
-}
-@media (min-width: 481px) {
-  .section--text-right {
-    align-items: flex-end;
-    height: 28rem;
-  }
-  .section--text-right .slide {
-    width: calc(58% - 2rem);
-    left: 0;
-    top: 0;
-    margin: 2.5rem 1rem 0;
-  }
-  .section--text-right .slide.slider--mobile {
-    width: auto;
-    right: auto;
-    left: 15%;
-    top: 3rem;
-  }
-  .section--text-right .top-content,
-  .section--text-right .bottom-content {
-    width: calc(40% - 3rem);
-    padding-bottom: 0;
   }
 }
 @media (min-width: 481px) {
@@ -3086,9 +3010,6 @@ img {
 .section--palegrey {
   background: #fafafa;
 }
-.section--dark .grid-cell {
-  justify-content: flex-end;
-}
 .slider-cell {
   align-items: flex-end;
 }
@@ -3335,5 +3256,53 @@ li {
   font-weight: 300;
   margin-left: 0.5rem;
   color: #aaaaaa;
+}
+.grid--column-grid {
+  position: relative;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+@media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
+  .bottom-content {
+    order: 2;
+  }
+}
+@media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
+  .top-content {
+    order: 0;
+  }
+}
+.slide-aspect {
+  height: 100%;
+  flex-basis: 100%
+	flex: 1;
+  flex: none;
+  justify-content: center;
+}
+.slide-aspect img {
+  display: block;
+  position: relative;
+  align-self: center;
+  height: 95%;
+  width: auto;
+  margin-top: 2.5%;
+}
+.slider--desktop {
+  position: absolute;
+  display: block;
+  top: 10%;
+  left: 50%;
+  margin-left: -10.75rem;
+  width: 21.5rem;
+}
+.slider--desktop:before {
+  content: '';
+  pointer-events: none;
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+  padding-top: 62.5%;
+  background: lime;
 }
 /*# sourceMappingURL=../source.map */

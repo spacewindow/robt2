@@ -520,9 +520,11 @@ section{
 
 .section--slider-desktop,
 .section--slider-mobile{
+	height: 23rem;
+	padding:0;
 	.media-desktop({
-		height: 27rem;
-		justify-content: space-between;
+
+		// justify-content: space-between;
 		.slider__nav{
 			justify-content: flex-start;
 		}
@@ -535,27 +537,27 @@ section{
 }
 
 .slider--desktop{
-  &:before{
-    content:'';
-    opacity:0;
-    z-index:-1;
-    position:relative;
-    display:block;
-    width:100%;
-    height:0;
-    padding-top: 62.5%; // aspect ratio for my weird-ass videos
-  }
-  position:relative;
-  width: 90%;
-  height:auto;
-  box-sizing: content-box;
-  // margin: 0 auto;
-  border: 1rem solid #aaaaaa;
-  border-radius: 0.5rem;
-	.media-phone-portrait({
-    margin: 0 !important;
-		border: 0.5rem solid #aaa;
-  });
+	// the magical element that creates aspect-ratio responsive screen sizing
+  // &:before{
+  //   content:'';
+  //   opacity:0;
+  //   z-index:-1;
+  //   position:relative;
+  //   display:block;
+  //   width:100%;
+  //   height:0;
+  //   padding-top: 62.5%; // aspect ratio for my weird-ass videos
+  // }
+  // position:relative;
+  // width: 90%;
+  // height:auto;
+  // box-sizing: content-box;
+  // // margin: 0 auto;
+  //
+  // border-radius: 0.5rem;
+	// .media-phone-portrait({
+  //   margin: 0 !important;
+  // });
 
   &.rsFullscreen{
     border: 0;
@@ -575,6 +577,22 @@ section{
     position:absolute;
     top:0;
   }
+}
+
+.slider-wrapper{
+	// overflow:hidden;
+	// flex: 1 1 30rem;
+
+	.section--slider-desktop & {
+		background-image: url(../images/screen-desktop.png);
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center top;
+	}
+	.media-phone-portrait({
+		flex: 1 1 auto;
+		order:1;
+	});
 }
 
 .slider--mobile{
@@ -752,21 +770,6 @@ img{
 	width:100%;
 }
 
-.top-content, .bottom-content{
-	position: relative;
-	width: ~"calc(50% - 3rem)";
-	margin: 0 1.5rem;
-	padding: 0 0 2rem;
-	img{
-		margin: 1.5rem 0 0.5rem;
-		border: 1px solid @midgrey;
-	}
-	.media-phone-portrait({
-		width:~"calc(100% - 1.5rem)";
-		margin: 0 0.75rem;
-		padding: 0 1rem 0.5rem 0;
-	});
-}
 
 .slide{
 	position:absolute;
@@ -797,50 +800,7 @@ img{
 	});
 }
 
-.section--text-left{
-	.media-desktop({
-		height: 28rem;
-		.slide{
-			width: ~"calc(58% - 2rem)";
-			right:0;
-			top:0;
-			margin:2.5rem 1rem 0 0;
-			&.slider--mobile{
-				width:auto;
-				left:auto;
-				right:15%;
-				top:3rem;
-			}
-		}
-		.top-content, .bottom-content{
-			width: ~"calc(40% - 3rem)";
-			padding-bottom:0;
-		}
-	});
-}
 
-.section--text-right{
-	.media-desktop({
-		align-items: flex-end;
-		height: 28rem;
-		.slide{
-			width: ~"calc(58% - 2rem)";
-			left:0;
-			top:0;
-			margin: 2.5rem 1rem 0;
-			&.slider--mobile{
-				width:auto;
-				right:auto;
-				left:15%;
-				top:3rem;
-			}
-		}
-		.top-content, .bottom-content{
-			width: ~"calc(40% - 3rem)";
-			padding-bottom:0;
-		}
-	});
-}
 
 .phone-royalSlider{
 	.media-desktop({
@@ -1386,10 +1346,6 @@ img{
 	background: @palegrey;
 }
 
-.section--dark .grid-cell{
-  justify-content: flex-end;
-}
-
 .slider-cell{
 	align-items: flex-end;
 }
@@ -1658,4 +1614,61 @@ li{
 		margin-left: 0.5rem;
 		color: @midgrey;
 	}
+}
+
+.grid--column-grid{
+	position: relative;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+
+.bottom-content{
+	.media-phone-portrait({
+		order:2;
+	});
+}
+
+.top-content{
+	.media-phone-portrait({
+		order:0;
+	});
+};
+
+.slide-aspect{
+	height: 100%;
+	flex-basis: 100%
+	flex: 1;
+	// display:block;
+	flex:none;
+	justify-content: center;
+	img{
+		display:block;
+		position: relative;
+		align-self: center; // stops the image distorting, default value for align-self is stretch
+		height: 95%;
+		width:auto;
+		margin-top: 2.5%;
+	}
+}
+
+.slider--desktop{
+	position: absolute;
+	display:block;
+    top: 10%;
+    left: 50%;
+		margin-left: -10.75rem;
+    width: 21.5rem;
+		// OH MY GOD AAAAGH! %-based padding on an element is calculated based on width of parent?? How the fuck did I not know that? I guess I usually do rems or ems...
+		// So the short version - the ASPECT RATIO trick must be done using a pseudo element, becuase this WILL take its padding based on its parent - the element you're trying to force the aspect ratio on. FUUUUUUUUUCK!
+		&:before{
+	    content:'';
+			pointer-events:none;
+	    // z-index:-1;
+	    position:relative;
+	    display:block;
+	    width:100%;
+	    height:auto;
+	    padding-top: 62.5%; // aspect ratio for 16:10 screen
+			background: lime;
+	  }
 }

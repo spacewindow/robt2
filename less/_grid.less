@@ -9,7 +9,7 @@ html{
 
 @columnColor: #bada55;
 
-@baseWidth: 90%;
+@baseWidth: 100%; // using this value is actually messing up the calculations...
 
 @numColumns:12;
 
@@ -77,8 +77,9 @@ body {
 });
 
 .grid{
-	width: @baseWidth;
-	// margin: 0 auto;
+	width: 90%;
+	// not setting a height on my flex-container (this grid) cost me hours of messing around - ugh
+	height:100%;
 	display:flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
@@ -118,9 +119,9 @@ section {
 
 .baseGridWidths(@i: 1) when (@i <= (@numColumns)) {
   .grid@{i} {
-    width: ~"calc(("@baseWidth~" * "@i/@numColumns~") - 1rem)";
+    width: ~"calc(("@baseWidth~" * "@i/@numColumns~") - 2rem)";
 		flex:none;
-		margin: 0 0.5rem;
+		margin: 0 1rem;
 		&.no-gutter{
 			width: ~"calc("@baseWidth~" * "@i/@numColumns~")";
 			margin:0;
