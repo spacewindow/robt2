@@ -779,7 +779,7 @@ section {
   justify-content: flex-start;
   align-items: center;
 }
-@media (min-width: 481px) {
+@media (min-width: 900px) {
   section {
     padding-top: 1rem;
     padding-bottom: 2rem;
@@ -1356,7 +1356,7 @@ body {
 .app__body.menu {
   transition: transform 0.5s cubic-bezier(0.8, 0.12, 0.9, 0.37);
 }
-@media (min-width: 481px) {
+@media (min-width: 900px) {
   .app__body.menu {
     transform: translateX(-30%);
   }
@@ -1566,7 +1566,7 @@ body {
 .app__header.menu {
   transition: transform 0.5s cubic-bezier(0.8, 0.12, 0.9, 0.37);
 }
-@media (min-width: 481px) {
+@media (min-width: 900px) {
   .app__header.menu {
     transform: translateX(-30%);
   }
@@ -1993,7 +1993,7 @@ img {
 }
 @media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
 }
-@media (min-width: 481px) {
+@media (min-width: 900px) {
   .section--slider-mobile {
     height: 28rem;
   }
@@ -2004,18 +2004,15 @@ img {
   width: 11.25rem;
   margin: 2rem auto;
 }
-.section--slider-desktop,
-.section--slider-mobile {
-  height: 23rem;
+.section--slider {
+  height: 27rem;
   padding: 0;
 }
-@media (min-width: 481px) {
-  .section--slider-desktop .slider__nav,
-  .section--slider-mobile .slider__nav {
+@media (min-width: 900px) {
+  .section--slider .slider__nav {
     justify-content: flex-start;
   }
-  .section--slider-desktop .bottom-content,
-  .section--slider-mobile .bottom-content {
+  .section--slider .bottom-content {
     display: flex;
     flex-direction: column-reverse;
     margin-bottom: 2rem;
@@ -2038,18 +2035,6 @@ img {
 .slider--desktop .rsOverflow {
   position: absolute;
   top: 0;
-}
-.section--slider-desktop .slider-wrapper {
-  background-image: url(../images/screen-desktop.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center top;
-}
-@media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
-  .slider-wrapper {
-    flex: 1 1 auto;
-    order: 1;
-  }
 }
 .slider--mobile {
   height: auto !important;
@@ -2290,7 +2275,7 @@ img {
     flex-direction: column;
   }
 }
-@media (min-width: 481px) {
+@media (min-width: 900px) {
   .phone-royalSlider {
     justify-content: space-between;
   }
@@ -2303,7 +2288,7 @@ img {
     margin-bottom: 2rem;
   }
 }
-@media (min-width: 481px) {
+@media (min-width: 900px) {
   .section--split {
     flex-direction: row;
   }
@@ -2315,7 +2300,7 @@ img {
     margin: 1rem 1.5rem 0rem;
   }
 }
-@media (min-width: 481px) {
+@media (min-width: 900px) {
   .characters .section--split {
     height: 28rem;
   }
@@ -2655,7 +2640,7 @@ img {
 .e-newsletters img {
   border: 0;
 }
-@media (min-width: 481px) {
+@media (min-width: 900px) {
   #email-personalised h2:after,
   #modular-content h2:after,
   #every-device h2:after {
@@ -2677,7 +2662,7 @@ img {
   width: 100%;
   z-index: 10;
 }
-@media (min-width: 481px) {
+@media (min-width: 900px) {
   #email-personalised .slide {
     position: absolute;
     width: calc(45% - 2rem);
@@ -2686,7 +2671,7 @@ img {
 #cgu-process h2:after {
   display: none;
 }
-@media (min-width: 481px) {
+@media (min-width: 900px) {
   #modular-content .top-content {
     margin-top: 7rem;
   }
@@ -2696,7 +2681,7 @@ img {
     transform: rotate(180deg);
   }
 }
-@media (min-width: 481px) {
+@media (min-width: 900px) {
   #every-device .top-content {
     margin-top: 12rem;
   }
@@ -2714,7 +2699,7 @@ img {
   height: auto;
   border: 0;
 }
-@media (min-width: 481px) {
+@media (min-width: 900px) {
   .section--overflow .slide {
     width: calc(45% - 2rem);
     margin-top: -20%;
@@ -3026,7 +3011,7 @@ img {
     margin-bottom: 2rem;
   }
 }
-@media (min-width: 481px) {
+@media (min-width: 900px) {
   .approach {
     flex-direction: row;
   }
@@ -3139,7 +3124,7 @@ img {
   position: relative;
   padding-left: 5em;
 }
-@media (min-width: 481px) {
+@media (min-width: 900px) {
   .process h2 {
     padding-left: 2.5rem;
   }
@@ -3213,7 +3198,7 @@ img {
 .slider__nav__bullet.current {
   background: #c8c8c8;
 }
-@media (min-width: 481px) {
+@media (min-width: 900px) {
   #slider-songs-full {
     width: calc(58% - 2rem);
   }
@@ -3234,7 +3219,7 @@ li {
   position: absolute;
   left: -0.3em;
 }
-@media (min-width: 481px) {
+@media (min-width: 900px) {
   .section--tall-desk {
     height: 32rem !important;
   }
@@ -3263,6 +3248,11 @@ li {
   justify-content: flex-start;
 }
 @media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
+  .grid--column-grid {
+    flex-direction: row;
+  }
+}
+@media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
   .bottom-content {
     order: 2;
   }
@@ -3272,37 +3262,66 @@ li {
     order: 0;
   }
 }
-.slide-aspect {
+.grid-cell--slider {
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
   height: 100%;
-  flex-basis: 100%
-	flex: 1;
-  flex: none;
-  justify-content: center;
 }
-.slide-aspect img {
+@media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
+  .grid-cell--slider {
+    height: auto;
+  }
+}
+.slider-wrapper--desktop {
   display: block;
   position: relative;
-  align-self: center;
-  height: 95%;
-  width: auto;
-  margin-top: 2.5%;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
 }
-.slider--desktop {
-  position: absolute;
-  display: block;
-  top: 10%;
-  left: 50%;
-  margin-left: -10.75rem;
-  width: 21.5rem;
+@media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
+  .slider-wrapper--desktop {
+    width: 100%;
+  }
 }
-.slider--desktop:before {
+@media (max-width: 899px) {
+  .slider-wrapper--desktop {
+    width: 95%;
+  }
+}
+@media (min-width: 900px) {
+  .slider-wrapper--desktop {
+    width: 80%;
+  }
+}
+@media (min-width: 1200px) {
+  .slider-wrapper--desktop {
+    width: 86%;
+  }
+}
+@media (min-width: 1500px) {
+  .slider-wrapper--desktop {
+    width: 70%;
+  }
+}
+.slider-wrapper--desktop:before {
   content: '';
   pointer-events: none;
   position: relative;
   display: block;
   width: 100%;
   height: auto;
-  padding-top: 62.5%;
+  padding-top: 100%;
+  background: url(../images/screen-desktop.png);
+  background-size: cover;
+}
+.slider--desktop {
+  position: absolute;
   background: lime;
+  width: 94%;
+  height: 58.75%;
+  top: 11%;
+  left: 3%;
 }
 /*# sourceMappingURL=../source.map */

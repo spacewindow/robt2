@@ -26,13 +26,21 @@
 
    /*   MEDIA QUERIES */
 
+ .media-xlarge(@rules) {
+     @media (min-width: 1500px) { @rules(); }
+ }
+
 .media-large(@rules) {
     @media (min-width: 1200px) { @rules(); }
 }
 
 .media-desktop(@rules) {
-    @media (min-width: 481px) { @rules(); }
+    @media (min-width: 900px) { @rules(); }
 }
+
+// .media-desktop(@rules) {
+//     @media (min-width: 481px) { @rules(); }
+// }
 
 .media-small-device(@rules) {
      @media (max-width: 899px) { @rules(); }
