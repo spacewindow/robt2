@@ -47,6 +47,14 @@ app.get('/about', function(req, res) {
   });
 });
 
+app.get('/video', function(req, res) {
+  res.render('../views/video.html.ejs', {
+    allData: data,
+    color: color,
+    tinycolor: tinycolor
+  });
+});
+
 // any page that is not the root / homepage
 
 app.get('/*', function(req, res) {

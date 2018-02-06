@@ -2,10 +2,14 @@
 
   <section class="section--grey section--intro">
     <div class="grid">
-      <div class="grid-cell grid6 intro-text">
+      <div class="grid-cell grid6 intro-text" style="padding-right: 2rem">
+        <img src="https://www.fillmurray.com/600/500
+        " alt="">
         <h2>Data visualisation screens to give clients rapid insight into the performance of their mobile advertising campaigns.</h2>
       </div>
       <div class="grid-cell grid6 credits">
+        <img src="https://www.fillmurray.com/600/500
+        " alt="">
         <h3>My Role</h3>
         <p>UX Research</p>
         <p>Design</p>
@@ -15,10 +19,35 @@
 
   </section>
 
+  <section class="section--grey section--image-blocks">
+    <div class="image-block image-block--left">
+        <div class="grid">
+          <div class="grid-cell grid12">
+            <p>Hello</p>
+          </div>
+        </div>
+    </div>
+    <div class="image-block image-block--right">
+
+    </div>
+
+  </section>
+
+  <section class="section--grey section--image-full">
+
+    <div class="image-full">
+      <div class="grid">
+        <div class="grid-cell grid12">
+          <p>Hello</p>
+        </div>
+      </div>
+     </div>
+  </section>
+
 
   <section class="section--slider section--slider-desktop">
 
-    <div class="grid grid--column-grid">
+    <div class="grid no-gutter grid--column-grid">
 
       <div class="grid-cell grid4 top-content">
 
@@ -89,7 +118,7 @@
 
   <section class="section--slider section--slider-mobile">
 
-    <div class="grid grid--column-grid">
+    <div class="grid no-gutter grid--column-grid">
 
       <div class="grid-cell grid4 top-content">
 
@@ -134,31 +163,46 @@
 
   </section>
 
+  <section class="section--slider section--slider-desktop" id="section--songs-vid">
 
+    <div class="grid no-gutter grid--column-grid">
 
-  <section class="process section--split">
-    <div class="top-content">
-      <img src="/images/process-reporting.png" alt="">
+      <div class="grid-cell grid4 top-content">
+
+        <h2 style="width:100%">Key Features</h2>
+
+      </div>
+
+      <div class="grid-cell grid4 bottom-content">
+
+        <div class="slider__captions">
+
+        </div>
+
+      </div>
+
+      <div class="grid-cell grid8 grid-cell--slider grid-cell--slider-desktop">
+
+        <div class="slider-wrapper slider-wrapper--desktop">
+          <div class="slider slider--desktop">
+
+            <div class="video-slide">
+              <video autoplay loop muted playsinline  id="songs-video">
+                    <source src="/images/songs/songs-demo.mp4">
+                      <track kind="chapters" label="Locations" src="/images/songs/songs-chapters.vtt" srclang="en" default type="text/vtt" >
+                  </video>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
 
     </div>
-    <div class="bottom-content">
-      <h2>Process</h2>
-      <p>
-        <svg viewBox="0 0 300 300" preserveAspectRatio="xMidYMid meet">
-          <use x="0" y="0" xlink:href="#research"></use>
-        </svg> I gathered information about our Playground clients through our Operations team to understand what the essential and most requested metrics and insights were for campaign reporting.</p>
 
-      <p>
-        <svg viewBox="0 0 300 300" preserveAspectRatio="xMidYMid meet">
-          <use x="0" y="0" xlink:href="#plan"></use>
-        </svg> I created wireframes for the application using Balsamiq Mockups over several iterations until we hit on the most clear and efficient layout.</p>
-
-      <p>
-        <svg viewBox="0 0 300 300" preserveAspectRatio="xMidYMid meet">
-          <use x="0" y="0" xlink:href="#codesign"></use>
-        </svg>I built the prototype with HTML / CSS / JS, using the Amcharts API for the more complex charts. I structured the app as a series of separate components, in preparation for the production development in React.</p>
-    </div>
   </section>
+
 
 
   <% include ../partials/footer.html.ejs %>

@@ -1,0 +1,85 @@
+<style>
+  .video-wrap {
+    width: 500px;
+    position: relative;
+  }
+
+  video {
+    position: relative;
+    width: 100%;
+  }
+
+  a{
+    background: grey;
+    margin: 1rem;
+    display:block;
+  }
+
+  a.active{
+
+    color:red;
+
+  }
+
+  .slider__caption.active{
+    color: lime;
+  }
+
+</style>
+<section class="video-wrap">
+  <video autoplay loop muted playsinline id="songs-video">
+            <source src="/images/songs/songs-demo.mp4">
+              <track kind="chapters" label="Locations" src="/images/songs/songs-chapters.vtt" srclang="en" default type="text/vtt" >
+          </video>
+</section>
+
+<div id="slider__captions"></div>
+
+<div id="slider__nav"></div>
+
+<script src="/js/jquery-3.1.1.min.js"></script>
+
+<script>
+
+  $(window).on('load',function() {
+    var video = $('#songs-video')[0];
+    var captionsDiv = $('#slider__captions');
+    var captions;
+    var bullets;
+    var sliderNav = $('#slider__nav');
+
+    if (!video.textTracks) return;
+
+    var track = video.textTracks[0];
+    var cues = track.cues;
+    console.log(cues);
+    track.mode = 'hidden';
+
+    for (i = 0; i < cues.length; i++) {
+      console.log('cue' + i, cues[i]);
+      var bullet = $('<a class="slider__bullet" data-time = ' + cues[i].startTime + ' id="cue' + cues[i].id + '">bullet</a>');
+      sliderNav.append(bullet);
+      bullets = sliderNav.children();
+      bullets.click(function(){
+        console.log('go to ' + $(this).data('time'));
+        video.currentTime = $(this).data('time');
+      });
+
+      var caption = $('<div class="slider__caption">' + cues[i].text + '</div>');
+      captionsDiv.append(caption);
+      captions = captionsDiv.children();
+      captions.eq(0).addClass('active');
+    }
+
+    track.oncuechange = function(e) {
+      var cue = this.activeCues[0];
+      if (cue !== undefined) {
+        console.log(cue);
+        bullets.removeClass('active').eq(cue.id).addClass('active');
+        captions.removeClass('active').eq(cue.id).addClass('active');
+      }
+    };
+
+  });
+
+</script>

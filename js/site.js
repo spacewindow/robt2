@@ -43,7 +43,7 @@ function makeSlider(divID) {
 
   var sliderNavLeft = $('<div class="slider__nav__arrow slider__nav__arrow--left"></div>');
   var sliderNavRight = $('<div class="slider__nav__arrow slider__nav__arrow--right"></div>');
-  var sliderBullet = '<div class="slider__nav__bullet"></div>';
+  var sliderBullet = '<a class="slider__nav__bullet"></a>';
 
   for(var i = 0; i < slider.numSlides; i++){
     var newBullet = $(sliderBullet);
@@ -136,6 +136,125 @@ function makeSlider(divID) {
   return slider;
 
 }
+
+// Video chapters
+
+var chVidSection = 'section--songs-vid';
+
+
+
+$(document).ready(function(){
+  var locationList = document.getElementById(chVidSection).getElementsByClassName("slider__captions")[0],
+  chapterVideo = document.getElementById("songs-video"),
+  trackElement = chapterVideo.getElementsByTagName("track")[0];
+  var sliderNav = $('<div class="slider__nav"></div>');
+  var sliderNavLeft = $('<div class="slider__nav__arrow slider__nav__arrow--left"></div>');
+  var sliderNavRight = $('<div class="slider__nav__arrow slider__nav__arrow--right"></div>');
+  var sliderBullet = '<a class="slider__nav__bullet"></a>';
+
+
+  chapterVideo.addEventListener("loadedmetadata", function run_tests() {
+        if (trackElement.readyState == 1) { setTimeout(run_tests, 0); } else { displayChapters(); }
+  });
+
+  function displayChapters(){
+    if ((trackElement.readyState == 2) && (textTrack = trackElement.track) && (window.matchMedia("(min-width: 500px)").matches)){
+          if(textTrack.kind === "chapters"){
+              var textTrack = trackElement.track;
+              textTrack.mode = 'hidden';
+              // for (var i = 0; i < textTrack.cues.length; ++i) {
+              //     var cue = textTrack.cues[i];
+              //     var chapterName = cue.text,
+              //     start = cue.startTime;
+              //
+              //     // create captions
+              //     var newLocale = document.createElement("div");
+              //     newLocale.className = 'caption';
+              //     var newLocalePara = document.createElement("p");
+              //     var localeDescription = document.createTextNode(cue.text);
+              //     newLocalePara.appendChild(localeDescription);
+              //     newLocale.appendChild(newLocalePara);
+              //     locationList.appendChild(newLocale);
+              //
+              //     // insert navigation elements
+              //
+              //     var newBullet = $(sliderBullet);
+              //     newBullet.attr('id', start);
+              //     newBullet.attr('tabindex', '0');
+              //     sliderNav.append(newBullet);
+              //
+              //     newBullet.on("click",
+              //     function() {
+              //     	chapterVideo.currentTime = this.id;
+              //     }, false);
+              //
+              // }
+
+              // set up newly created nav
+              //
+              //   var sliderBullets = sliderNav.children('.slider__nav__bullet');
+              //
+              // sliderNav.prepend(sliderNavLeft);
+              // sliderNav.append(sliderNavRight);
+              //
+              // // init style
+              // sliderNav.addClass('start');
+              // sliderBullets.first().addClass('current');
+              //
+              // var currentChapter = 0;
+              // var totalChapters = textTrack.cues.length;
+              //
+              // sliderNavLeft.click(function() {
+              //   if(currentChapter > 0){
+              //     currentChapter--;
+              //     var targetTime = $('.slider__nav__bullet')[currentChapter].id;
+              //     chapterVideo.currentTime = targetTime;
+              //   }else{
+              //     console.log('At chapter one already');
+              //     return;
+              //   }
+              //
+              // });
+              // sliderNavRight.click(function() {
+              //   if(currentChapter < totalChapters){
+              //     currentChapter++;
+              //     var targetTime = $('.slider__nav__bullet')[currentChapter].id;
+              //     chapterVideo.currentTime = targetTime;
+              //   }else{
+              //     console.log('At last chapter');
+              //     return;
+              //   }
+              // });
+              //
+              // sliderNav.insertBefore(locationList);
+              //
+              // // init styles
+              // $(locationList).children().first().addClass('current');
+
+
+              textTrack.addEventListener("cuechange", function(e) {
+                console.log(e);
+                var thisOne = e.srcElement;
+                    var currentLocation = textTrack.activeCues[0].startTime;
+                    if (chapter = document.getElementById(currentLocation)) {
+                    	var locations = [].slice.call(document.querySelectorAll("#chapters li a"));
+                    	for (var i = 0; i < locations.length; ++i) { locations[i].classList.remove("current"); }
+                        chapter.classList.add("current");
+                      // locationlist.style.top = "-"+chapter.parentNode.offsetTop+"px";
+                      // alternative approach, as scrollIntoView will cause entire page to jump if video is not at top of page
+                      chapter.scrollIntoView();
+                    }
+                }, false);
+
+
+          }
+      }
+  }
+});
+
+
+
+
 
 // scrolling animation
 

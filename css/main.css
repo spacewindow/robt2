@@ -431,7 +431,8 @@ body.showgrid:before {
   }
 }
 .grid {
-  width: 90%;
+  width: 100%;
+  padding: 0 2rem;
   height: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -439,7 +440,7 @@ body.showgrid:before {
 }
 @media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
   .grid {
-    width: 100%;
+    padding: 0;
   }
 }
 .grid-cell {
@@ -809,14 +810,14 @@ section.tall {
 @font-face {
   font-family: 'Interstate';
   src: url('../fonts/interstateplus_regular-webfont.eot');
-  src: url('../fonts/interstateplus_regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/interstateplus_regular-webfont.ttf') format('truetype'), url('../fonts/interstateplus_regular-webfont.woff') format('woff'), url('../fonts/interstateplus_regular-webfont.svg#interstateplus_regular-webfont') format('svg');
+  src: url('../fonts/interstateplus_regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/interstateplus_regular-webfont.ttf') format('truetype'), url('../fonts/interstateplus_regular-webfont.woff') format('woff');
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: 'Interstate';
   src: url('../fonts/interstateplus_bold-webfont.eot');
-  src: url('../fonts/interstateplus_bold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/interstateplus_bold-webfont.ttf') format('truetype'), url('../fonts/interstateplus_bold-webfont.woff') format('woff'), url('../fonts/interstateplus_bold-webfont.svg#interstateplus_black-webfont') format('svg');
+  src: url('../fonts/interstateplus_bold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/interstateplus_bold-webfont.ttf') format('truetype'), url('../fonts/interstateplus_bold-webfont.woff') format('woff');
   font-weight: 700;
   font-style: normal;
 }
@@ -2299,9 +2300,13 @@ img {
     position: relative;
   }
 }
+.credits {
+  padding-left: 2rem;
+}
 @media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
   .credits {
     display: block;
+    padding-left: 0;
   }
 }
 .credits h3 {
@@ -3159,6 +3164,7 @@ img {
   border-color: transparent transparent transparent rgba(200, 200, 200, 0.6);
 }
 .slider__nav__bullet {
+  display: block;
   width: 0.2rem;
   height: 0.2rem;
   border-radius: 50%;
@@ -3235,18 +3241,13 @@ li {
 .grid-cell--slider {
   flex-direction: row;
   align-items: center;
+  justify-content: center;
   height: 100%;
 }
 @media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
   .grid-cell--slider {
     height: auto;
   }
-}
-.grid-cell--slider-desktop {
-  justify-content: flex-end;
-}
-.grid-cell--slider-mobile {
-  justify-content: center;
 }
 @media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
   .grid-cell--slider-mobile {
@@ -3331,5 +3332,65 @@ li {
   height: 69%;
   top: 15%;
   left: 11.5%;
+}
+.section--image-blocks {
+  height: 25rem;
+  flex-direction: row;
+  padding: 0;
+}
+@media (min-width: 1200px) {
+  .section--image-blocks {
+    height: 30rem;
+  }
+}
+@media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
+  .section--image-blocks {
+    flex-direction: column;
+    height: 30rem;
+  }
+}
+.image-block {
+  height: 100%;
+  width: 50%;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
+  .image-block {
+    height: 50%;
+    width: 100%;
+  }
+}
+.image-block .grid-cell {
+  height: auto;
+  padding-top: 1rem;
+}
+.image-block--left {
+  background-image: url(../images/hero-campaign-analytics.jpg);
+}
+.image-block--right {
+  background-image: url(../images/hero-characters.jpg);
+}
+.section--image-full {
+  height: 25rem;
+  padding: 0;
+}
+@media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
+  .section--image-full {
+    height: 12rem;
+  }
+}
+.image-full {
+  width: 100%;
+  height: 100%;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../images/hero-characters.jpg);
+}
+.image-full .grid-cell {
+  height: auto;
+  padding-top: 1rem;
 }
 /*# sourceMappingURL=../source.map */
