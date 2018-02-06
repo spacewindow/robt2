@@ -31,8 +31,6 @@ function makeSlider(divID) {
   // Captions
 
   var captions = sliderDiv.closest('.grid').children('.bottom-content').first().children('.slider__captions');
-  console.log(captions);
-
   // init styles
   captions.children().first().addClass('current');
   // set Nav state
@@ -47,10 +45,15 @@ function makeSlider(divID) {
 
   for(var i = 0; i < slider.numSlides; i++){
     var newBullet = $(sliderBullet);
+    newBullet.data('ref', i);
     sliderNav.append(newBullet);
   }
 
   var sliderBullets = sliderNav.children('.slider__nav__bullet');
+  sliderBullets.click(function(){
+    var ref = $(this).data('ref');
+    slider.goTo(ref);
+  });
 
   sliderNav.prepend(sliderNavLeft);
   sliderNav.append(sliderNavRight);
@@ -137,123 +140,90 @@ function makeSlider(divID) {
 
 }
 
-// Video chapters
+// Chapter videos
 
-var chVidSection = 'section--songs-vid';
+$(window).on('load',function() {
+  var videoSection = $('#section--songs-video');
+  var video = videoSection.find('video')[0];
 
+  if(video !== undefined){
 
+    var captionsDiv = videoSection.find('.slider__captions');
+    var captions;
+    var bullets;
+    var sliderNav = $('<div class="slider__nav"></div>');
+    var sliderNavLeft = $('<div class="slider__nav__arrow slider__nav__arrow--left"></div>');
+    var sliderNavRight = $('<div class="slider__nav__arrow slider__nav__arrow--right"></div>');
+    var currentChapter = 0;
 
-$(document).ready(function(){
-  var locationList = document.getElementById(chVidSection).getElementsByClassName("slider__captions")[0],
-  chapterVideo = document.getElementById("songs-video"),
-  trackElement = chapterVideo.getElementsByTagName("track")[0];
-  var sliderNav = $('<div class="slider__nav"></div>');
-  var sliderNavLeft = $('<div class="slider__nav__arrow slider__nav__arrow--left"></div>');
-  var sliderNavRight = $('<div class="slider__nav__arrow slider__nav__arrow--right"></div>');
-  var sliderBullet = '<a class="slider__nav__bullet"></a>';
+    console.log(video);
 
+    if (!video.textTracks) return;
 
-  chapterVideo.addEventListener("loadedmetadata", function run_tests() {
-        if (trackElement.readyState == 1) { setTimeout(run_tests, 0); } else { displayChapters(); }
-  });
+    var track = video.textTracks[0];
+    var cues = track.cues;
+    // console.log(cues);
+    track.mode = 'hidden';
 
-  function displayChapters(){
-    if ((trackElement.readyState == 2) && (textTrack = trackElement.track) && (window.matchMedia("(min-width: 500px)").matches)){
-          if(textTrack.kind === "chapters"){
-              var textTrack = trackElement.track;
-              textTrack.mode = 'hidden';
-              // for (var i = 0; i < textTrack.cues.length; ++i) {
-              //     var cue = textTrack.cues[i];
-              //     var chapterName = cue.text,
-              //     start = cue.startTime;
-              //
-              //     // create captions
-              //     var newLocale = document.createElement("div");
-              //     newLocale.className = 'caption';
-              //     var newLocalePara = document.createElement("p");
-              //     var localeDescription = document.createTextNode(cue.text);
-              //     newLocalePara.appendChild(localeDescription);
-              //     newLocale.appendChild(newLocalePara);
-              //     locationList.appendChild(newLocale);
-              //
-              //     // insert navigation elements
-              //
-              //     var newBullet = $(sliderBullet);
-              //     newBullet.attr('id', start);
-              //     newBullet.attr('tabindex', '0');
-              //     sliderNav.append(newBullet);
-              //
-              //     newBullet.on("click",
-              //     function() {
-              //     	chapterVideo.currentTime = this.id;
-              //     }, false);
-              //
-              // }
+    for (i = 0; i < cues.length; i++) {
 
-              // set up newly created nav
-              //
-              //   var sliderBullets = sliderNav.children('.slider__nav__bullet');
-              //
-              // sliderNav.prepend(sliderNavLeft);
-              // sliderNav.append(sliderNavRight);
-              //
-              // // init style
-              // sliderNav.addClass('start');
-              // sliderBullets.first().addClass('current');
-              //
-              // var currentChapter = 0;
-              // var totalChapters = textTrack.cues.length;
-              //
-              // sliderNavLeft.click(function() {
-              //   if(currentChapter > 0){
-              //     currentChapter--;
-              //     var targetTime = $('.slider__nav__bullet')[currentChapter].id;
-              //     chapterVideo.currentTime = targetTime;
-              //   }else{
-              //     console.log('At chapter one already');
-              //     return;
-              //   }
-              //
-              // });
-              // sliderNavRight.click(function() {
-              //   if(currentChapter < totalChapters){
-              //     currentChapter++;
-              //     var targetTime = $('.slider__nav__bullet')[currentChapter].id;
-              //     chapterVideo.currentTime = targetTime;
-              //   }else{
-              //     console.log('At last chapter');
-              //     return;
-              //   }
-              // });
-              //
-              // sliderNav.insertBefore(locationList);
-              //
-              // // init styles
-              // $(locationList).children().first().addClass('current');
+      var bullet = $('<a class="slider__nav__bullet" data-time = ' + cues[i].startTime + ' id="cue' + cues[i].id + '"></a>');
+      sliderNav.append(bullet);
 
 
-              textTrack.addEventListener("cuechange", function(e) {
-                console.log(e);
-                var thisOne = e.srcElement;
-                    var currentLocation = textTrack.activeCues[0].startTime;
-                    if (chapter = document.getElementById(currentLocation)) {
-                    	var locations = [].slice.call(document.querySelectorAll("#chapters li a"));
-                    	for (var i = 0; i < locations.length; ++i) { locations[i].classList.remove("current"); }
-                        chapter.classList.add("current");
-                      // locationlist.style.top = "-"+chapter.parentNode.offsetTop+"px";
-                      // alternative approach, as scrollIntoView will cause entire page to jump if video is not at top of page
-                      chapter.scrollIntoView();
-                    }
-                }, false);
+      var caption = $('<div class="caption">' + cues[i].text + '</div>');
+      captionsDiv.append(caption);
+    }
 
+    // insert and add click to bullets
 
-          }
+    sliderNav.insertBefore(captionsDiv);
+    bullets = sliderNav.children();
+    bullets.click(function(){
+      console.log('go to ' + $(this).data('time'));
+      video.currentTime = $(this).data('time');
+    });
+
+    // insert and add click to arrows
+
+    sliderNavLeft.click(function() {
+      if(currentChapter > 0){
+        currentChapter--;
+        var targetTime = track.cues[currentChapter].startTime;
+        console.log(targetTime);
+        video.currentTime = targetTime;
       }
+    });
+    sliderNavRight.click(function() {
+      if(currentChapter < track.cues.length-1){
+        currentChapter++;
+        var targetTime = track.cues[currentChapter].startTime;
+        console.log(targetTime);
+        video.currentTime = targetTime;
+      }
+    });
+
+    sliderNav.prepend(sliderNavLeft);
+    sliderNav.append(sliderNavRight);
+
+    captions = captionsDiv.children();
+    captions.eq(0).addClass('current');
+
+
+
+    track.oncuechange = function(e) {
+      var cue = this.activeCues[0];
+      if (cue !== undefined) {
+        currentChapter = cue.id;
+        bullets.removeClass('current').eq(cue.id).addClass('current');
+        captions.removeClass('current').eq(cue.id).addClass('current');
+      }
+    };
+
   }
+
+
 });
-
-
-
 
 
 // scrolling animation
