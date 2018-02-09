@@ -21,7 +21,7 @@ const data = [
   //   color: "#72b1a3"
   // },
   {
-    id: "songs",
+    id: "songs-for-the-fallen",
     title: "Songs for the&nbsp;Fallen",
     type: "responsive / website / CMS",
     client: "Critical Stages",
@@ -29,7 +29,7 @@ const data = [
     color: "#c80511"
   },
   {
-    id: "store-locator",
+    id: "mobile-store-locator",
     title: "Store Locator",
     type: "mobile / web component",
     client: "Playground XYZ",
@@ -37,7 +37,7 @@ const data = [
     color: "#ff0000"
   },
   {
-    id: "characters",
+    id: "animated-characters",
     title: "Brand Characters",
     type: "responsive / illustration / javascript",
     client: "Playground XYZ",
@@ -53,7 +53,7 @@ const data = [
     color: "#0aa945"
   },
   {
-    id: "wattyl",
+    id: "wattyl-100-years",
     title: "Wattyl: 100 Years",
     type: "responsive / website",
     client: "Wattyl Paints",
@@ -70,7 +70,7 @@ const data = [
   // },
   {
     id: "michael-thwaites",
-    title: "Michael Thwaites: Poetry",
+    title: "Michael Thwaites: Australian Poet",
     type: "desktop / website / CMS",
     client: "Personal Project",
     description: "Showcasing the work of this award-winning poet with words, imagery and audio",
