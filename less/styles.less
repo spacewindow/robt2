@@ -269,6 +269,7 @@ body{
 	color: @darkgrey;
 	.media-phone-portrait({
 		height: 5rem;
+		margin: 0.5rem 0 1rem;
 	});
 	a{
 		position: absolute;
@@ -332,6 +333,9 @@ body{
 	}
 	.media-phone-portrait({
 		width:75%;
+		&:after{
+			display:none;
+		}
 	});
 }
 
@@ -346,9 +350,11 @@ body{
 	.fontSize(1);
 	.media-phone-portrait({
 		.fontSize(small, mobile);
+		top: 0rem;
+		margin:0;
 	});
 }
-.footer-links__type{
+.footer-links__client{
 	.fontSize(small);
 	font-family: @fontFamily;
 	text-transform: uppercase;
@@ -368,9 +374,20 @@ body{
 	flex-wrap: wrap;
 	justify-content: center;
 	margin: 6rem 0 4rem;
+	.media-phone-portrait({
+		.fontSize(xsmall, mobile);
+		justify-content: flex-start;
+		width:auto;
+		margin: 1rem 0rem 1rem 6rem;
+	});
 	h2{
 		width:100%;
 		margin-bottom: 0.5rem;
+		.media-phone-portrait({
+			text-align: left;
+			.fontSize(0, mobile);
+			line-height: 1.4;
+		});
 	}
 	a{
 		position: relative;
@@ -378,6 +395,16 @@ body{
 		color: @black;
 		text-decoration: none;
 		overflow:visible;
+		.media-phone-portrait({
+			font-size: 0.7em;
+			display:block;
+			width: auto;
+			text-align: left;
+			line-height: 1.4;
+			&:after{
+				display:none;
+			}
+		});
 	}
 	.footer__email{
 		margin-right: 1rem;
@@ -387,34 +414,20 @@ body{
 			top: 0.1rem;
 			border-right: 1px solid black;
 			right: -0.5rem;
-			.media-phone-portrait({
-				display:none;
-			});
 		}
-	}
-	.footer__phone{
-		font-size: 0.9em;
-	}
-	.media-phone-portrait({
-		justify-content: flex-start;
-		width:auto;
-		margin-left: 40%;
-		.fontSize(xsmall, mobile);
-		h2{
-			text-align: left;
-			.fontSize(0);
-			line-height: 1.4;
-		}
-		a{
-			display:block;
-			width: auto;
-			text-align: left;
-			line-height: 1.4;
+		.media-phone-portrait({
+			font-size: 0.8em;
 			&:after{
 				display:none;
 			}
-		}
-	});
+		});
+	}
+	.footer__phone{
+		font-size: 0.9em;
+		.media-phone-portrait({
+			font-size: 0.7em;
+		});
+	}
 }
 
 .footer__signoff__links{
@@ -488,11 +501,11 @@ footer{
 
 	.media-small-device({
 		background-size:
-			auto 95%,
+			auto 120%,
 			auto,
 			auto 12rem;
 		background-position:
-			left -1rem bottom -1rem,
+			left -0.5rem bottom -1rem,
 			0 0,
 			0 0;
 			height: 8rem;

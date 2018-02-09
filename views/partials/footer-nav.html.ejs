@@ -4,7 +4,7 @@
         <div class="footer-links__thumb">
           <!-- <img src="/images/thumb-bw-<%= pageData.previous.id %>.png" alt=""> -->
 
-          <span class="footer-links__type"><%= pageData.previous.client %></span>
+          <span class="footer-links__client"><%= pageData.previous.client %></span>
 
           <span class="footer-links__title"><%- pageData.previous.title %></span>
 
@@ -20,11 +20,11 @@
       <a class="next" href="/<%= pageData.next.id %>">
         <div class="footer-links__thumb">
           <!-- <img src="/images/thumb-bw-<%= pageData.next.id %>.png" alt=""> -->
-          <span class="footer-links__type"><%= pageData.next.client %></span>
-          <span class="footer-links__title" "><%- pageData.next.title %></span>
+          <span class="footer-links__client"><%= pageData.next.client %></span>
+          <span class="footer-links__title"><%- pageData.next.title %></span>
 
         </div>
-        <div class="footer-links__chevron footer-links__chevron--right" style="border-color: <%= pageData.next.color %>;">
+        <div class="footer-links__chevron footer-links__chevron--right">
           <svg viewBox="0 0 300 300" preserveAspectRatio="xMidYMid meet">
             <use x="0" y="0" xlink:href="#chevron-right"></use>
           </svg>
