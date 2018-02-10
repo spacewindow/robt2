@@ -240,7 +240,19 @@ function makeChapterVideo(target) {
 
 var lastScroll = 0;
 
-var scrollDirection = function(section) {
+function deviceType(){
+  var deviceOrient = window.orientation;
+  var deviceWidth = window.innerWidth;
+
+  if (deviceOrient === 0 && deviceWidth <= 414) {
+    return 'mobile';
+  }
+  else{
+    return 'desktop';
+  }
+}
+
+function scrollDirection(section) {
   if (section.scrollTop > lastScroll) {
     lastScroll = section.scrollTop;
     return 'down';
@@ -264,13 +276,7 @@ $(window).on('load', function() {
 
   // JS version of media query
 
-  var deviceOrient = window.orientation;
-  var deviceWidth = window.innerWidth;
-  var deviceType = 'desktop';
 
-  if (deviceOrient === 0 && deviceWidth <= 414) {
-    deviceType = 'mobile';
-  }
 
   // alert(deviceType);
 
@@ -302,11 +308,11 @@ $(window).on('load', function() {
 
     $(window).on('scroll', function() {
       // modular blocks animation
-      var cgu_mod_progress = progress('#email-main', 200);
+      var cgu_mod_progress = progress('#email-main', 0);
       cgu_mod_TL.progress(cgu_mod_progress);
 
       // mobile mail animation
-      var cgu_mail_progress = progress('#cgu-mobile-edm', 400);
+      var cgu_mail_progress = progress('#email-mobile', 400);
       console.log(cgu_mail_progress);
       $('#cgu-mobile-edm').css('transform', 'translateY(-' + 32 * cgu_mail_progress + '%)');
 
@@ -339,7 +345,7 @@ function progress(element, offsetStart) { // element is the selector string
   var scrollTopEnd = scrollElement.height() / 2 + scrollTopStart;
 
   var currentPosition = window.pageYOffset;
-  console.log('IE POSITION', currentPosition);
+  // console.log('IE POSITION', currentPosition);
   var progress;
   if (currentPosition < scrollTopStart) {
     progress = 0;

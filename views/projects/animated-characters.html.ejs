@@ -1,105 +1,61 @@
 <% include ../partials/header.html.ejs %>
 
 <section class="section--grey section--intro">
-    <div class="top-content" style="color: <%= pageData.current.color %>">
-        <p>The branding or Playground XYZ includes several characters to help tell the story of its products. Some of these characters required animation.</p>
-        <p>Below are three of the animated characters I produced for the company.</p>
-      </div>
-
-    <div class="bottom-content credits">
-      <h3>Client</h3>
-      <p><%= pageData.current.client %></p>
-      <h3>My role</h3>
-      <p>Character Design, Javascript Animation</p>
-
+  <div class="grid">
+    <div class="grid-cell grid6 intro-text" style="padding-right: 2rem">
+      <h2>Description.</h2>
     </div>
-  </section>
-
-  <section class="section--split">
-    <div class="top-content">
-      <div class="video-slide">
-        <video autoplay loop muted playsinline>
-          <source src="/images/characters/character-wizard.mp4">
-        </video>
-      </div>
+    <div class="grid-cell grid6 credits">
+      <h3>My Role</h3>
+      <p>Role</p>
+      <p>Role</p>
     </div>
-    <div class="bottom-content">
-      <div class="slide slider--desktop">
-        <div class="video-slide">
-          <video autoplay loop muted playsinline>
-            <source src="/images/characters/character-
-wizard-context.mp4">
-          </video>
-        </div>
-        </div>
-      </div>
-  </section>
+  </div>
 
+</section>
 
-  <section class="section--split  section--slider-mobile the-player">
-    <div class="top-content">
-      <div class="slide slider--mobile mobile-player">
-        <div class="video-slide">
-          <video autoplay loop muted playsinline>
-            <source src="/images/characters/character-
-player-context.mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-    <div class="bottom-content">
-      <div class="video-slide">
-        <video autoplay loop muted playsinline>
-          <source src="/images/characters/character-player.mp4">
-        </video>
-      </div>
-    </div>
-  </section>
+<section class="section--grey section--image-blocks">
 
-  <section class="section--split the-runner">
-    <div class="top-content">
-      <div class="video-slide">
-        <video autoplay loop muted playsinline>
-          <source src="/images/characters/character-runner.mp4">
-        </video>
+  <div class="image-block image-block--left">
+
+  </div>
+  <div class="image-block image-block--right">
+
+  </div>
+
+</section>
+
+<section class="section--grey section--image-blocks">
+
+  <div class="image-block image-block--left">
+
+  </div>
+  <div class="image-block image-block--right">
+
+  </div>
+
+</section>
+
+<section class="section--grey section--image-blocks">
+
+  <div class="image-block image-block--left">
+
+  </div>
+  <div class="image-block image-block--right">
+
+  </div>
+
+</section>
+
+<section class="section--grey section--image-full">
+
+  <div class="image-full">
+    <div class="grid">
+      <div class="grid-cell grid12">
+        <p>Caption goes here.</p>
       </div>
     </div>
-    <div class="bottom-content">
-      <div class="slide slider--mobile mobile-runner">
-        <div class="video-slide">
-          <video autoplay loop muted playsinline>
-            <source src="/images/characters/character-
-runner-context.mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="process section--split">
-    <div class="top-content">
-      <img src="/images/process-characters.jpg" alt="">
-    </div>
-    <div class="bottom-content">
-      <h2>Process</h2>
-      <p>
-        <svg viewBox="0 0 300 300" preserveAspectRatio="xMidYMid meet">
-          <use x="0" y="0" xlink:href="#design"></use>
-        </svg>Characters were created and storyboards developed in consultation with the brand team, either sketched on paper or sourced from Shutterstock.</p>
-      <p>
-        <svg viewBox="0 0 300 300" preserveAspectRatio="xMidYMid meet">
-          <use x="0" y="0" xlink:href="#code"></use>
-        </svg>I converted the images to SVGs in Illustrator, then used the Greensock platform to animate them.</p>
-
-        <p>
-          <svg viewBox="0 0 300 300" preserveAspectRatio="xMidYMid meet">
-            <use x="0" y="0" xlink:href="#design"></use>
-          </svg>Animations were captured as video, or converted to GIFs, or PNG sequences for interactive animation.</p>
-        <p>
-    </div>
-
-  </section>
-
-
+   </div>
+</section>
 
   <% include ../partials/footer.html.ejs %>

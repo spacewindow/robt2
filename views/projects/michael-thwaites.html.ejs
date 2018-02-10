@@ -1,101 +1,121 @@
 <% include ../partials/header.html.ejs %>
 
 <section class="section--grey section--intro">
-    <div class="top-content" style="color: <%= pageData.current.color %>">
-        <p>Michael Thwaites, my grandfather, was a distinguished Australia poet. He won the Kings Gold Medal for poetry, wrote the Bicentennial hymn for the opening of New Parliament House, and other notable achievements.</p>
-        <p>The foundation that manages his estate contracted me to provide an appropriate web presence for his work. The project was a deeply personal one for me, giving me the chance to explore the imagery of my grandfather's work in a contemporary style, without losing its link to the life of the author.</p>
+  <div class="grid">
+    <div class="grid-cell grid6 intro-text" style="padding-right: 2rem">
+      <h2>Description.</h2>
     </div>
-
-    <div class="bottom-content credits">
-      <h3>Client</h3>
-      <p><%= pageData.current.client %></p>
+    <div class="grid-cell grid6 credits">
       <h3>My Role</h3>
-      <p>Design, Coding, CMS</p>
+      <p>Role</p>
+      <p>Role</p>
     </div>
-  </section>
+  </div>
 
-  <section class="section--text-left section--slider-desktop section--dark">
-      <div class="top-content">
-        <h2>Words and Imagery</h2>
+</section>
+
+<section class="display display--slider display--desktop">
+
+  <div class="grid no-gutter grid--column-grid">
+
+    <div class="grid-cell grid4 top-content">
+
+      <h2 style="width:100%">Features</h2>
+
+    </div>
+
+    <div class="grid-cell grid4 bottom-content">
+
+      <div class="display__captions">
+        <div class="caption caption1">
+          <p>Caption goes here</p>
+        </div>
+        <div class="caption caption2">
+          <p>Caption goes here</p>
+        </div>
+        <div class="caption caption3">
+          <p>Caption goes here</p>
+        </div>
+        <div class="caption caption4">
+          <p>Caption goes here</p>
+        </div>
       </div>
-      <div class="slide slider--desktop" id="slider-poetry" >
-        <!-- image and content -->
-        <div class="video-slide">
-          <video autoplay loop muted playsinline>
-            <source src="/images/thwaites/thwaites-nav.mp4">
-            <!-- <source src="image.webm" onerror="fallback(parentNode)"> -->
-            <!-- <img src="image.gif"> -->
-          </video>
+
+    </div>
+
+    <div class="grid-cell grid8 grid-cell--display">
+
+      <div class="display__screen__wrapper">
+        <div class="display__screen">
+
+          <div class="video-slide video1">
+            <video autoplay loop muted playsinline>
+                  <source src="/images/campaign-analytics/v2-list-breakdown.mp4">
+                </video>
+          </div>
+
+          <div class="video-slide video2">
+            <video autoplay loop muted playsinline>
+                  <source src="/images/campaign-analytics/2-charts.mp4">
+                </video>
+          </div>
+          <div class="video-slide video3">
+            <video autoplay loop muted playsinline>
+                  <source src="/images/campaign-analytics/3-notes.mp4">
+                </video>
+          </div>
+
+          <div class="video-slide video4">
+            <video autoplay loop muted playsinline>
+                  <source src="/images/campaign-analytics/4-split.mp4">
+                </video>
+          </div>
+
         </div>
 
-        <div class="video-slide">
-          <video autoplay loop muted playsinline>
-            <source src="/images/thwaites/thwaites-poem.mp4">
-            <!-- <source src="image.webm" onerror="fallback(parentNode)"> -->
-            <!-- <img src="image.gif"> -->
-          </video>
-        </div>
-
       </div>
-      <div class="bottom-content">
-        <div class="slider__captions">
-            <div class="caption current"><p>Family albums were raided to create an iconic image for each poem. Some poem pages included and audio recording, indicated by an icon in the navigation.</p></div>
-            <div class="caption"><p>Each poem was carefully and clearly typeset so that the visual elements of the site would not interfere with the power of the words.</p></div>
-        </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<section class="section--grey section--image-full">
+
+  <div class="image-full">
+    <div class="grid">
+      <div class="grid-cell grid12">
+        <p>Caption goes here.</p>
       </div>
-  </section>
-
-
-  <section class="section--text-right">
-    <div class="top-content">
-      <h2>Audio and Media</h2>
-      <p>Audio recordings from a live <em>Concert of Poetry and Music</em> were available to be listened to on the site, or downloadable from iTunes as a podcast.</p>
-      <p>Press clippings of interviews with the poet could be clicked and viewed.</p>
-      <p>The author's publications were also for sale on the website.</p>
     </div>
-    <div class="slide">
-      <img src="/images/thwaites/thwaites-ipad.jpg" alt="" style="border:0">
+   </div>
+</section>
+
+<section class="section--intro section--details">
+  <div class="grid">
+    <div class="grid-cell grid6 intro-text" style="padding-right: 2rem">
+      <img src="http://placehold.it/900x600" alt="">
     </div>
-    <div class="bottom-content"></div>
-
-  </section>
-
-  <section class="section--text-left section--palegrey">
-      <div class="top-content">
-        <h2>Social Features</h2>
-        <p>Social sharing was a key goal of the project.</p>
-        <p>Facebook, Twitter and Pinterest APIs were incorporated into the site.</p>
-      </div>
-      <div class="slide">
-        <img src="/images/thwaites/thwaites-share.png" alt="">
-      </div>
-    <div class="bottom-content"></div>
-
-  </section>
-
-
-  <section class="process section--split">
-    <div class="top-content">
-      <img src="/images/thwaites/interface.jpg" alt="">
+    <div class="grid-cell grid6 credits">
+      <img src="http://placehold.it/900x600" alt="">
     </div>
-    <div class="bottom-content">
-      <h2>Process</h2>
-      <p>
-        <svg viewBox="0 0 300 300" preserveAspectRatio="xMidYMid meet">
-          <use x="0" y="0" xlink:href="#research"></use>
-        </svg>I dived deep into family photo albums and archived materials to source the text and imagery for the site.</p>
+  </div>
 
-      <p>
-        <svg viewBox="0 0 300 300" preserveAspectRatio="xMidYMid meet">
-          <use x="0" y="0" xlink:href="#design"></use>
-        </svg>I mocked up each page of the site with Photoshop, using a series of photo manipulation techniques for the accompanying imagery for each poem.</p>
+</section>
 
-      <p>
-        <svg viewBox="0 0 300 300" preserveAspectRatio="xMidYMid meet">
-          <use x="0" y="0" xlink:href="#code"></use>
-        </svg>I created a Wordpress theme for the site with a custom admin interface, so that family members could update content easily and contribute.</p>
-    </div>
-  </section>
+<section class="section--grey section--image-blocks">
+
+  <div class="image-block image-block--left">
+
+  </div>
+  <div class="image-block image-block--right">
+
+  </div>
+
+</section>
+
 
   <!-- <script src="/js/birds_loop.js"></script> -->
 
