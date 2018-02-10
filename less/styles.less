@@ -1720,9 +1720,11 @@ li{
 
 .section--scroll{
 	flex-direction: row;
-	align-items:flex-start;
+	align-items:stretch;
 	.image-block{
 		position:relative;
+		height: auto;
+		// haveing height: 100% here made the element collapse to auto WTFFFFFF Flexbox!!
 		img{
 
 		}
@@ -1794,8 +1796,8 @@ li{
 
 .mod-blocks,
 #email-main img.sizer{
-		width:80%;
-		left:10%;
+		width:76%;
+		left:12%;
 	.media-phone-portrait({
 		width: 100%;
 		left: 0%;
@@ -1805,8 +1807,8 @@ li{
 #email-dynamic{
 		background-color: @palegrey;
 	img{
-		width: 80%;
-		left: 10%;
+		width: 76%;
+		left: 12%;
 		.media-phone-portrait({
 			width: 95%;
 			left: 2.5%;

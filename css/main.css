@@ -3387,10 +3387,11 @@ li {
 }
 .section--scroll {
   flex-direction: row;
-  align-items: flex-start;
+  align-items: stretch;
 }
 .section--scroll .image-block {
   position: relative;
+  height: auto;
 }
 .section--scroll img.anim {
   position: absolute;
@@ -3456,8 +3457,8 @@ li {
 }
 .mod-blocks,
 #email-main img.sizer {
-  width: 80%;
-  left: 10%;
+  width: 76%;
+  left: 12%;
 }
 @media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
   .mod-blocks,
@@ -3470,8 +3471,8 @@ li {
   background-color: #fafafa;
 }
 #email-dynamic img {
-  width: 80%;
-  left: 10%;
+  width: 76%;
+  left: 12%;
 }
 @media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
   #email-dynamic img {
