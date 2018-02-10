@@ -254,6 +254,10 @@ function deviceType(){
   }
 }
 
+function remToPx(rem) {
+    return rem * parseFloat(getComputedStyle(document.documentElement).fontSize);
+}
+
 // function scrollDirection() {
 //   console.log(window.scrollY);
 //   if (window.scrollY > lastScroll) {
@@ -307,9 +311,30 @@ $(window).on('load', function() {
 
 
 
-  if ($('body').hasClass('e-newsletters') && device === 'desktop' ) {
+  if ($('body').hasClass('e-newsletters')) {
 
-    $('#email-main .sticky-element, #email-dynamic .sticky-element').stick_in_parent();
+    $(window).on('scroll', function() {
+
+      // modular blocks animation
+      var cgu_mod_progress = progress('#email-main', 0);
+      cgu_mod_TL.progress(cgu_mod_progress);
+
+      // if(cgu_mod_TL === 0)
+
+      // mobile mail animation
+      var cgu_mail_progress = progress('#email-mobile', 100);
+      $('#mobile-edm').css('transform', 'translateY(-' + 32 * cgu_mail_progress + '%)');
+
+    });
+
+
+
+    if(device === 'desktop'){
+
+      $('#email-main .sticky-element, #email-dynamic .sticky-element').stick_in_parent({offset_top: remToPx(2)});
+    }
+
+
 
     // Fixed behaviour
 
@@ -325,19 +350,7 @@ $(window).on('load', function() {
     //
     // }
 
-    $(window).on('scroll', function() {
 
-      // modular blocks animation
-      var cgu_mod_progress = progress('#email-main', 0);
-      cgu_mod_TL.progress(cgu_mod_progress);
-
-      // if(cgu_mod_TL === 0)
-
-      // mobile mail animation
-      // var cgu_mail_progress = progress('#email-mobile', 400);
-      // $('#cgu-mobile-edm').css('transform', 'translateY(-' + 32 * cgu_mail_progress + '%)');
-
-    });
 
   }
 

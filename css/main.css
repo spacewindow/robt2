@@ -1626,7 +1626,7 @@ body {
 }
 @media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
   .footer-links a {
-    width: 50%;
+    width: 45%;
   }
 }
 .footer-links__thumb {
@@ -1973,7 +1973,7 @@ footer p {
 }
 @media (max-width: 899px) {
   footer {
-    background-size: auto 120%,
+    background-size: auto 110%,
 			auto,
 			auto 12rem;
     background-position: left -0.5rem bottom -1rem, 0 0, 0 0;
@@ -2076,6 +2076,9 @@ img {
     margin-bottom: 2rem;
   }
 }
+.display__screen {
+  overflow: hidden;
+}
 .display--desktop .display__screen.rsFullscreen {
   border: 0;
   border-radius: 0;
@@ -2145,6 +2148,8 @@ element.style {
 .project__header {
   color: white;
   height: 25rem;
+  background-size: auto 100%;
+  background-position: center right 10%;
 }
 .project__header:before {
   content: '';
@@ -2157,6 +2162,7 @@ element.style {
 @media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
   .project__header {
     height: 18rem;
+    background-position: center center;
   }
 }
 .project__header .grid {
@@ -2171,7 +2177,7 @@ element.style {
 }
 @media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
   .project__header__title h1 {
-    font-size: 1.9912rem;
+    font-size: 1.6592rem;
     line-height: 3rem;
     margin-bottom: 0.5rem;
   }
@@ -2254,13 +2260,15 @@ img {
 @media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
   .section--intro {
     padding: 1rem 0;
+    flex-direction: column;
   }
 }
 .section--intro h2 {
-  font-weight: 400;
   font-size: 1.0664rem;
   line-height: 2rem;
+  font-weight: 400;
   max-width: 20em;
+  line-height: 1.6 !important;
 }
 @media (min-width: 1200px) {
   .section--intro h2 {
@@ -2287,8 +2295,8 @@ img {
   }
 }
 @media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
-  .section--intro {
-    flex-direction: column;
+  .section--intro h2 {
+    line-height: 1.8 !important;
   }
 }
 @media (min-width: 900px) {
@@ -3332,6 +3340,11 @@ li {
   top: 15%;
   left: 11.5%;
 }
+@media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
+  .display--mobile .image-full .display__screen__wrapper {
+    width: 8rem;
+  }
+}
 .section--image-blocks {
   height: 25rem;
   flex-direction: row;
@@ -3347,6 +3360,25 @@ li {
     flex-direction: column;
     height: 30rem;
   }
+}
+.image-full__caption {
+  position: absolute;
+  width: 40%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+@media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
+  .image-full__caption {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+}
+.image-full__caption h4,
+.image-full__caption p {
+  color: #ffffff;
+  text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
 }
 .image-block {
   height: 100%;
@@ -3366,7 +3398,7 @@ li {
   padding-top: 1rem;
 }
 .section--image-full {
-  height: 25rem;
+  height: 30rem;
   padding: 0;
 }
 @media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
@@ -3378,11 +3410,11 @@ li {
   width: 100%;
   height: 100%;
   background-position: center center;
-  background-size: auto 100%;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 .image-full .grid-cell {
-  height: auto;
+  height: 100%;
   padding-top: 1rem;
 }
 .section--scroll {
@@ -3457,8 +3489,8 @@ li {
 }
 .mod-blocks,
 #email-main img.sizer {
-  width: 76%;
-  left: 12%;
+  width: 70%;
+  left: 5%;
 }
 @media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
   .mod-blocks,
@@ -3471,13 +3503,16 @@ li {
   background-color: #fafafa;
 }
 #email-dynamic img {
-  width: 76%;
-  left: 12%;
+  width: 70%;
+  left: 5%;
 }
 @media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
   #email-dynamic img {
     width: 95%;
     left: 2.5%;
   }
+}
+.is_stuck {
+  top: 3rem !important;
 }
 /*# sourceMappingURL=../source.map */
