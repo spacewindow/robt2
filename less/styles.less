@@ -1638,9 +1638,20 @@ li{
 .display--desktop .display__screen{
 	position: absolute;
 	width: 94%;
-	height: 58.75%;
-	top: 11%;
+	height: auto;
+	top: 12%;
 	left: 3%;
+	&:before{
+	    content:'';
+			pointer-events:none;
+	    // z-index:-1;
+	    position:relative;
+	    display:block;
+	    width:62.5%;
+	    height:auto;
+	    padding-top: 100%;
+			// background:red;
+	  }
 }
 
 .display--mobile .display__screen__wrapper{
