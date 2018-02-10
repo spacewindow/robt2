@@ -212,6 +212,16 @@ body{
 	z-index:100;
 	transition: transform 0.5s 0.1s cubic-bezier(.02,.8,.24,.99);
 	overflow:visible;
+	&:before{
+		.pseudofill;
+		height: 300%;
+		pointer-events: none;
+		opacity:0;
+		.init & {
+			opacity:1;
+		}
+	}
+
 	.grid-cell{
 		overflow:visible;
 	}

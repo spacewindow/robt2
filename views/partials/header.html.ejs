@@ -77,9 +77,14 @@
       <% var gradient2 = tinycolor(pageData.current.color).setAlpha(0).toRgbString(); %>
       <% var gradient1 = tinycolor(pageData.current.color).setAlpha(0.9).toRgbString(); %>
 
+      .app__header:before{
+        background-image:
+        linear-gradient(to bottom, <%= gradient1 %> 10%, <%= gradient2 %> 100%);
+      }
+
       .project__header:before{
         background-image:
-        linear-gradient(30deg, <%= gradient1 %> 10%, <%= gradient2 %> 100%);
+        linear-gradient(30deg, <%= gradient1 %> 10%, <%= gradient2 %> 70%);
       }
 
       .process{

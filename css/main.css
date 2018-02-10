@@ -1554,6 +1554,21 @@ body {
   transition: transform 0.5s 0.1s cubic-bezier(0.02, 0.8, 0.24, 0.99);
   overflow: visible;
 }
+.app__header:before {
+  content: '';
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 300%;
+  pointer-events: none;
+  opacity: 0;
+}
+.init .app__header:before {
+  opacity: 1;
+}
 .app__header .grid-cell {
   overflow: visible;
 }
