@@ -3651,4 +3651,11 @@ li {
 .mobile-store-locator .display--video {
   background-image: linear-gradient(to right, #F8C680, #f6cd7e);
 }
+.wattyl-100-years .display--mobile {
+  background-image: linear-gradient(to right, #536694, #2A355B);
+}
+.wattyl-100-years .display--mobile .caption {
+  color: #ffffff;
+  text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+}
 /*# sourceMappingURL=../source.map */

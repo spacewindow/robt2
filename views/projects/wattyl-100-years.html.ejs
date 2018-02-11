@@ -1,52 +1,49 @@
 <% include ../partials/header.html.ejs %>
 
 <section class="section--grey section--intro">
-    <div class="top-content" style="color: <%= pageData.current.color %>">
-        <p>Wattyl required a microsite that leveraged the 100-year anniversary of the company re-engage customers with their brand.</p>
-        <p>They wanted to connect with their audience on social media (a first for Wattyl) and leverage their history as an innovative Australian brand.</p>
-        <p>Wattyl was also running a promotional competition, so these two messages needed to work together.</p>
+  <div class="grid">
+    <div class="grid-cell grid6 intro-text" style="padding-right: 2rem">
+      <h2>A social-oriented microsite leveraging the 100 year anniversary of this iconic brand to re-engage with their customers.</h2>
     </div>
-
-    <div class="bottom-content credits">
-      <h3>Client</h3>
-      <p><%= pageData.current.client %></p>
+    <div class="grid-cell grid6 credits">
       <h3>My Role</h3>
       <p>Web Development</p>
+      <p>Graphic Design</p>
       <h3>Contributors</h3>
       <p>Mary Cuy, Graphic Design</p>
     </div>
-  </section>
+  </div>
 
-  <section class="display display--chapter display--desktop">
+</section>
 
-    <div class="grid no-gutter grid--column-grid">
+<section class="display display--chapter display--desktop">
 
-      <div class="grid-cell grid4 top-content">
+  <div class="grid no-gutter grid--column-grid">
 
-        <h2 style="width:100%">Features</h2>
+    <div class="grid-cell grid4 top-content">
+
+      <h4>Features</h4>
+
+    </div>
+
+    <div class="grid-cell grid4 bottom-content">
+
+      <div class="display__captions">
 
       </div>
 
-      <div class="grid-cell grid4 bottom-content">
+    </div>
 
-        <div class="display__captions">
+    <div class="grid-cell grid8 grid-cell--display">
 
-        </div>
+      <div class="display__screen__wrapper">
+        <div class="display__screen">
 
-      </div>
-
-      <div class="grid-cell grid8 grid-cell--display">
-
-        <div class="display__screen__wrapper">
-          <div class="display__screen">
-
-            <div class="video-slide">
-              <video autoplay loop muted playsinline >
-                    <source src="/images/wattyl/wattyl-mobile.mp4">
-                      <track kind="chapters" label="Locations" src="/images/wattyl/wattyl-mobile-chapters.vtt" srclang="en" default type="text/vtt" >
-                  </video>
-            </div>
-
+          <div class="video-slide">
+            <video autoplay loop muted playsinline >
+                  <source src="/images/wattyl-100-years/wattyl-desktop.mp4">
+                    <track kind="chapters" label="Locations" src="/images/songs-for-the-fallen/songs-chapters.vtt" srclang="en" default type="text/vtt" >
+                </video>
           </div>
 
         </div>
@@ -55,18 +52,14 @@
 
     </div>
 
-  </section>
+  </div>
+
+</section>
 
   <section class="display display--chapter display--mobile">
 
     <div class="grid no-gutter grid--column-grid">
 
-      <div class="grid-cell grid4 top-content">
-
-        <h2 style="width:100%">Features</h2>
-
-      </div>
-
       <div class="grid-cell grid4 bottom-content">
 
         <div class="display__captions">
@@ -82,8 +75,8 @@
 
             <div class="video-slide">
               <video autoplay loop muted playsinline >
-                    <source src="/images/songs/songs-demo.mp4">
-                      <track kind="chapters" label="Locations" src="/images/songs/songs-chapters.vtt" srclang="en" default type="text/vtt" >
+                    <source src="/images/wattyl-100-years/wattyl-mobile.mp4">
+                      <track kind="chapters" label="Locations" src="/images/wattyl-100-years/wattyl-mobile-chapters.vtt" srclang="en" default type="text/vtt" >
                   </video>
             </div>
 
@@ -96,6 +89,7 @@
     </div>
 
   </section>
+
 
   <section class="section--grey section--image-blocks">
     <div class="image-block image-block--left">

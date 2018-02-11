@@ -1,13 +1,13 @@
 WEBVTT
 
 0
-00:00:00.011 --> 00:00:02.000
-Chapter 1.
+00:00:00.000 --> 00:00:13.000
+Each component displays perfectly on mobile devices.
 
 1
-00:00:03.022 --> 00:00:04.000
-Chapter 2.
+00:00:14.000 --> 00:00:23.000
+The competition for best DIY Tip is introduced through a gallery.
 
 2
-00:00:05.033 --> 00:00:06.000
-Chapter 3.
+00:00:27.832 --> 00:00:44.000
+Entry form contains javascript validation and integration with Marketo lead capturing API.
