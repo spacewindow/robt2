@@ -986,7 +986,7 @@ p,
 li {
   font-size: 0.8rem;
   line-height: 1rem;
-  line-height: 1.7;
+  line-height: 1.5rem;
 }
 @media (min-width: 1200px) {
   p,
@@ -1523,7 +1523,7 @@ body {
 .app__menu__links {
   display: flex;
   align-items: center;
-  font-size: 0.6rem;
+  font-size: 0.8rem;
   line-height: 1rem;
   text-transform: uppercase;
   margin-right: 1rem;
@@ -1531,25 +1531,25 @@ body {
 }
 @media (min-width: 1200px) {
   .app__menu__links {
-    font-size: 0.6rem;
+    font-size: 0.8rem;
     line-height: 1rem;
   }
 }
 @media (max-width: 899px) {
   .app__menu__links {
-    font-size: 0.6664rem;
+    font-size: 0.8rem;
     line-height: 1rem;
   }
 }
 @media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
   .app__menu__links {
-    font-size: 0.45rem;
+    font-size: 0.6rem;
     line-height: 1rem;
   }
 }
 @media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
   .app__menu__links {
-    font-size: 0.45rem;
+    font-size: 0.6rem;
     line-height: 1rem;
   }
 }
@@ -1568,7 +1568,7 @@ body {
   color: #222222 !important;
 }
 .init .app__menu__links {
-  transform: translateY(25%);
+  transform: translateY(50%);
 }
 .init .app__menu__links a {
   color: #ffffff;
@@ -2496,7 +2496,7 @@ img {
 }
 .display__captions {
   position: relative;
-  height: 10rem;
+  height: 14rem;
 }
 @media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
   .display__captions {
@@ -2567,7 +2567,7 @@ img {
   transition: all 0.3s ease-in 0.3s;
   transform: translateX(0%);
   position: absolute;
-  bottom: 2rem;
+  top: 0rem;
   margin: 0.5rem 0;
 }
 @media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
@@ -3310,34 +3310,20 @@ li {
 .display--desktop .display__screen__wrapper {
   display: block;
   position: relative;
+  width: 32rem;
   height: auto;
   max-width: 100%;
   max-height: 100%;
 }
 @media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
-  .display--desktop .display__screen__wrapper {
-    width: 100%;
-  }
 }
 @media (max-width: 899px) {
-  .display--desktop .display__screen__wrapper {
-    width: 100%;
-  }
 }
 @media (min-width: 900px) {
-  .display--desktop .display__screen__wrapper {
-    width: 80%;
-  }
 }
 @media (min-width: 1200px) {
-  .display--desktop .display__screen__wrapper {
-    width: 75%;
-  }
 }
 @media (min-width: 1500px) {
-  .display--desktop .display__screen__wrapper {
-    width: 70%;
-  }
 }
 .display--desktop .display__screen__wrapper:before {
   content: '';
@@ -3440,10 +3426,15 @@ li {
   color: #ffffff;
   text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
 }
+.image-full__caption p,
+.image-block__caption p {
+  line-height: 1.5rem !important;
+}
 .image-full__caption a,
 .image-block__caption a {
   display: flex;
   align-items: center;
+  text-decoration: none;
   color: white;
 }
 .image-full__caption a svg,
@@ -3497,7 +3488,10 @@ li {
 }
 .image-full .grid-cell {
   height: 100%;
-  padding-top: 1rem;
+  padding-top: 3rem;
+}
+.image-full .grid-cell h4 {
+  margin-top: 0;
 }
 .section--scroll {
   flex-direction: row;
@@ -3634,7 +3628,7 @@ li {
   width: 100%;
   padding-top: 75%;
   z-index: 3;
-  background-image: radial-gradient(rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.5) 100%);
+  background-image: radial-gradient(rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0.3) 100%);
   opacity: 0.1;
 }
 .section--details img {
@@ -3699,5 +3693,32 @@ li {
 }
 .section--vids {
   padding: 0;
+}
+.section--vids .main-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
+  .section--vids .main-slide {
+    position: relative;
+    height: 20rem;
+  }
+}
+.section--vids .main-slide video {
+  transform: scale(0.7);
+}
+@media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
+  .section--vids .main-slide video {
+    transform: scale(0.9);
+  }
+}
+.player .image-block--right {
+  order: -1;
+}
+@media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
+  .wizard {
+    height: auto !important;
+  }
 }
 /*# sourceMappingURL=../source.map */

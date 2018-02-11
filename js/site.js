@@ -180,7 +180,7 @@ function makeChapterVideo(target) {
         chapterNav.append(bullet);
 
 
-        var caption = $('<div class="caption">' + cues[i].text + '</div>');
+        var caption = $('<div class="caption"><p>' + cues[i].text + '</p></div>');
         captionsDiv.append(caption);
       }
 

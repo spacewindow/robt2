@@ -175,7 +175,7 @@ body{
 .app__menu__links{
 	display:flex;
 	align-items:center;
-	.fontSize(small);
+	.fontSize(0);
 	text-transform: uppercase;
 	margin-right: 1rem;
 	transition: all 0.3s ease-out;
@@ -193,7 +193,7 @@ body{
 		}
 	}
 	.init & {
-		transform: translateY(25%);
+		transform: translateY(50%);
 		a{
 			color: @white;
 		}
@@ -913,7 +913,7 @@ img{
 
 .display__captions{
 	position:relative;
-	height: 10rem;
+	height: 14rem;
 	.media-phone-portrait({
 		height: 8rem;
 	});
@@ -931,7 +931,7 @@ img{
 		transition: all 0.3s ease-in 0.3s;
 		transform: translateX(0%);
 		position: absolute;
-		bottom:2rem;
+		top:0rem;
     margin: 0.5rem 0;
 		.media-phone-portrait({
 			bottom:auto;
@@ -1577,21 +1577,22 @@ li{
 .display--desktop .display__screen__wrapper{
   display:block;
 	position:relative;
+	width: 32rem;
 	.media-phone-portrait({
-		width: 100%;
+		// width: 100%;
 	});
 	.media-small-device({
-		width:100%;
+		// width:100%;
 	});
 
 	.media-desktop({
-		width: 80%;
+		// width: 50rem;
 	});
 	.media-large({
-		width: 75%;
+		// width: 75%;
 	});
 	.media-xlarge({
-		width: 70%;
+		// width: 70%;
 	});
   height:auto;
   max-width:100%;
@@ -1704,9 +1705,13 @@ li{
 		color: @white;
 		text-shadow: 1px 1px 10px rgba(0,0,0,0.3);
 	}
+	p{
+		line-height: 1.5rem !important;
+	}
 	a{
 		display:flex;
 		align-items: center;
+		text-decoration: none;
 		color: white;
 		svg{
 			fill: @white;
@@ -1759,7 +1764,10 @@ li{
 	.grid-cell{
 		// justify-content: flex-start;
 		height: 100%;
-		padding-top: 1rem;
+		padding-top: 3rem;
+		h4{
+			margin-top:0;
+		}
 	}
 	// top:0;
 	background-position: center center;
@@ -1908,7 +1916,7 @@ li{
 			width: 100%;
 			padding-top: 75%;
 			z-index:3;
-			background-image: radial-gradient(rgba(0,0,0,0) 60%, rgba(0,0,0,0.5) 100%);
+			background-image:radial-gradient(rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0.3) 100%);
 			opacity: 0.1;
 		}
 	}
@@ -1963,4 +1971,30 @@ li{
 
 .section--vids{
 	padding:0;
+	.main-slide{
+		display:flex;
+		justify-content: center;
+		align-items: center;
+		.media-phone-portrait({
+			position:relative;
+			height: 20rem;
+		});
+		video{
+			transform: scale(0.7);
+			.media-phone-portrait({
+				transform: scale(0.9);
+			});
+		}
+	}
+
+}
+
+.player .image-block--right{
+	order:-1;
+}
+
+.wizard {
+	.media-phone-portrait({
+		height: auto !important;
+	});
 }
