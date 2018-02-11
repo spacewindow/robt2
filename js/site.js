@@ -3,6 +3,8 @@
 
 $(window).on('load', function() {
   renderDisplays();
+
+
 });
 
 function renderDisplays() {
@@ -14,6 +16,11 @@ function renderDisplays() {
   if (sliders.length > 0) {
     makeSlider('.display--slider');
   };
+
+  $('.about-slider').royalSlider({
+    transitionType: 'fade',
+    arrowsNavAutoHide: false
+  });
 }
 
 

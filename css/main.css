@@ -3031,9 +3031,44 @@ img {
 .index .footer-links {
   display: none;
 }
+.index-title {
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+}
 @media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
   .index-title {
-    margin-bottom: 2rem;
+    margin-top: 0rem;
+    margin-bottom: 1rem;
+  }
+  .index-title h1 {
+    font-size: 1.8952rem;
+    line-height: 3rem;
+    line-height: 1.6 !important;
+    margin-bottom: 1rem;
+  }
+}
+@media (max-width: 550px) and (orientation: portrait) and (min-width: 1200px), (max-width: 480px) and (orientation: landscape) and (min-width: 1200px) {
+  .index-title h1 {
+    font-size: 1.8952rem;
+    line-height: 3rem;
+  }
+}
+@media (max-width: 550px) and (orientation: portrait) and (max-width: 899px), (max-width: 480px) and (orientation: landscape) and (max-width: 899px) {
+  .index-title h1 {
+    font-size: 1.3824rem;
+    line-height: 2rem;
+  }
+}
+@media (max-width: 550px) and (orientation: portrait) and (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) and (max-width: 550px) and (orientation: portrait), (max-width: 550px) and (orientation: portrait) and (max-width: 480px) and (orientation: landscape), (max-width: 480px) and (orientation: landscape) and (max-width: 480px) and (orientation: landscape) {
+  .index-title h1 {
+    font-size: 1.4214rem;
+    line-height: 3rem;
+  }
+}
+@media (max-width: 550px) and (orientation: portrait) and (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) and (max-width: 550px) and (orientation: portrait), (max-width: 550px) and (orientation: portrait) and (max-width: 480px) and (orientation: landscape), (max-width: 480px) and (orientation: landscape) and (max-width: 480px) and (orientation: landscape) {
+  .index-title h1 {
+    font-size: 1.4214rem;
+    line-height: 3rem;
   }
 }
 @media (min-width: 900px) {
@@ -3713,12 +3748,28 @@ li {
     transform: scale(0.9);
   }
 }
-.player .image-block--right {
-  order: -1;
+@media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
+  .player .image-block--right {
+    order: -1;
+  }
 }
 @media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
   .wizard {
     height: auto !important;
   }
+}
+.index p {
+  line-height: 1.3rem !important;
+}
+.about-slider {
+  width: 100%;
+  height: 30rem;
+  background: transparent !important;
+}
+.about-slider .rsOverflow,
+.about-slider .rsSlide,
+.about-slider .rsVideoFrameHolder,
+.about-slider .rsThumbs {
+  background: transparent !important;
 }
 /*# sourceMappingURL=../source.map */
