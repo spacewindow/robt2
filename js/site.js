@@ -19,7 +19,9 @@ function renderDisplays() {
 
   $('.about-slider').royalSlider({
     transitionType: 'fade',
-    arrowsNavAutoHide: false
+    arrowsNavAutoHide: false,
+    arrowsNav: true,
+    controlNavigation: 'thumbnails'
   });
 }
 

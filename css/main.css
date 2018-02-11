@@ -3762,14 +3762,90 @@ li {
   line-height: 1.3rem !important;
 }
 .about-slider {
-  width: 100%;
-  height: 30rem;
+  margin: 3rem 0 0;
+  width: 110%;
+  height: auto;
+  left: -65px;
   background: transparent !important;
+}
+.about-slider:before {
+  content: '';
+  pointer-events: none;
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+  padding-top: 90%;
+  background-size: cover;
+}
+@media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
+  .about-slider {
+    height: 14rem;
+    margin-top: 1rem;
+  }
 }
 .about-slider .rsOverflow,
 .about-slider .rsSlide,
 .about-slider .rsVideoFrameHolder,
 .about-slider .rsThumbs {
   background: transparent !important;
+}
+.about-slider .rsArrow {
+  opacity: 1;
+}
+.about-slider .rsArrowIcn {
+  top: 40%;
+}
+.about-slider .rsNav {
+  position: absolute;
+  top: 0;
+}
+.about-slider .rsOverflow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.about-slider .rsThumbsContainer {
+  transform: none !important;
+  width: 90% !important;
+  margin-left: 5%;
+}
+.about-slider .rsThumb {
+  width: 19%;
+}
+.about-slider .rsThumb div {
+  text-align: center;
+  font-family: 'Merriweather', Helvetica, Arial, sans-serif;
+  font-size: 0.8rem;
+  line-height: 1rem;
+}
+@media (min-width: 1200px) {
+  .about-slider .rsThumb div {
+    font-size: 0.8rem;
+    line-height: 1rem;
+  }
+}
+@media (max-width: 899px) {
+  .about-slider .rsThumb div {
+    font-size: 0.8rem;
+    line-height: 1rem;
+  }
+}
+@media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
+  .about-slider .rsThumb div {
+    font-size: 0.6rem;
+    line-height: 1rem;
+  }
+}
+@media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
+  .about-slider .rsThumb div {
+    font-size: 0.6rem;
+    line-height: 1rem;
+  }
+}
+.about-slider .rsThumb:not(.rsNavSelected) {
+  opacity: 0.4;
 }
 /*# sourceMappingURL=../source.map */

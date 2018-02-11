@@ -2017,10 +2017,62 @@ li{
 }
 
 .about-slider{
-	width:100%;
-	height:30rem;
+	margin: 3rem 0 0;
+	width:110%;
+	height: auto;
+	left: -65px;
+	&:before{
+	    content:'';
+			pointer-events:none;
+	    // z-index:-1;
+	    position:relative;
+	    display:block;
+	    width:100%;
+	    height:auto;
+	    padding-top: 90%;
+			background-size: cover;
+	  }
+	.media-phone-portrait({
+		height: 14rem;
+		margin-top: 1rem;
+	});
 	background: transparent !important;
  .rsOverflow, .rsSlide, .rsVideoFrameHolder, .rsThumbs{
 		background: transparent !important;
+	}
+	.rsArrow{
+		opacity:1;
+	}
+	.rsArrowIcn{
+		top: 40%;
+	}
+	.rsNav {
+  position: absolute;
+	  top: 0;
+	}
+	.rsOverflow {
+	   position: absolute;
+		 top:0;
+		 left:0;
+		 right:0;
+		 bottom:0;
+	}
+	.rsThumbsContainer {
+    transform: none !important;
+    width: 90% !important;
+		margin-left: 5%;
+	}
+
+	.rsThumb{
+		width: 19%;
+		div{
+			text-align: center;
+			font-family: @headingFamily;
+			.fontSize(0, all);
+			// .fontSize
+		}
+	}
+	.rsThumb:not(.rsNavSelected){
+		opacity:0.4;
 	}
 }
