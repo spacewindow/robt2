@@ -567,8 +567,11 @@ section{
 }
 
 .display{
-	height: 27rem;
+	height: 32rem;
 	padding:0;
+	.top-content{
+		margin-top: 2rem;
+	}
 	.media-desktop({
 
 		// justify-content: space-between;
@@ -588,27 +591,6 @@ section{
 }
 
 .display--desktop .display__screen{
-	// the magical element that creates aspect-ratio responsive screen sizing
-  // &:before{
-  //   content:'';
-  //   opacity:0;
-  //   z-index:-1;
-  //   position:relative;
-  //   display:block;
-  //   width:100%;
-  //   height:0;
-  //   padding-top: 62.5%; // aspect ratio for my weird-ass videos
-  // }
-  // position:relative;
-  // width: 90%;
-  // height:auto;
-  // box-sizing: content-box;
-  // // margin: 0 auto;
-  //
-  // border-radius: 0.5rem;
-	// .media-phone-portrait({
-  //   margin: 0 !important;
-  // });
 
   &.rsFullscreen{
     border: 0;
@@ -693,6 +675,7 @@ element.style {
   height: 25rem;
 	background-size: auto 100%;
 	background-position: center right 10%;
+	padding: 2.5rem 0;
 	&:before{
 		content:'';
 		position: absolute;
@@ -774,7 +757,7 @@ img{
 }
 
 .section--intro{
-	padding: 3rem 0;
+	padding: 4rem 0;
 	background: @lightgrey;
 	.media-phone-portrait({
 		padding: 1rem 0;
@@ -784,10 +767,6 @@ img{
 		.fontSize(1, all);
 		font-weight: 400;
 		max-width: 20em;
-		line-height: 1.6 !important;
-		.media-phone-portrait({
-			line-height: 1.8 !important;
-		});
 	}
 
 }
@@ -861,9 +840,9 @@ img{
 	});
   h3{
     color: @darkgrey;
-		.fontSize(0);
-		margin-top: 1.5rem;
-		font-weight: 600;
+		.fontSize(1);
+		margin: 1rem 0;
+		font-weight: 400;
 		// margin-bottom: 0rem;
   }
 	p{
@@ -934,7 +913,7 @@ img{
 
 .display__captions{
 	position:relative;
-	height: 8rem;
+	height: 10rem;
 	.media-phone-portrait({
 		height: 8rem;
 	});
@@ -943,11 +922,9 @@ img{
     margin:1rem 0;
   }
   p{
-    .fontSize(small);
+    .fontSize(0);
+		line-height: 1.5rem !important;
     margin-top:0;
-    overflow:hidden;
-    height: 4rem;
-    max-height: 4rem;
     transition: all 0.5s linear;
   }
   .caption{
@@ -1894,6 +1871,14 @@ li{
 }
 
 .section--details{
+	padding: 4rem 0;
+	background: @lightgrey;
+	&.first{
+		padding-top: 4rem 0 3rem;
+	}
+	&.last{
+		padding-bottom: 3rem 0 4rem;
+	}
 	.grid{
 		.grid-cell{
 			.media-phone-portrait({
@@ -1929,10 +1914,16 @@ li{
 	}
 	img{
   	display:block;
+		border: 2px solid @lightgrey;
 	}
 	p{
-		margin-top:1rem;
+		.fontSize(0, all);
+		// text-transform: uppercase;
 		color: @darkgrey;
+		margin-top:2rem;
+		padding-left: 0.5rem;
+		color: @darkgrey;
+		line-height: 1.5rem !important;
 	}
 }
 
