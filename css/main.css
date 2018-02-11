@@ -3427,7 +3427,8 @@ li {
     height: 26rem;
   }
 }
-.image-full__caption {
+.image-full__caption,
+.image-block__caption {
   position: absolute;
   width: 40%;
   height: 100%;
@@ -3435,29 +3436,38 @@ li {
   left: 0;
 }
 @media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
-  .image-full__caption {
+  .image-full__caption,
+  .image-block__caption {
     position: relative;
     width: 100%;
     height: auto;
   }
 }
 .image-full__caption h4,
-.image-full__caption p {
+.image-block__caption h4,
+.image-full__caption p,
+.image-block__caption p {
   color: #ffffff;
   text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
 }
-.image-full__caption a {
+.image-full__caption a,
+.image-block__caption a {
   display: flex;
   align-items: center;
   color: white;
 }
-.image-full__caption a svg {
+.image-full__caption a svg,
+.image-block__caption a svg {
   fill: #ffffff;
   width: 1.7em;
   height: 1.7em;
   margin-right: 0.2em;
 }
+.image-block__caption {
+  width: 60%;
+}
 .image-block {
+  position: relative;
   height: 100%;
   width: 50%;
   background-position: center center;
@@ -3657,5 +3667,8 @@ li {
 .wattyl-100-years .display--mobile .caption {
   color: #ffffff;
   text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+}
+.section--vids {
+  padding: 0;
 }
 /*# sourceMappingURL=../source.map */

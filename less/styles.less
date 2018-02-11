@@ -1712,7 +1712,7 @@ li{
 	}
 }
 
-.image-full__caption{
+.image-full__caption, .image-block__caption{
 	position: absolute;
 	width: 40%;
 	height: 100%;
@@ -1740,8 +1740,12 @@ li{
 	}
 }
 
+.image-block__caption{
+	width: 60%;
+}
+
 .image-block{
-	// position: absolute;
+	position: relative;
 	// width:50%;
 	height:100%;
 	width: 50%;
@@ -1964,4 +1968,8 @@ li{
 			text-shadow: 1px 1px 10px rgba(0,0,0,0.3);
 		}
 	}
+}
+
+.section--vids{
+	padding:0;
 }
