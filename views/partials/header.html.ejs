@@ -78,8 +78,8 @@
       <% var gradient1 = tinycolor(pageData.current.color).setAlpha(0.9).toRgbString(); %>
 
       .app__header:before{
-        background-image:
-        linear-gradient(to bottom, <%= gradient1 %> 10%, <%= gradient2 %> 100%);
+        /* background-image:
+        linear-gradient(to bottom, rgba(0,0,0,0.2) 10%, rgba(0,0,0,0) 100%); */
       }
       .index .app__header:before{
         display:none;
