@@ -255,7 +255,7 @@ h4, .size-1{
   font-family: @fontFamily;
   text-transform: uppercase;
   font-weight: 400;
-  margin: 0 0 0.5rem;
+  // margin: 0 0 0.5rem;
 }
 p{
   margin: 0.25rem 0 0.5rem;
@@ -276,24 +276,26 @@ p.xsmall{
 }
 
 
-p a:link,
-p a:hover,
-p a:visited,
-{
-	display: inline-block;
-  position: relative;
-  // justify-content: flex-start;
-  // align-items: center;
-	width: auto;
-	text-decoration: none;
-  color: lighten(@black, 30%);
-  &:after{
-    content:'';
-    .pseudofill;
-    bottom: -0.25rem;
-    border-bottom: 2px dotted @midgrey;
+.index-title{
+  p a:link,
+  p a:hover,
+  p a:visited,
+  {
+  	display: inline-block;
+    position: relative;
+    // justify-content: flex-start;
+    // align-items: center;
+  	width: auto;
+  	text-decoration: none;
+    color: lighten(@black, 30%);
+    &:after{
+      content:'';
+      .pseudofill;
+      bottom: -0.25rem;
+      border-bottom: 2px dotted @midgrey;
+    }
+
   }
-  // color: #ff9900;
 }
 
 a:link, a:visited{

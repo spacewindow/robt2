@@ -420,6 +420,11 @@ body.showgrid:before {
     font-size: 25px;
   }
 }
+@media (min-width: 1500px) {
+  html {
+    font-size: 30px;
+  }
+}
 @media (max-width: 899px) {
   html {
     font-size: 17px;
@@ -951,7 +956,6 @@ h4,
   font-family: 'Interstate', Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 400;
-  margin: 0 0 0.5rem;
 }
 @media (min-width: 1200px) {
   h4,
@@ -1102,18 +1106,18 @@ p.xsmall {
     line-height: 1rem;
   }
 }
-p a:link,
-p a:hover,
-p a:visited {
+.index-title p a:link,
+.index-title p a:hover,
+.index-title p a:visited {
   display: inline-block;
   position: relative;
   width: auto;
   text-decoration: none;
   color: #6f6f6f;
 }
-p a:link:after,
-p a:hover:after,
-p a:visited:after {
+.index-title p a:link:after,
+.index-title p a:hover:after,
+.index-title p a:visited:after {
   content: '';
   position: absolute;
   display: block;
@@ -2466,7 +2470,7 @@ img {
 }
 .display__captions {
   position: relative;
-  height: 10rem;
+  height: 8rem;
 }
 @media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
   .display__captions {
@@ -2476,7 +2480,7 @@ img {
 .display__captions h4 {
   font-size: 0.8rem;
   line-height: 1rem;
-  margin-bottom: 0.5em;
+  margin: 1rem 0;
 }
 @media (min-width: 1200px) {
   .display__captions h4 {
@@ -3271,6 +3275,9 @@ li {
     height: auto;
   }
 }
+.display--desktop .grid-cell--display {
+  justify-content: flex-end;
+}
 @media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
   .display--mobile .grid-cell--display {
     height: 22rem;
@@ -3300,7 +3307,7 @@ li {
 }
 @media (min-width: 1200px) {
   .display--desktop .display__screen__wrapper {
-    width: 86%;
+    width: 75%;
   }
 }
 @media (min-width: 1500px) {
@@ -3371,18 +3378,19 @@ li {
 }
 .section--image-blocks {
   height: 25rem;
-  flex-direction: row;
-  padding: 0;
+  flex-direction: row
+	padding: 0;
 }
-@media (min-width: 1200px) {
+@media (max-width: 899px) {
   .section--image-blocks {
-    height: 30rem;
+    flex-direction: column;
+    height: 19rem;
   }
 }
 @media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
   .section--image-blocks {
     flex-direction: column;
-    height: 30rem;
+    height: 26rem;
   }
 }
 .image-full__caption {
@@ -3404,6 +3412,17 @@ li {
   color: #ffffff;
   text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
 }
+.image-full__caption a {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+.image-full__caption a svg {
+  fill: #ffffff;
+  width: 1.7em;
+  height: 1.7em;
+  margin-right: 0.2em;
+}
 .image-block {
   height: 100%;
   width: 50%;
@@ -3420,6 +3439,11 @@ li {
 .image-block .grid-cell {
   height: auto;
   padding-top: 1rem;
+}
+@media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
+  .image-block {
+    background-size: 138% auto;
+  }
 }
 .section--image-full {
   height: 30rem;
@@ -3538,5 +3562,56 @@ li {
 }
 .is_stuck {
   top: 3rem !important;
+}
+@media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
+  .section--details .grid .grid-cell {
+    padding: 0;
+  }
+}
+.section--details .grid .grid-cell:first-of-type {
+  padding-right: 2rem;
+}
+.section--details .grid .grid-cell:last-of-type {
+  padding-left: 2rem;
+}
+.section--details .grid .grid-cell:last-of-type:before {
+  left: auto;
+  right: 0;
+}
+.section--details .vignette {
+  position: relative;
+}
+.section--details .vignette:before {
+  content: '';
+  position: absolute;
+  height: auto;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 75%;
+  z-index: 3;
+  background-image: radial-gradient(rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.5) 100%);
+  opacity: 0.1;
+}
+.section--details img {
+  display: block;
+}
+.section--details p {
+  margin-top: 1rem;
+  color: #333333;
+}
+.image-full.vignette {
+  position: relative;
+}
+.image-full.vignette:before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 3;
+  background-image: radial-gradient(rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.5) 100%);
+  opacity: 0.1;
 }
 /*# sourceMappingURL=../source.map */

@@ -934,13 +934,13 @@ img{
 
 .display__captions{
 	position:relative;
-	height: 10rem;
+	height: 8rem;
 	.media-phone-portrait({
 		height: 8rem;
 	});
   h4{
     .fontSize(0);
-    margin-bottom: 0.5em;
+    margin:1rem 0;
   }
   p{
     .fontSize(small);
@@ -1586,7 +1586,7 @@ li{
 }
 
 .display--desktop .grid-cell--display{
-	// justify-content: flex-end;
+	justify-content: flex-end;
 }
 
 .display--mobile .grid-cell--display{
@@ -1611,7 +1611,7 @@ li{
 		width: 80%;
 	});
 	.media-large({
-		width: 86%;
+		width: 75%;
 	});
 	.media-xlarge({
 		width: 70%;
@@ -1694,14 +1694,18 @@ li{
 
 .section--image-blocks{
 	height:25rem;
-	flex-direction: row;
+	flex-direction: row
 	padding: 0;
-	.media-large({
-		height: 30rem;
+	// .media-large({
+	// 	height: 30rem;
+	// });
+	.media-small-device({
+		flex-direction:column;
+		height: 19rem;
 	});
 	.media-phone-portrait({
 		flex-direction:column;
-		height: 30rem;
+		height: 26rem;
 	});
 	.grid{
 		// align-items: flex-end;
@@ -1722,6 +1726,17 @@ li{
 	h4, p{
 		color: @white;
 		text-shadow: 1px 1px 10px rgba(0,0,0,0.3);
+	}
+	a{
+		display:flex;
+		align-items: center;
+		color: white;
+		svg{
+			fill: @white;
+			width: 1.7em;
+			height: 1.7em;
+			margin-right: 0.2em;
+		}
 	}
 }
 
@@ -1744,6 +1759,9 @@ li{
 	background-position: center center;
 	background-size: cover;
 	background-repeat: no-repeat;
+	.media-phone-portrait({
+		background-size: 138% auto;
+	});
 }
 
 .section--image-full{
@@ -1869,4 +1887,62 @@ li{
 
 .is_stuck{
 	top: 3rem !important;
+}
+
+.section--details{
+	.grid{
+		.grid-cell{
+			.media-phone-portrait({
+				padding:0;
+			});
+		}
+		.grid-cell:first-of-type{
+			padding-right: 2rem;
+		}
+		.grid-cell:last-of-type{
+			padding-left: 2rem;
+			&:before{
+				left:auto;
+				right:0;
+			}
+		}
+	}
+	.vignette{
+		position: relative;
+	// margin-bottom: 0.5rem;
+		&:before{
+			content:'';
+			position: absolute;
+			height: auto;
+			top:0;
+			left:0;
+			width: 100%;
+			padding-top: 75%;
+			z-index:3;
+			background-image: radial-gradient(rgba(0,0,0,0) 60%, rgba(0,0,0,0.5) 100%);
+			opacity: 0.1;
+		}
+	}
+	img{
+  	display:block;
+	}
+	p{
+		margin-top:1rem;
+		color: @darkgrey;
+	}
+}
+
+.image-full.vignette{
+	position: relative;
+	&:before{
+		content:'';
+		position: absolute;
+		height: 100%;
+		top:0;
+		left:0;
+		width: 100%;
+		z-index:3;
+		background-image: radial-gradient(rgba(0,0,0,0) 60%, rgba(0,0,0,0.5) 100%);
+		opacity: 0.1;
+	}
 }
