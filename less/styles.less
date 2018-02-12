@@ -15,6 +15,7 @@ body{
 	}
 	.media-phone-portrait({
 		margin-top: 1rem;
+		// padding-top:0;
 	});
 }
 
@@ -2024,6 +2025,11 @@ li{
 	width:110%;
 	height: auto;
 	left: -65px;
+	.media-phone-portrait({
+		width:100%;
+		height: auto;
+		left: 0px;
+	});
 	&:before{
 	    content:'';
 			pointer-events:none;
@@ -2064,14 +2070,26 @@ li{
     transform: none !important;
     width: 90% !important;
 		margin-left: 5%;
+		.media-phone-portrait({
+			width:100% !important;
+			margin:0 !important;
+		});
 	}
 
 	.rsThumb{
 		width: 19%;
+		.media-phone-portrait({
+			width: 20%;
+			margin:0 !important;
+		});
 		div{
 			text-align: center;
 			font-family: @headingFamily;
 			.fontSize(0, all);
+			.media-phone-portrait({
+				font-size: 0.5rem;
+				margin:0;
+			});
 			// .fontSize
 		}
 	}

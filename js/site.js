@@ -21,7 +21,10 @@ function renderDisplays() {
     transitionType: 'fade',
     arrowsNavAutoHide: false,
     arrowsNav: true,
-    controlNavigation: 'thumbnails'
+    controlNavigation: 'thumbnails',
+    thumbs: {
+      arrows:false
+    }
   });
 }
 
