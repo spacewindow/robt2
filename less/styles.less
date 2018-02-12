@@ -768,6 +768,27 @@ img{
 		font-weight: 400;
 		max-width: 20em;
 	}
+	h3{
+    color: @darkgrey;
+		.fontSize(1);
+		margin: 1rem 0;
+		font-weight: 400;
+		// margin-bottom: 0rem;
+		.media-phone-portrait({
+			margin-bottom: 0;
+		});
+  }
+	p{
+		// .fontSize(small);
+		.media-phone-portrait({
+			display:inline-block;
+			width:auto;
+			margin-bottom: 0em !important;
+			&:not(:last-of-type):after{
+				content: ', ';
+			}
+		});
+	}
 
 }
 
@@ -838,24 +859,6 @@ img{
 		display:block;
 		padding-left: 0;
 	});
-  h3{
-    color: @darkgrey;
-		.fontSize(1);
-		margin: 1rem 0;
-		font-weight: 400;
-		// margin-bottom: 0rem;
-  }
-	p{
-		// .fontSize(small);
-		.media-phone-portrait({
-			display:inline-block;
-			width:auto;
-
-			&:not(:last-of-type):after{
-				content: ', ';
-			}
-		});
-	}
 }
 
 .divider{
@@ -2074,5 +2077,98 @@ li{
 	}
 	.rsThumb:not(.rsNavSelected){
 		opacity:0.4;
+	}
+}
+
+.mobile-store-locator{
+	.image-full__caption{
+		padding-top:3rem;
+		h4, p{
+			text-shadow: none;
+			color: @black;
+		}
+		.media-phone-portrait({
+			padding-top: 1rem;
+		});
+	}
+}
+
+.phone-wrap{
+	display:block;
+	position:relative;
+	width:12rem;
+	// transform: translateX(22%);
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	background-position: top left;
+	.media-phone-portrait({
+		width: 40%;
+		padding-bottom: 1rem;
+	});
+
+
+
+  height:auto;
+  &:before{
+	    content:'';
+			pointer-events:none;
+	    // z-index:-1;
+	    position:relative;
+	    display:block;
+	    width:100%;
+	    height:auto;
+	    padding-top: 196%;
+			// background: url(../images/screen-mobile.png);
+			background-size: cover;
+	  }
+}
+
+.phone-wrap1, .phone-wrap2{
+	background-image: url(../images/mobile-store-locator/sl-phone1.jpg);
+	&:after{
+		content: '►';
+		position: absolute;
+		height: 100%;
+		width: 1em;
+		color: @midgrey;
+		top:50%;
+		right:-30%;
+		.media-phone-portrait({
+			top:auto;
+			right:auto;
+			left:-55%;
+			bottom: -47%;
+			transform: rotate(90deg);
+		});
+	}
+}
+
+.phone-wrap2{
+	background-image: url(../images/mobile-store-locator/sl-phone2.jpg);
+}
+
+.phone-wrap3{
+	background-image: url(../images/mobile-store-locator/sl-phone3.jpg);
+}
+
+.text-wrap{
+	h4{
+		line-height: 1.4 !important;
+		margin-top: 1rem !important;
+	}
+	.media-phone-portrait({
+		width: 60%;
+
+	});
+}
+
+.section--steps{
+	margin-top: 2rem;
+	margin-bottom: 3rem;
+	.grid-cell{
+		.media-phone-portrait({
+			flex-direction: row;
+			margin: 0 0.5rem 0.5rem;
+		});
 	}
 }

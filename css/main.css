@@ -2344,6 +2344,52 @@ img {
     line-height: 2rem;
   }
 }
+.section--intro h3 {
+  color: #333333;
+  font-size: 1.0664rem;
+  line-height: 2rem;
+  margin: 1rem 0;
+  font-weight: 400;
+}
+@media (min-width: 1200px) {
+  .section--intro h3 {
+    font-size: 1.0664rem;
+    line-height: 2rem;
+  }
+}
+@media (max-width: 899px) {
+  .section--intro h3 {
+    font-size: 0.96rem;
+    line-height: 2rem;
+  }
+}
+@media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
+  .section--intro h3 {
+    font-size: 0.7998rem;
+    line-height: 2rem;
+  }
+}
+@media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
+  .section--intro h3 {
+    font-size: 0.7998rem;
+    line-height: 2rem;
+  }
+}
+@media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
+  .section--intro h3 {
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
+  .section--intro p {
+    display: inline-block;
+    width: auto;
+    margin-bottom: 0em !important;
+  }
+  .section--intro p:not(:last-of-type):after {
+    content: ', ';
+  }
+}
 @media (min-width: 900px) {
   .phone-royalSlider {
     justify-content: space-between;
@@ -2405,46 +2451,6 @@ img {
   .credits {
     display: block;
     padding-left: 0;
-  }
-}
-.credits h3 {
-  color: #333333;
-  font-size: 1.0664rem;
-  line-height: 2rem;
-  margin: 1rem 0;
-  font-weight: 400;
-}
-@media (min-width: 1200px) {
-  .credits h3 {
-    font-size: 1.0664rem;
-    line-height: 2rem;
-  }
-}
-@media (max-width: 899px) {
-  .credits h3 {
-    font-size: 0.96rem;
-    line-height: 2rem;
-  }
-}
-@media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
-  .credits h3 {
-    font-size: 0.7998rem;
-    line-height: 2rem;
-  }
-}
-@media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
-  .credits h3 {
-    font-size: 0.7998rem;
-    line-height: 2rem;
-  }
-}
-@media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
-  .credits p {
-    display: inline-block;
-    width: auto;
-  }
-  .credits p:not(:last-of-type):after {
-    content: ', ';
   }
 }
 .divider {
@@ -3847,5 +3853,92 @@ li {
 }
 .about-slider .rsThumb:not(.rsNavSelected) {
   opacity: 0.4;
+}
+.mobile-store-locator .image-full__caption {
+  padding-top: 3rem;
+}
+.mobile-store-locator .image-full__caption h4,
+.mobile-store-locator .image-full__caption p {
+  text-shadow: none;
+  color: #222222;
+}
+@media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
+  .mobile-store-locator .image-full__caption {
+    padding-top: 1rem;
+  }
+}
+.phone-wrap {
+  display: block;
+  position: relative;
+  width: 12rem;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: top left;
+  height: auto;
+}
+@media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
+  .phone-wrap {
+    width: 40%;
+    padding-bottom: 1rem;
+  }
+}
+.phone-wrap:before {
+  content: '';
+  pointer-events: none;
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+  padding-top: 196%;
+  background-size: cover;
+}
+.phone-wrap1,
+.phone-wrap2 {
+  background-image: url(../images/mobile-store-locator/sl-phone1.jpg);
+}
+.phone-wrap1:after,
+.phone-wrap2:after {
+  content: '►';
+  position: absolute;
+  height: 100%;
+  width: 1em;
+  color: #aaaaaa;
+  top: 50%;
+  right: -30%;
+}
+@media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
+  .phone-wrap1:after,
+  .phone-wrap2:after {
+    top: auto;
+    right: auto;
+    left: -55%;
+    bottom: -47%;
+    transform: rotate(90deg);
+  }
+}
+.phone-wrap2 {
+  background-image: url(../images/mobile-store-locator/sl-phone2.jpg);
+}
+.phone-wrap3 {
+  background-image: url(../images/mobile-store-locator/sl-phone3.jpg);
+}
+.text-wrap h4 {
+  line-height: 1.4 !important;
+  margin-top: 1rem !important;
+}
+@media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
+  .text-wrap {
+    width: 60%;
+  }
+}
+.section--steps {
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+@media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
+  .section--steps .grid-cell {
+    flex-direction: row;
+    margin: 0 0.5rem 0.5rem;
+  }
 }
 /*# sourceMappingURL=../source.map */
