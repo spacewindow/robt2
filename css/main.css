@@ -2214,6 +2214,7 @@ element.style {
   .project__header {
     height: 18rem;
     background-position: center center;
+    padding: 0;
   }
 }
 .project__header .grid {
@@ -2231,6 +2232,7 @@ element.style {
     font-size: 1.6592rem;
     line-height: 3rem;
     margin-bottom: 0.5rem;
+    line-height: 2.4rem !important;
   }
 }
 .project__header__title h3 {
@@ -2310,7 +2312,7 @@ img {
 }
 @media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
   .section--intro {
-    padding: 1rem 0;
+    padding: 1rem 0 2rem;
     flex-direction: column;
   }
 }
@@ -2342,6 +2344,11 @@ img {
   .section--intro h2 {
     font-size: 0.7998rem;
     line-height: 2rem;
+  }
+}
+@media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
+  .section--intro h2 {
+    line-height: 1.6rem !important;
   }
 }
 .section--intro h3 {
@@ -3441,49 +3448,8 @@ li {
 @media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
   .section--image-blocks {
     flex-direction: column;
-    height: 26rem;
+    height: 32rem;
   }
-}
-.image-full__caption,
-.image-block__caption {
-  position: absolute;
-  width: 40%;
-  height: 100%;
-  top: 0;
-  left: 0;
-}
-@media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
-  .image-full__caption,
-  .image-block__caption {
-    position: relative;
-    width: 100%;
-    height: auto;
-  }
-}
-.image-full__caption h4,
-.image-block__caption h4,
-.image-full__caption p,
-.image-block__caption p {
-  color: #ffffff;
-  text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
-}
-.image-full__caption p,
-.image-block__caption p {
-  line-height: 1.5rem !important;
-}
-.image-full__caption a,
-.image-block__caption a {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  color: white;
-}
-.image-full__caption a svg,
-.image-block__caption a svg {
-  fill: #ffffff;
-  width: 1.7em;
-  height: 1.7em;
-  margin-right: 0.2em;
 }
 .image-block__caption {
   width: 60%;
@@ -3637,10 +3603,18 @@ li {
   background: #efefef;
 }
 .section--details.first {
-  padding-top: 4rem 0 3rem;
+  padding: 4rem 0 3rem;
 }
 .section--details.last {
-  padding-bottom: 3rem 0 4rem;
+  padding: 3rem 0 4rem;
+}
+@media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
+  .section--details.first {
+    padding: 1.5rem 0 0;
+  }
+  .section--details.last {
+    padding: 0 0 1.5rem;
+  }
 }
 @media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
   .section--details .grid .grid-cell {
@@ -3650,6 +3624,11 @@ li {
 .section--details .grid .grid-cell:first-of-type {
   padding-right: 2rem;
 }
+@media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
+  .section--details .grid .grid-cell:first-of-type {
+    padding: 1rem 0;
+  }
+}
 .section--details .grid .grid-cell:last-of-type {
   padding-left: 2rem;
 }
@@ -3657,20 +3636,10 @@ li {
   left: auto;
   right: 0;
 }
-.section--details .vignette {
-  position: relative;
-}
-.section--details .vignette:before {
-  content: '';
-  position: absolute;
-  height: auto;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding-top: 75%;
-  z-index: 3;
-  background-image: radial-gradient(rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0.3) 100%);
-  opacity: 0.1;
+@media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
+  .section--details .grid .grid-cell:last-of-type {
+    padding: 1rem 0;
+  }
 }
 .section--details img {
   display: block;
@@ -3707,6 +3676,21 @@ li {
     font-size: 0.6rem;
     line-height: 1rem;
   }
+}
+.vignette {
+  position: relative;
+}
+.vignette:before {
+  content: '';
+  position: absolute;
+  height: auto;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 75%;
+  z-index: 3;
+  background-image: radial-gradient(rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0.3) 100%);
+  opacity: 0.1;
 }
 .image-full.vignette {
   position: relative;
@@ -3965,5 +3949,192 @@ li {
     flex-direction: row;
     margin: 0 0.5rem 0.5rem;
   }
+}
+@media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
+  .display--mobile .image-block--right {
+    height: 20rem;
+  }
+}
+@media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
+  .section--image-full {
+    height: 28rem;
+  }
+  .section--image-full .image-full {
+    background-size: auto 100%;
+    background-position: bottom center;
+  }
+}
+.caption-block {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 40%;
+  height: 100%;
+  padding: 2rem 0 0 3rem;
+}
+@media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
+  .caption-block {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+  }
+}
+.caption-block h4,
+.caption-block p {
+  color: #ffffff;
+  text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+}
+@media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
+  .caption-block h4 {
+    margin: 0rem;
+  }
+}
+.caption-block p {
+  line-height: 1.5rem !important;
+}
+.caption-block a {
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  color: white;
+  padding-left: 1.7em;
+}
+.caption-block a:after {
+  content: '';
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 2em;
+  bottom: 0;
+  right: 0;
+  bottom: -0.2em;
+  border-bottom: 2px dotted #fff;
+}
+.caption-block a svg {
+  position: absolute;
+  display: inline-block;
+  left: 0;
+  fill: #ffffff;
+  width: 1.7em;
+  height: 1.7em;
+  margin-right: 0.2em;
+}
+#campaign-ux {
+  height: 25rem;
+  background-image: url(../images/campaign-ux-FULL.jpg);
+}
+@media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
+  #campaign-ux {
+    height: 20rem;
+  }
+}
+@media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
+  #campaign-ux {
+    background-image: url(../images/campaign-ux-MOB.jpg);
+    background-size: 100% auto;
+    background-position: bottom center;
+  }
+}
+#songs-responsive {
+  height: 25rem;
+  background-image: url(../images/songs-responsive-FULL.jpg);
+}
+@media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
+  #songs-responsive {
+    height: 22rem;
+  }
+}
+@media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
+  #songs-responsive {
+    background-image: url(../images/songs-responsive-MOB.jpg);
+    background-size: 100% auto;
+    background-position: bottom center;
+  }
+}
+#store-locator-vid h4,
+#store-locator-vid p {
+  text-shadow: none;
+  color: #333333;
+}
+#wizard-context .grid-cell--display {
+  justify-content: center;
+}
+#wizard-context .display__screen__wrapper {
+  width: 23rem;
+}
+#email-mobile {
+  height: 25rem;
+  background-image: url(../images/email-mobile-FULL.jpg);
+}
+@media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
+  #email-mobile {
+    height: 22rem;
+  }
+}
+@media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
+  #email-mobile {
+    background-image: url(../images/email-mobile-MOB.jpg);
+    background-size: 100% auto;
+    background-position: bottom center;
+  }
+}
+#email-desktop {
+  height: 25rem;
+  background-size: 100% auto;
+  background-position: center center;
+  background-image: url(../images/email-desktop-FULL.jpg);
+}
+@media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
+  #email-desktop {
+    height: 15rem;
+  }
+}
+@media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
+  #email-desktop {
+    background-image: url(../images/email-desktop-MOB.jpg);
+    background-size: 100% auto;
+    background-position: bottom center;
+  }
+}
+#michael-thwaites-ipad {
+  height: 25rem;
+  background-image: url(../images/michael-thwaites-ipad-FULL.jpg);
+}
+#michael-thwaites-ipad h4,
+#michael-thwaites-ipad p {
+  text-shadow: none;
+  color: #333333;
+}
+@media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
+  #michael-thwaites-ipad {
+    height: 22rem;
+  }
+}
+@media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
+  #michael-thwaites-ipad {
+    background-image: url(../images/michael-thwaites-ipad-MOB.jpg);
+    background-size: 100% auto;
+    background-position: bottom center;
+  }
+}
+#michael-thwaites-imagery {
+  height: 25rem;
+  background-image: url(../images/michael-thwaites-imagery-FULL.jpg);
+}
+@media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
+  #michael-thwaites-imagery {
+    height: 22rem;
+  }
+}
+@media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
+  #michael-thwaites-imagery {
+    background-image: url(../images/michael-thwaites-imagery-MOB.jpg);
+    background-size: 100% auto;
+    background-position: bottom center;
+  }
+}
+.michael-thwaites .display--slider {
+  background: #fafafa;
 }
 /*# sourceMappingURL=../source.map */

@@ -70,7 +70,7 @@ const data = [
   // },
   {
     id: "michael-thwaites",
-    title: "Michael Thwaites: Australian Poet",
+    title: "Michael Thwaites: Australian&nbsp;Poet",
     type: "desktop / website / CMS",
     client: "Personal Project",
     description: "Showcasing the work of this award-winning poet with words, imagery and audio",

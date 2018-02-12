@@ -688,7 +688,7 @@ element.style {
 	.media-phone-portrait({
 		height: 18rem;
 		background-position: center center;
-		// padding: 2.5rem 0.5rem 0 0.5rem;
+		padding:  0;
 	});
 	.grid{
 		height:100%;
@@ -709,6 +709,7 @@ element.style {
 		.media-phone-portrait({
 			.fontSize(4, mobile);
 			margin-bottom: 0.5rem;
+			line-height: 2.4rem !important;
 		});
 	}
 	h3{
@@ -761,14 +762,18 @@ img{
 	padding: 4rem 0;
 	background: @lightgrey;
 	.media-phone-portrait({
-		padding: 1rem 0;
+		padding: 1rem 0 2rem;
 		flex-direction: column;
 	});
 	h2{
 		.fontSize(1, all);
 		font-weight: 400;
 		max-width: 20em;
+		.media-phone-portrait({
+			line-height: 1.6rem !important;
+		});
 	}
+
 	h3{
     color: @darkgrey;
 		.fontSize(1);
@@ -1695,44 +1700,14 @@ li{
 	});
 	.media-phone-portrait({
 		flex-direction:column;
-		height: 26rem;
+		height: 32rem;
 	});
 	.grid{
 		// align-items: flex-end;
 	}
 }
 
-.image-full__caption, .image-block__caption{
-	position: absolute;
-	width: 40%;
-	height: 100%;
-	top:0;
-	left:0;
-	.media-phone-portrait({
-		position: relative;
-		width:100%;
-		height:auto;
-	});
-	h4, p{
-		color: @white;
-		text-shadow: 1px 1px 10px rgba(0,0,0,0.3);
-	}
-	p{
-		line-height: 1.5rem !important;
-	}
-	a{
-		display:flex;
-		align-items: center;
-		text-decoration: none;
-		color: white;
-		svg{
-			fill: @white;
-			width: 1.7em;
-			height: 1.7em;
-			margin-right: 0.2em;
-		}
-	}
-}
+
 
 .image-block__caption{
 	width: 60%;
@@ -1893,12 +1868,23 @@ li{
 .section--details{
 	padding: 4rem 0;
 	background: @lightgrey;
-	&.first{
-		padding-top: 4rem 0 3rem;
-	}
-	&.last{
-		padding-bottom: 3rem 0 4rem;
-	}
+
+
+		&.first{
+			padding: 4rem 0 3rem;
+		}
+		&.last{
+			padding: 3rem 0 4rem;
+		}
+		.media-phone-portrait({
+			&.first{
+				padding:1.5rem 0 0;
+			}
+			&.last{
+				padding:0 0 1.5rem;
+			}
+		});
+
 	.grid{
 		.grid-cell{
 			.media-phone-portrait({
@@ -1907,6 +1893,9 @@ li{
 		}
 		.grid-cell:first-of-type{
 			padding-right: 2rem;
+			.media-phone-portrait({
+				padding:1rem 0;
+				});
 		}
 		.grid-cell:last-of-type{
 			padding-left: 2rem;
@@ -1914,24 +1903,12 @@ li{
 				left:auto;
 				right:0;
 			}
+			.media-phone-portrait({
+				padding: 1rem 0;
+				});
 		}
 	}
-	.vignette{
-		position: relative;
-	// margin-bottom: 0.5rem;
-		&:before{
-			content:'';
-			position: absolute;
-			height: auto;
-			top:0;
-			left:0;
-			width: 100%;
-			padding-top: 75%;
-			z-index:3;
-			background-image:radial-gradient(rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0.3) 100%);
-			opacity: 0.1;
-		}
-	}
+
 	img{
   	display:block;
 		border: 2px solid @lightgrey;
@@ -1944,6 +1921,23 @@ li{
 		padding-left: 0.5rem;
 		color: @darkgrey;
 		line-height: 1.5rem !important;
+	}
+}
+
+.vignette{
+	position: relative;
+// margin-bottom: 0.5rem;
+	&:before{
+		content:'';
+		position: absolute;
+		height: auto;
+		top:0;
+		left:0;
+		width: 100%;
+		padding-top: 75%;
+		z-index:3;
+		background-image:radial-gradient(rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0.3) 100%);
+		opacity: 0.1;
 	}
 }
 
@@ -2189,4 +2183,184 @@ li{
 			margin: 0 0.5rem 0.5rem;
 		});
 	}
+}
+
+.media-phone-portrait({
+	.display--mobile .image-block--right{
+		height: 20rem;
+	}
+});
+
+.section--image-full{
+	.media-phone-portrait({
+		height: 28rem;
+		.image-full{
+			background-size: auto 100%;
+			background-position: bottom center;
+		}
+	});
+}
+
+.caption-block{
+	position: absolute;
+	left:0;
+	top:0;
+	width: 40%;
+	height: 100%;
+	padding:2rem 0 0 3rem;
+	.media-phone-portrait({
+		position: relative;
+		width:100%;
+		height:auto;
+		padding:1rem;
+	});
+	h4, p{
+		color: @white;
+		text-shadow: 1px 1px 10px rgba(0,0,0,0.3);
+	}
+	h4{
+		.media-phone-portrait({
+			margin: 0rem;
+		});
+	}
+	p{
+		line-height: 1.5rem !important;
+	}
+	a{
+		display:inline-block;
+		position: relative;
+		// align-items: flex-end;
+		text-decoration: none;
+		color: white;
+		padding-left: 1.7em;
+		&:after{
+			content: '';
+			position: absolute;
+			display: block;
+			top: 0;
+			left: 2em;
+			bottom: 0;
+			right: 0;
+			bottom: -0.2em;
+			border-bottom: 2px dotted #fff;
+		}
+		svg{
+			position:absolute;
+			display:inline-block;
+			left: 0;
+			fill: @white;
+			width: 1.7em;
+			height: 1.7em;
+			margin-right: 0.2em;
+		}
+	}
+}
+
+
+
+
+
+
+#campaign-ux{
+	height: 25rem;
+	.media-phone-portrait({
+		height: 20rem;
+	});
+	background-image: url(../images/campaign-ux-FULL.jpg);
+	.media-phone-portrait({
+		background-image: url(../images/campaign-ux-MOB.jpg);
+		background-size: 100% auto;
+		background-position: bottom center;
+	});
+}
+
+#songs-responsive{
+	height: 25rem;
+	.media-phone-portrait({
+		height: 22rem;
+	});
+	background-image: url(../images/songs-responsive-FULL.jpg);
+	.media-phone-portrait({
+		background-image: url(../images/songs-responsive-MOB.jpg);
+		background-size: 100% auto;
+		background-position: bottom center;
+	});
+}
+
+#store-locator-vid{
+	h4, p{
+		text-shadow: none;
+		color: @darkgrey;
+	}
+}
+
+#wizard-context{
+	.grid-cell--display{
+		justify-content: center;
+	}
+	.display__screen__wrapper{
+		width: 23rem;
+	}
+}
+
+#email-mobile{
+	height: 25rem;
+	.media-phone-portrait({
+		height: 22rem;
+	});
+	background-image: url(../images/email-mobile-FULL.jpg);
+	.media-phone-portrait({
+		background-image: url(../images/email-mobile-MOB.jpg);
+		background-size: 100% auto;
+		background-position: bottom center;
+	});
+}
+
+#email-desktop{
+	height: 25rem;
+	background-size: 100% auto;
+	background-position: center center;
+	.media-phone-portrait({
+		height: 15rem;
+	});
+	background-image: url(../images/email-desktop-FULL.jpg);
+	.media-phone-portrait({
+		background-image: url(../images/email-desktop-MOB.jpg);
+		background-size: 100% auto;
+		background-position: bottom center;
+	});
+}
+
+#michael-thwaites-ipad{
+	h4, p{
+		text-shadow: none;
+		color: @darkgrey;
+	}
+	height: 25rem;
+	.media-phone-portrait({
+		height: 22rem;
+	});
+	background-image: url(../images/michael-thwaites-ipad-FULL.jpg);
+	.media-phone-portrait({
+		background-image: url(../images/michael-thwaites-ipad-MOB.jpg);
+		background-size: 100% auto;
+		background-position: bottom center;
+	});
+}
+
+#michael-thwaites-imagery{
+	height: 25rem;
+	.media-phone-portrait({
+		height: 22rem;
+	});
+	background-image: url(../images/michael-thwaites-imagery-FULL.jpg);
+	.media-phone-portrait({
+		background-image: url(../images/michael-thwaites-imagery-MOB.jpg);
+		background-size: 100% auto;
+		background-position: bottom center;
+	});
+}
+
+.michael-thwaites .display--slider{
+	background: @palegrey;
 }
