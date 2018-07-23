@@ -4040,6 +4040,7 @@ li {
 #songs-responsive {
   height: 25rem;
   background-image: url(../images/songs-responsive-FULL.jpg);
+  background-position: center;
 }
 @media (max-width: 550px) and (orientation: portrait), (max-width: 480px) and (orientation: landscape) {
   #songs-responsive {
