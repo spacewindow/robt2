@@ -2,6 +2,7 @@
   "name": "robt",
   "description": "Rob Thwaites Portfolio",
   "main": "server.js",
+  "engines" : { "node" : "12.14.0" },
   "scripts": {
     "dev": "npm-run-all -p start watch:less watch:sync",
     "start": "node server.js",
