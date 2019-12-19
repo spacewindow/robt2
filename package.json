@@ -32,17 +32,8 @@
   "devDependencies": {
     "glob": "^7.1.0",
     "browser-sync": "^2.14.0",
-    "clean-css": "^3.4.19",
     "jquery": "^3.0.0",
-    "node-sass": "^3.8.0",
     "nodemon": "^1.8.1",
-    "npm-run-all": "^2.1.1",
-    "onchange": "^2.5.0",
-    "postcss": "^5.2",
-    "postcss-cli": "^2.6.0",
-    "uglify-js": "^2.7.4",
-    "autoprefixer": "^6.7.3",
-    "lucid-ui": "^2.15.2",
-    "less": "^2.7.2"
+    "npm-run-all": "^2.1.1"
   }
 }
