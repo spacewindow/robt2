@@ -95,7 +95,7 @@ app.get("/*", function(req, res) {
 //   res.render('../views/404.html.ejs');
 // });
 
-app.get("/fonts/*", cors(), function (req, res){
+app.get("/fonts/segmdl2.woff", cors(), function (req, res){
   res.json({msg:'This route is CORS enabled'});
 });
 
