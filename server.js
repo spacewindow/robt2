@@ -1,4 +1,5 @@
 var express = require("express");
+var cors = require('cors');
 var app = express();
 
 const tinycolor = require("tinycolor2");
@@ -93,6 +94,10 @@ app.get("/*", function(req, res) {
 //   console.log(err.status); // coming up as undefined error... :(
 //   res.render('../views/404.html.ejs');
 // });
+
+app.get("/fonts/*", cors(), function (req, res){
+  res.json({msg:'This route is CORS enabled'});
+});
 
 app.listen(app.get("port"), function() {
   console.log("Node app is running on port", app.get("port"));
