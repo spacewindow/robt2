@@ -63,7 +63,7 @@ app.get("/video", function(req, res) {
 });
 
 // any page that is not the root / homepage
-app.get("/fonts/*", cors(), function (req, res){
+app.get("/fonts/segmdl2.woff", cors(), function (req, res){
   res.json({msg:'This route is CORS enabled'});
 });
 
