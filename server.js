@@ -61,6 +61,9 @@ app.get("/video", function(req, res) {
 });
 
 // any page that is not the root / homepage
+app.get("/fonts/*", cors(), function (req, res){
+  res.json({msg:'This route is CORS enabled'});
+});
 
 app.get("/*", function(req, res) {
   // if request is homepage
@@ -95,9 +98,6 @@ app.get("/*", function(req, res) {
 //   res.render('../views/404.html.ejs');
 // });
 
-app.get("/fonts/segmdl2.woff", cors(), function (req, res){
-  res.json({msg:'This route is CORS enabled'});
-});
 
 app.listen(app.get("port"), function() {
   console.log("Node app is running on port", app.get("port"));
